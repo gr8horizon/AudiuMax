@@ -92,7 +92,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 312.5, 197.0, 39.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 312.5, 197.0, 39.0, 20.0 ],
+					"presentation_rect" : [ 508.5, 42.0, 39.0, 20.0 ],
 					"text" : "clear"
 				}
 
@@ -618,7 +618,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 316.5, 219.0, 29.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.5, 219.0, 29.5, 22.0 ],
+					"presentation_rect" : [ 512.5, 64.0, 29.5, 22.0 ],
 					"text" : "-"
 				}
 
