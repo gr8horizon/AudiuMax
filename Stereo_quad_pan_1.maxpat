@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-56",
@@ -788,7 +789,7 @@
 					"patching_rect" : [ 277.0, 590.5, 94.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 36.0, 373.5, 94.0, 22.0 ],
-					"text" : "dac~ 9 12 10 11"
+					"text" : "dac~ 10 11 9 12"
 				}
 
 			}
