@@ -202,7 +202,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 326.0, 243.0, 47.0, 22.0 ],
+					"patching_rect" : [ 315.0, 243.0, 47.0, 22.0 ],
 					"text" : "serial e"
 				}
 
