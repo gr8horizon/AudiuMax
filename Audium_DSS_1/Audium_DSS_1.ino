@@ -1,6 +1,6 @@
 
 // MAX-Controlled
-// December 2020
+// December 8, 2020
 //
 // 64ch 57600-baud serial receiver 
 // single-character ASCII starting with 0b0
@@ -11,8 +11,8 @@
 //SN: BD3D262F51514743594A2020FF051E3A (B)
 //SN: 9CAD845751514743594A2020FF050D30 (X)
 
-// *** Change DSS_ID, specific to DSS connected
-const char DSS_ID = 'X';  // {A,B,X,Z,F,L}
+// *** Change DSS_ID, specific to DSS connected (probe with '?')
+const char DSS_ID = 'A';  // {A,B,X,Z,F,L}
 
 long long ll_output = 0LL;
 long long ll_output_last = 0LL;
@@ -62,7 +62,8 @@ void printlonglongbits(long long val)
 
 void process_data (const char * data)
 {
-  char two_chr[2];
+  char two_chr[3];
+  two_chr[2] = '\0'; // null terminator
   ll_output_last = ll_output; 
   
   if (strlen(data) == 1) {
@@ -83,7 +84,7 @@ void process_data (const char * data)
       printlonglongbits(ll_output);
     }
     
-    if (strlen(data) == 3) {  // "B##"  (required two-digits)    
+    if (strlen(data) == 3 || strlen(data) == 4) {  // "B##" or "B##?"    
       two_chr[0] = data[1];
       two_chr[1] = data[2];
       if (isdigit(two_chr[0]) && isdigit(two_chr[1])) {
@@ -97,6 +98,7 @@ void process_data (const char * data)
           ll_output ^= 1LL << atoi(two_chr);
       }        
     }
+    
     if (strlen(data) == 65) {  // "B0..(64)..0"
       Serial.println(data);
       ll_output = 0LL;
