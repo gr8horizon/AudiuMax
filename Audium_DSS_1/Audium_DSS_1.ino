@@ -1,23 +1,36 @@
-
-// MAX-Controlled
-// December 8, 2020
+// |                               |
+// | Audium Digital Speaker Switch |
+// |                               |
 //
-// 64ch 57600-baud serial receiver 
-// single-character ASCII starting with 0b0
+// Target: Arduino Nano Every on DSS PCB Rev.2 (2020)
+// Paul Barton
+// December 13, 2020
+//
+// Serial speed: 57600, DTS=on (for MAX)
+//
+// [ COMMANDS ]
+// ?    returns DSS ID character
+// -    clears output state for every DSS
+// A    lists 64 bit binary output state if board's DSS_ID = 'A'
+// B!   reassign DSS_ID of current board to 'B'
+// A^   save output state of DSS 'A' in non-volatile memory
+// A+   load output state of DSS 'A' from non-volatile memory
+// A##  toggle output state of DSS 'A' output ## (2-digits required: 00-63)
+// A010...101  set state of all 64 outputs of DSS 'A'
 
 #include <SPI.h>
+#include <EEPROM.h>
 
 //SN: 03413AD351514743594A2020FF05423B (A)
 //SN: BD3D262F51514743594A2020FF051E3A (B)
 //SN: 9CAD845751514743594A2020FF050D30 (X)
 
-// *** Change DSS_ID, specific to DSS connected (probe with '?')
-const char DSS_ID = 'A';  // {A,B,X,Z,F,L}
+char DSS_ID = '?';  // {A,B,X,Z,F,L}
 
 long long ll_output = 0LL;
 long long ll_output_last = 0LL;
 const unsigned int MAX_INPUT = 70;
-//typdef enum { MONO, QUAD, POLY} DSS_modes;
+//typdef enum { MONO, QUAD, POLY} DSS_modes; // *** TODO: future stuff
 //DSS_modes DSS_mode = MONO;
 int ms_overlap = 0;
 
@@ -31,6 +44,8 @@ void setup (void)
   SPI.begin();
   SPI.setClockDivider(SPI_CLOCK_DIV2);
   SPI.setBitOrder(LSBFIRST);
+  load64();  // load default output state from EEPROM addresses 0:7
+  DSS_ID = EEPROM[10];  // load board ID from EEPROM address 10
 }
 
 void switch_outputs(long long val)
@@ -47,6 +62,29 @@ void switch_outputs(long long val)
 
   PORTB |= B00000100;  // SS High
   PORTB &= ~(B00001100);   // SS, MOSI Low
+}
+
+void load64()
+{
+  unsigned char byteArray[8];
+  ll_output = 0LL;
+  
+  for(int i = 0; i < 8; i++) {
+    byteArray[i] = EEPROM[i];
+    delay(100);
+    ll_output |= ((long long) byteArray[i]) << (64 - (i+1) * 8); 
+  }
+}
+
+void save64(long long val)
+{
+  unsigned char byteArray[8];
+  
+  for(int i = 0; i < 8; i++) {
+    byteArray[i] = (char)((val >> (64 - (i+1) * 8)) & 0xFF);
+    EEPROM[i] = byteArray[i];
+    delay(100);
+  }
 }
 
 void printlonglongbits(long long val) 
@@ -74,14 +112,38 @@ void process_data (const char * data)
       case '-':  // clear all outputs
         ll_output = 0LL;
         Serial.println('-');
+        break;
     }
   }
-  
+ 
   if (data[0] == DSS_ID) {
     
     // if no outputs, then offer info about board (switch states, mode, etc.)
     if (strlen(data) == 1) {  
       printlonglongbits(ll_output);
+    }
+
+    if (strlen(data) == 2) {
+      if (data[1] == '^') {
+        save64(ll_output);
+        Serial.println('^');
+      }
+      else if (data[1] == '+') {
+        load64();
+        Serial.println('+');
+      }
+      else if (data[1] == '-') {
+        ll_output = 0LL;
+        Serial.println('-');
+      }
+    }
+    
+    if (strlen(data) == 3) {
+      if (data[1] == '!') {
+        EEPROM[10] = data[2];
+        DSS_ID = data[2];
+        Serial.println(DSS_ID);
+      }
     }
     
     if (strlen(data) == 3 || strlen(data) == 4) {  // "B##" or "B##?"    
