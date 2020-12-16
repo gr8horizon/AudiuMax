@@ -6,7 +6,7 @@
 // Paul Barton
 // December 13, 2020
 //
-// Serial speed: 57600, DTS=on (for MAX)
+// Serial speed: 57600, Newline Only, DTS=on (for MAX)
 //
 // [ COMMANDS ]
 // ?    returns DSS ID character
@@ -25,7 +25,7 @@
 //SN: BD3D262F51514743594A2020FF051E3A (B)
 //SN: 9CAD845751514743594A2020FF050D30 (X)
 
-char DSS_ID = '?';  // {A,B,X,Z,F,L}
+char DSS_ID = 'x';  // {A,B,X,Z,F,L}
 
 long long ll_output = 0LL;
 long long ll_output_last = 0LL;
@@ -44,8 +44,10 @@ void setup (void)
   SPI.begin();
   SPI.setClockDivider(SPI_CLOCK_DIV2);
   SPI.setBitOrder(LSBFIRST);
-  load64();  // load default output state from EEPROM addresses 0:7
-  DSS_ID = EEPROM[10];  // load board ID from EEPROM address 10
+  if (EEPROM[20] == '!') {  // unlikely after 1st upload
+    DSS_ID = EEPROM[10];  // load board ID from EEPROM address 10
+    load64();  // load default output state from EEPROM addresses 0:7
+  }
 }
 
 void switch_outputs(long long val)
@@ -141,6 +143,7 @@ void process_data (const char * data)
     if (strlen(data) == 3) {
       if (data[1] == '!') {
         EEPROM[10] = data[2];
+        EEPROM[20] = '!';
         DSS_ID = data[2];
         Serial.println(DSS_ID);
       }
