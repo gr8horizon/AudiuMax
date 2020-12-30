@@ -4,7 +4,7 @@
 //
 // Target: Arduino Nano Every on DSS PCB Rev.2 (2020)
 // Paul Barton
-// December 13, 2020
+// December 30, 2020
 //
 // Serial speed: 57600, Newline Only, DTS=on (for MAX)
 //
@@ -76,6 +76,9 @@ void load64()
     delay(100);
     ll_output |= ((long long) byteArray[i]) << (64 - (i+1) * 8); 
   }
+  switch_outputs(ll_output);
+  Serial.print("Loaded Default Output State for DSS: ");
+  Serial.println(DSS_ID);
 }
 
 void save64(long long val)
