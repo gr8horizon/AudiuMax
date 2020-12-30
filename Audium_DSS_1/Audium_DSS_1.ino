@@ -10,23 +10,24 @@
 //
 // [ COMMANDS ]
 // ?    returns DSS ID character
-// -    clears output state for every DSS
+// -    clears output state
+// v    returns 11-char date stamp when cocde was uploaded
 // A    lists 64 bit binary output state if board's DSS_ID = 'A'
 // B!   reassign DSS_ID of current board to 'B'
 // A^   save output state of DSS 'A' in non-volatile memory
 // A+   load output state of DSS 'A' from non-volatile memory
 // A##  toggle output state of DSS 'A' output ## (2-digits required: 00-63)
 // A010...101  set state of all 64 outputs of DSS 'A'
+//
+// First Upload:
+// . set DSS_ID: x!A
+// . clear default outputs: A^
 
 #include <SPI.h>
 #include <EEPROM.h>
 
-//SN: 03413AD351514743594A2020FF05423B (A)
-//SN: BD3D262F51514743594A2020FF051E3A (B)
-//SN: 9CAD845751514743594A2020FF050D30 (X)
 
 char DSS_ID = 'x';  // {A,B,X,Z,F,L}
-
 long long ll_output = 0LL;
 long long ll_output_last = 0LL;
 const unsigned int MAX_INPUT = 70;
@@ -47,6 +48,9 @@ void setup (void)
   if (EEPROM[20] == '!') {  // unlikely after 1st upload
     DSS_ID = EEPROM[10];  // load board ID from EEPROM address 10
     load64();  // load default output state from EEPROM addresses 0:7
+  }
+  for(int i = 0; i <= 11; i++) {
+    EEPROM[30+i] = char(__DATE__[i]);
   }
 }
 
@@ -77,8 +81,8 @@ void load64()
     ll_output |= ((long long) byteArray[i]) << (64 - (i+1) * 8); 
   }
   switch_outputs(ll_output);
-  Serial.print("Loaded Default Output State for DSS: ");
-  Serial.println(DSS_ID);
+//  EEPROM[30] = VERSION_WK;
+//  EEPROM[31] = VERSION_YY;
 }
 
 void save64(long long val)
@@ -117,6 +121,13 @@ void process_data (const char * data)
       case '-':  // clear all outputs
         ll_output = 0LL;
         Serial.println('-');
+        break;
+      case 'v':
+        Serial.print("Audium_DSS_1.ino uploaded: ");
+        for (int i = 0; i <= 11; i++) {
+          Serial.print(char(EEPROM[30+i]));
+        }
+        Serial.println();
         break;
     }
   }
