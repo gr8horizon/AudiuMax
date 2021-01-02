@@ -22,7 +22,7 @@
 //
 // First Upload:
 // . set DSS_ID: x!A
-// . clear default outputs: A^
+// . clear default outputs: -, A^
 
 #include <SPI.h>
 #include <EEPROM.h>
