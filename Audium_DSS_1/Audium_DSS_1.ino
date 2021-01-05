@@ -20,7 +20,12 @@
 // A##  toggle output state of DSS 'A' output ## (2-digits required: 00-63)
 // A010...101  set state of all 64 outputs of DSS 'A'
 //
-// First Upload:
+// [ EEPROM Map ]
+// 10: DSS_ID
+// 20: ! after resetting DSS_ID
+// 30-41: __DATE__
+//
+// Do This on First Upload:
 // . set DSS_ID: x!A
 // . clear default outputs: A^
 
