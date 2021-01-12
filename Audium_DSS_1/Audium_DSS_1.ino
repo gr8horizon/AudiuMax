@@ -43,7 +43,7 @@ int ms_overlap = 0;
 
 void setup (void)
 {  
-  Serial.begin(57600);
+  Serial.begin(1000000);
 
   DDRB  |= B00101100;  // SCK (13), MOSI (11), SS (10) outputs
   PORTB |= B00000100;  // SS High (Low ???)
