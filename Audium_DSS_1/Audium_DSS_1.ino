@@ -165,7 +165,7 @@ void process_data (const char * data)
         EEPROM[10] = data[2];
         EEPROM[20] = '!';
         DSS_ID = data[2];
-        Serial.println(DSS_ID);
+        Serial.println(DSS_ID);  
       }
     }
     
@@ -173,7 +173,7 @@ void process_data (const char * data)
       two_chr[0] = data[1];
       two_chr[1] = data[2];
       if (isdigit(two_chr[0]) && isdigit(two_chr[1])) {
-        Serial.println(atoi(two_chr));
+        //Serial.println(atoi(two_chr)); // maybe don't echo this ... for speed?
 //        ll_output = 1LL << char(atoi(two_chr)); // switch 1 at a time
 //        ll_output = 
 //          (1LL << char(atoi(two_chr)))
