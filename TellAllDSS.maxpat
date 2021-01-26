@@ -262,8 +262,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 261.0, 134.0, 103.0, 22.0 ],
-					"text" : "baud 57600, dtr 1"
+					"patching_rect" : [ 261.0, 134.0, 116.0, 22.0 ],
+					"text" : "baud 1000000, dtr 1"
 				}
 
 			}
