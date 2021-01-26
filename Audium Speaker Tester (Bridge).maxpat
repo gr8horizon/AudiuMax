@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 174.0, 1062.0, 779.0 ],
+		"rect" : [ 100.0, 174.0, 661.0, 535.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -61,7 +61,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 498.0, 368.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 39.0, 254.25, 44.0, 44.0 ]
+					"presentation_rect" : [ 39.0, 308.75, 44.0, 44.0 ]
 				}
 
 			}
@@ -171,7 +171,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 272.0, 319.449441432952881, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 39.0, 306.5, 44.0, 44.0 ]
+					"presentation_rect" : [ 39.0, 254.25, 44.0, 44.0 ]
 				}
 
 			}
