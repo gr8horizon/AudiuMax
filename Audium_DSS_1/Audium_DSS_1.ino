@@ -185,7 +185,7 @@ void process_data (const char * data)
     }
     
     if (strlen(data) == 65) {  // "B0..(64)..0"
-      Serial.println(data);
+      //Serial.println(data); // poll this later for speed
       ll_output = 0LL;
       for(int i = 1; i <= 64; i++) {
         if(data[i] == '1')
