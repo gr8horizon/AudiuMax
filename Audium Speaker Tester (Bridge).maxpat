@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 174.0, 661.0, 535.0 ],
+		"rect" : [ 100.0, 174.0, 441.0, 397.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -397,8 +397,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.775351166725159, 547.025791630744834, 123.033705711364746, 33.0 ],
-					"text" : "OSC Messages from DSS_Bridge"
+					"patching_rect" : [ 560.775351166725159, 547.025791630744834, 137.033705711364746, 33.0 ],
+					"text" : "OSC Messages from DSS_Bridge Broadcast"
 				}
 
 			}
@@ -578,7 +578,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.775351166725159, 649.999999999999886, 120.0, 76.0 ],
-					"text" : "/DSS/A \"0000000000000000000000000000000000000000000000000000000000000000\""
+					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
 				}
 
 			}
@@ -615,7 +615,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 378.573100924491882, 625.5, 165.0, 22.0 ],
-					"text" : "udpsend 192.168.42.68 1337"
+					"text" : "udpsend 192.168.42.68 1336"
 				}
 
 			}
