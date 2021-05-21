@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1451.0, 143.0, 1334.0, 818.0 ],
+		"rect" : [ 441.0, 172.0, 1334.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -85,7 +85,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1094.0, 159.625, 23.5, 81.375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 99.5, 338.125, 124.5, 22.25 ]
+					"presentation_rect" : [ 604.0, 109.375, 18.0, 57.25 ]
 				}
 
 			}
@@ -624,7 +624,7 @@
 ,
 					"patching_rect" : [ 439.5, 109.0, 101.0, 101.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 336.5, 107.0, 101.0, 101.0 ],
+					"presentation_rect" : [ 147.5, 92.0, 101.0, 101.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -683,7 +683,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 915.0, 543.0, 53.0, 22.0 ],
+					"patching_rect" : [ 839.5, 634.5, 53.0, 22.0 ],
 					"text" : "r toIPAD"
 				}
 
@@ -903,11 +903,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-48",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 915.0, 574.0, 138.0, 35.0 ],
+					"patching_rect" : [ 839.5, 665.5, 178.0, 22.0 ],
 					"text" : "udpsend 192.168.42.75 9000"
 				}
 
@@ -958,7 +957,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 961.0, 159.625, 22.5, 108.75 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.5, 323.125, 124.5, 22.25 ],
+					"presentation_rect" : [ 254.5, 92.125, 19.0, 100.875 ],
 					"rows" : 6
 				}
 
@@ -1193,7 +1192,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 836.0, 159.625, 22.5, 108.75 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 69.5, 308.125, 124.5, 22.25 ],
+					"presentation_rect" : [ 121.5, 92.0, 18.0, 101.0 ],
 					"rows" : 6
 				}
 
@@ -1448,7 +1447,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 915.0, 635.5, 57.0, 22.0 ],
+					"patching_rect" : [ 1037.0, 636.0, 57.0, 22.0 ],
 					"text" : "r toDSS2"
 				}
 
@@ -1459,7 +1458,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 915.0, 665.0, 165.0, 22.0 ],
+					"patching_rect" : [ 1037.0, 665.5, 165.0, 22.0 ],
 					"text" : "udpsend 192.168.42.68 1336"
 				}
 
@@ -1498,7 +1497,7 @@
 					"patching_rect" : [ 18.0, 726.0, 56.0, 19.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-57", "toggle", "int", 1, 5, "obj-58", "toggle", "int", 1, 5, "obj-59", "toggle", "int", 0, 5, "obj-60", "toggle", "int", 0, 5, "obj-72", "toggle", "int", 0, 5, "obj-71", "toggle", "int", 0, 5, "obj-70", "toggle", "int", 0, 5, "obj-69", "toggle", "int", 0, 5, "obj-83", "live.gain~", "float", -29.615837097167969, 5, "obj-96", "live.gain~", "float", -60.0, 5, "obj-107", "live.gain~", "float", -60.0, 5, "obj-108", "live.gain~", "float", -60.0, 28, "obj-124", "matrixctrl", "list", 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 5, "obj-126", "toggle", "int", 1, 22, "obj-46", "matrixctrl", "list", 0, 0, 1, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 22, "obj-51", "matrixctrl", "list", 0, 0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 0, 0, 4, 0, 0, 5, 0, 16, "obj-141", "matrixctrl", "list", 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0 ]
+							"data" : [ 5, "obj-57", "toggle", "int", 1, 5, "obj-58", "toggle", "int", 1, 5, "obj-59", "toggle", "int", 0, 5, "obj-60", "toggle", "int", 0, 5, "obj-72", "toggle", "int", 1, 5, "obj-71", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 1, 5, "obj-69", "toggle", "int", 1, 5, "obj-83", "live.gain~", "float", -29.615837097167969, 5, "obj-96", "live.gain~", "float", -60.0, 5, "obj-107", "live.gain~", "float", -60.0, 5, "obj-108", "live.gain~", "float", -60.0, 28, "obj-124", "matrixctrl", "list", 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 5, "obj-126", "toggle", "int", 1, 22, "obj-46", "matrixctrl", "list", 0, 0, 1, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 22, "obj-51", "matrixctrl", "list", 0, 0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 0, 0, 4, 0, 0, 5, 0, 16, "obj-141", "matrixctrl", "list", 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 1 ]
 						}
  ]
 				}
@@ -2109,7 +2108,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 710.0, 629.5, 31.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 95.5, 130.5, 24.0, 20.0 ],
+					"presentation_rect" : [ 95.5, 128.0, 24.0, 20.0 ],
 					"text" : "A",
 					"textjustification" : 1
 				}
@@ -2123,7 +2122,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 695.0, 614.5, 31.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 276.5, 132.5, 24.0, 20.0 ],
+					"presentation_rect" : [ 275.5, 128.0, 24.0, 20.0 ],
 					"text" : "B",
 					"textjustification" : 1
 				}
@@ -2522,9 +2521,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 347.0, 186.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 250.5, 130.5, 24.0, 24.0 ]
+					"patching_rect" : [ 347.0, 186.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2536,9 +2533,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 322.0, 186.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 121.5, 130.5, 24.0, 24.0 ]
+					"patching_rect" : [ 322.0, 186.0, 24.0, 24.0 ]
 				}
 
 			}
