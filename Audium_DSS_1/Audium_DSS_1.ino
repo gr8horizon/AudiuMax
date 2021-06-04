@@ -141,7 +141,7 @@ void process_data (const char * data)
   if (data[0] == DSS_ID) {
     
     // if no outputs, then offer info about board (switch states, mode, etc.)
-    if (strlen(data) == 1) {  
+    if (strlen(data) == 1) {  // including DSS_ID char
       printlonglongbits(ll_output);
     }
 
@@ -169,18 +169,25 @@ void process_data (const char * data)
       }
     }
     
-    if (strlen(data) == 3 || strlen(data) == 4) {  // "B##" or "B##?"    
+    if (strlen(data) == 3 || strlen(data) == 4) {  
+      // https://stackoverflow.com/questions/47981/how-do-you-set-clear-and-toggle-a-single-bit
+      // "B##"  : Toggle state of spkr ##    
+      // "B##b" : Set spkr ## to binary state b
       two_chr[0] = data[1];
       two_chr[1] = data[2];
       if (isdigit(two_chr[0]) && isdigit(two_chr[1])) {
-        //Serial.println(atoi(two_chr)); // maybe don't echo this ... for speed?
-//        ll_output = 1LL << char(atoi(two_chr)); // switch 1 at a time
-//        ll_output = 
-//          (1LL << char(atoi(two_chr)))
-//        | (1LL << char(char(atoi(two_chr)) + 16))
-//        | (1LL << char(char(atoi(two_chr)) + 32))
-//        | (1LL << char(char(atoi(two_chr)) + 48)); // switch 4 at a time
+        if (strlen(data) == 3) {
           ll_output ^= 1LL << atoi(two_chr);
+        }
+        else if (strlen(data) == 4) {
+          if (data[3] == '1') {
+            ll_output |= 1LL << atoi(two_chr);
+          }
+          else if (data[3] == '0') {
+            ll_output &= ~(1LL << atoi(two_chr));
+          }
+        }
+        
       }        
     }
     
@@ -195,6 +202,7 @@ void process_data (const char * data)
   }
   
   // switch_outputs(ll_output | ll_output_last); delay(50);  // overlap with last state
+  
   switch_outputs(ll_output);
    
 }  
