@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,15 +37,16 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.0, 235.0, 138.0, 33.0 ],
-					"text" : "2 digit number after /DSS/DSS_ID"
+					"patching_rect" : [ 260.0, 235.0, 138.0, 47.0 ],
+					"text" : "2 digit number after /DSS/DSS_ID \nfollowed by binary off/on"
 				}
 
 			}
@@ -81,7 +82,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 124.333333333333314, 323.0, 74.0, 22.0 ],
-					"text" : "/DSS/A 0"
+					"text" : "/DSS/A 32 0"
 				}
 
 			}
@@ -113,11 +114,11 @@
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.333333333333314, 230.0, 95.0, 22.0 ],
-					"text" : "sprintf %s %02u"
+					"patching_rect" : [ 126.333333333333314, 230.0, 123.0, 22.0 ],
+					"text" : "sprintf %s %02u %1u"
 				}
 
 			}
@@ -269,6 +270,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 1 ],
 					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 2 ],
+					"source" : [ "obj-39", 0 ]
 				}
 
 			}
