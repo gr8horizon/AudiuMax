@@ -4052,7 +4052,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -29.615837097167969,
+						"live.gain~" : 0.0,
 						"live.gain~[2]" : -60.0,
 						"live.gain~[3]" : -60.0,
 						"live.gain~[4]" : -60.0
@@ -4076,7 +4076,7 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -29.615837097167969,
+									"live.gain~" : 0.0,
 									"live.gain~[2]" : -60.0,
 									"live.gain~[3]" : -60.0,
 									"live.gain~[4]" : -60.0
