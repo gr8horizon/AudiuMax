@@ -5,7 +5,7 @@
 
 int brightness = 255;    // PWM = [0,255]
 int fadeAmount = 1;    // how many points to fade the LED by
-int pwm_pin = 9; // pins 5-6 are different on Nano
+int pwm_pin = 3; // pins 5-6 @ 980 Hz, o/w 490 Hz
 const unsigned int MAX_INPUT = 70;
 
 void setup() {
