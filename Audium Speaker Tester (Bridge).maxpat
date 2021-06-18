@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 57.0, 219.0, 788.0, 766.0 ],
+		"rect" : [ 1047.0, 163.0, 788.0, 766.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -591,7 +591,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.775351166725159, 649.999999999999886, 120.0, 76.0 ],
-					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
+					"text" : "/DSS/B \"0000000000000000000000000000000000000000000000000000000000000000\""
 				}
 
 			}
@@ -3130,7 +3130,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 6,
 					"presentation_rect" : [ 160.0, 61.0, 27.0, 142.0 ],
-					"text" : "W\nP\nHT\nC\nE",
+					"text" : "W\nP\nHT\nC\nJ",
 					"textcolor" : [ 0.364705882352941, 0.43921568627451, 0.847058823529412, 1.0 ],
 					"textjustification" : 1
 				}
@@ -3149,7 +3149,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 6,
 					"presentation_rect" : [ 12.0, 61.0, 28.0, 142.0 ],
-					"text" : "L\nV\nU\nR\nD\nJ",
+					"text" : "L\nV\nU\nR\nD\nE",
 					"textcolor" : [ 0.847058823529412, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
