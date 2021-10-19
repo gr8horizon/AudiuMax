@@ -555,6 +555,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
 									"parameter_enable" : 0,
+									"patching_rect" : [ 0.0, -1.0, 100.0, 100.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 106.5, 50.0, 100.0, 100.0 ],
 									"rightvalue" : 100,
@@ -622,7 +623,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 439.5, 109.0, 101.0, 101.0 ],
+					"patching_rect" : [ 439.5, 104.0, 108.0, 112.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 147.5, 92.0, 101.0, 101.0 ],
 					"viewvisibility" : 1
@@ -1009,7 +1010,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 184.0, 211.0, 150.0, 60.0 ],
+									"text" : "TouchOSC:Max zero:one-based index conversion (Row, Column, Value)"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "message",
@@ -4052,7 +4066,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : 0.0,
+						"live.gain~" : -29.615837097167969,
 						"live.gain~[2]" : -60.0,
 						"live.gain~[3]" : -60.0,
 						"live.gain~[4]" : -60.0
@@ -4076,7 +4090,7 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : 0.0,
+									"live.gain~" : -29.615837097167969,
 									"live.gain~[2]" : -60.0,
 									"live.gain~[3]" : -60.0,
 									"live.gain~[4]" : -60.0
