@@ -1,0 +1,3310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Mediator-Model Version="1" User="" TWO_Version="0.9.14">
+  <Model V="8" ID="TWO">
+    <Composite V="1" ID="Locations">
+      <OSC_Location V="2" ID="QLab_OSC_IO" Root_OSC_Address="" Outgoing_IP="192.168.42.68"
+                    Outgoing_Port="3001" Incoming_Port="53801" Bundle="1">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Location_EditTreeVCO_LT" isOpen="1"/>
+          <EditTreeVCO V="1" ID="QLab_OSC_IO_EditTreeVCO_LT" isOpen="1"/>
+        </VCOs>
+      </OSC_Location>
+      <OSC_Location V="2" ID="DSS_OSC_IO" Root_OSC_Address="" Outgoing_IP="192.168.42.68"
+                    Outgoing_Port="3002" Incoming_Port="53802" Bundle="1">
+        <VCOs>
+          <EditTreeVCO V="1" ID="DSS_OSC_IO_EditTreeVCO_LT" isOpen="1"/>
+          <EditTreeVCO V="1" ID="Location_EditTreeVCO_LT" isOpen="1"/>
+        </VCOs>
+      </OSC_Location>
+      <OSC_Location V="2" ID="OUT_TO_DSS" Root_OSC_Address="" Outgoing_IP="192.168.42.68"
+                    Outgoing_Port="1336" Incoming_Port="51465" Bundle="1">
+        <VCOs>
+          <EditTreeVCO V="1" ID="OUT_TO_DSS_EditTreeVCO_LT" isOpen="1"/>
+          <EditTreeVCO V="1" ID="Location_EditTreeVCO_LT" isOpen="1"/>
+        </VCOs>
+      </OSC_Location>
+      <OSC_Location V="2" ID="OUT_TO_QLAB" Root_OSC_Address="" Outgoing_IP="192.168.42.68"
+                    Outgoing_Port="53000" Incoming_Port="50188" Bundle="1">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Location_EditTreeVCO_LT" isOpen="1"/>
+        </VCOs>
+      </OSC_Location>
+    </Composite>
+    <Composite V="1" ID="Nodes">
+      <Node V="6" ID="QLab_OSC" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+            MuteOut="0" AP="" BuildNamespace="1">
+        <VCOs>
+          <EditTreeVCO V="1" ID="QLab_OSC_EditTreeVCO_NodeTNode" isOpen="1"/>
+        </VCOs>
+        <Node V="5" ID="cue" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+              MuteOut="0">
+          <VCOs>
+            <EditTreeVCO V="1" ID="cue_EditTreeVCO_NodeTNode" isOpen="1"/>
+          </VCOs>
+          <Node V="5" ID="{*.AB}" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                MuteOut="0">
+            <VCOs>
+              <EditTreeVCO V="1" ID="{*.AB}_EditTreeVCO_NodeTNode" isOpen="1"/>
+            </VCOs>
+            <Node V="5" ID="sliderLevel" Behaviour="Continuous" Direction="Bi"
+                  MuteIn="0" MuteOut="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="sliderLevel_EditTreeVCO_NodeTNode" isOpen="1"/>
+              </VCOs>
+              <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+                <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="s" Default="0"
+                    UseRanges="0"/>
+                <TT V="4" ID="TT1" Min="0.0" Max="0.0" Clip="0" Tag="f" Default="0.0"
+                    UseRanges="0"/>
+              </TTS>
+              <Node V="5" ID="18" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                    MuteOut="0">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="18_EditTreeVCO_NodeTNode" isOpen="1"/>
+                </VCOs>
+                <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+                  <VCOs>
+                    <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+                  </VCOs>
+                  <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="f" Default="0.0"
+                      UseRanges="0"/>
+                </TTS>
+              </Node>
+              <Node V="5" ID="19" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                    MuteOut="0">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="19_EditTreeVCO_NodeTNode" isOpen="1"/>
+                </VCOs>
+                <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+                  <VCOs>
+                    <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+                  </VCOs>
+                  <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="f" Default="0.0"
+                      UseRanges="0"/>
+                </TTS>
+              </Node>
+            </Node>
+          </Node>
+          <Node V="5" ID="{*.N}" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                MuteOut="0">
+            <VCOs>
+              <EditTreeVCO V="1" ID="{*.N}_EditTreeVCO_NodeTNode" isOpen="1"/>
+            </VCOs>
+            <Node V="5" ID="sliderLevel" Behaviour="Continuous" Direction="Bi"
+                  MuteIn="0" MuteOut="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="sliderLevel_EditTreeVCO_NodeTNode" isOpen="1"/>
+              </VCOs>
+              <Node V="5" ID="0" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                    MuteOut="0">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="0_EditTreeVCO_NodeTNode" isOpen="1"/>
+                </VCOs>
+                <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+                  <VCOs>
+                    <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+                  </VCOs>
+                  <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="f" Default="0.0"
+                      UseRanges="0"/>
+                </TTS>
+              </Node>
+            </Node>
+          </Node>
+          <Node V="5" ID="{*.F}" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                MuteOut="0">
+            <VCOs>
+              <EditTreeVCO V="1" ID="{*.F}_EditTreeVCO_NodeTNode" isOpen="1"/>
+            </VCOs>
+            <Node V="5" ID="sliderLevel" Behaviour="Continuous" Direction="Bi"
+                  MuteIn="0" MuteOut="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="sliderLevel_EditTreeVCO_NodeTNode" isOpen="1"/>
+              </VCOs>
+              <Node V="5" ID="0" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                    MuteOut="0">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="0_EditTreeVCO_NodeTNode" isOpen="1"/>
+                </VCOs>
+                <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+                  <VCOs>
+                    <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+                  </VCOs>
+                  <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="f" Default="0.0"
+                      UseRanges="0"/>
+                </TTS>
+              </Node>
+            </Node>
+          </Node>
+          <Node V="5" ID="{*.Sub}" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                MuteOut="0">
+            <VCOs>
+              <EditTreeVCO V="1" ID="{*.Sub}_EditTreeVCO_NodeTNode" isOpen="1"/>
+            </VCOs>
+            <Node V="5" ID="sliderLevel" Behaviour="Continuous" Direction="Bi"
+                  MuteIn="0" MuteOut="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="sliderLevel_EditTreeVCO_NodeTNode" isOpen="1"/>
+              </VCOs>
+              <Node V="5" ID="0" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                    MuteOut="0">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="0_EditTreeVCO_NodeTNode" isOpen="1"/>
+                </VCOs>
+                <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+                  <VCOs>
+                    <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="0"/>
+                  </VCOs>
+                  <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="f" Default="0.0"
+                      UseRanges="0">
+                    <VCOs>
+                      <EditTreeVCO V="1" ID="TTS_TT_EditTreeVCO_TTT" isOpen="1"/>
+                    </VCOs>
+                  </TT>
+                </TTS>
+              </Node>
+            </Node>
+          </Node>
+          <Node V="5" ID="{*.K}" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                MuteOut="0">
+            <VCOs>
+              <EditTreeVCO V="1" ID="{*.K}_EditTreeVCO_NodeTNode" isOpen="1"/>
+            </VCOs>
+            <Node V="5" ID="sliderLevel" Behaviour="Continuous" Direction="Bi"
+                  MuteIn="0" MuteOut="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="sliderLevel_EditTreeVCO_NodeTNode" isOpen="1"/>
+              </VCOs>
+              <Node V="5" ID="0" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                    MuteOut="0">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="0_EditTreeVCO_NodeTNode" isOpen="1"/>
+                </VCOs>
+                <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+                  <VCOs>
+                    <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+                  </VCOs>
+                  <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="f" Default="0.0"
+                      UseRanges="0"/>
+                </TTS>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+        <Node V="5" ID="go" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+              MuteOut="0">
+          <VCOs>
+            <EditTreeVCO V="1" ID="go_EditTreeVCO_NodeTNode" isOpen="1"/>
+          </VCOs>
+          <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+            <VCOs>
+              <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+            </VCOs>
+            <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="N" Default=""
+                UseRanges="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="TTS_TT_EditTreeVCO_TTT" isOpen="1"/>
+              </VCOs>
+            </TT>
+            <TT V="4" ID="TT1" Min="0.0" Max="1.0" Clip="0" Tag="s" Default="now"
+                UseRanges="1">
+              <VCOs>
+                <EditTreeVCO V="1" ID="TTS_TT1_EditTreeVCO_TTT" isOpen="1"/>
+              </VCOs>
+            </TT>
+          </TTS>
+          <TTS V="4" ID="TTS1" PreferredHandling="NoPreference">
+            <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="N" Default="0"
+                UseRanges="0"/>
+          </TTS>
+        </Node>
+        <Node V="5" ID="yo" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+              MuteOut="0">
+          <VCOs>
+            <EditTreeVCO V="1" ID="yo_EditTreeVCO_NodeTNode" isOpen="1"/>
+          </VCOs>
+          <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+            <VCOs>
+              <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+            </VCOs>
+            <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="s" Default="0"
+                UseRanges="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="TTS_TT_EditTreeVCO_TTT" isOpen="1"/>
+              </VCOs>
+            </TT>
+          </TTS>
+        </Node>
+        <Node V="5" ID="bang" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+              MuteOut="0">
+          <VCOs>
+            <EditTreeVCO V="1" ID="bang_EditTreeVCO_NodeTNode" isOpen="1"/>
+          </VCOs>
+          <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+            <VCOs>
+              <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+            </VCOs>
+            <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="I" Default=""
+                UseRanges="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="TTS_TT_EditTreeVCO_TTT" isOpen="1"/>
+              </VCOs>
+            </TT>
+          </TTS>
+        </Node>
+        <Node V="5" ID="button" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+              MuteOut="0">
+          <VCOs>
+            <EditTreeVCO V="1" ID="button_EditTreeVCO_NodeTNode" isOpen="1"/>
+          </VCOs>
+          <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+            <VCOs>
+              <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+            </VCOs>
+            <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="I" Default=""
+                UseRanges="0">
+              <VCOs>
+                <EditTreeVCO V="1" ID="TTS_TT_EditTreeVCO_TTT" isOpen="1"/>
+              </VCOs>
+            </TT>
+          </TTS>
+        </Node>
+        <Node V="5" ID="po" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+              MuteOut="0">
+          <VCOs>
+            <EditTreeVCO V="1" ID="po_EditTreeVCO_NodeTNode" isOpen="1"/>
+          </VCOs>
+          <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+            <VCOs>
+              <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+            </VCOs>
+            <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                UseRanges="0"/>
+          </TTS>
+        </Node>
+      </Node>
+      <Node V="6" ID="DSS_OSC" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+            MuteOut="0" AP="" BuildNamespace="1">
+        <VCOs>
+          <EditTreeVCO V="1" ID="DSS_OSC_EditTreeVCO_NodeTNode" isOpen="1"/>
+        </VCOs>
+        <Node V="5" ID="DSS" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+              MuteOut="0">
+          <VCOs>
+            <EditTreeVCO V="1" ID="DSS_EditTreeVCO_NodeTNode" isOpen="1"/>
+          </VCOs>
+          <Node V="5" ID="X" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                MuteOut="0">
+            <VCOs>
+              <EditTreeVCO V="1" ID="X_EditTreeVCO_NodeTNode" isOpen="1"/>
+            </VCOs>
+            <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+              <VCOs>
+                <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+              </VCOs>
+              <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT1" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT3" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT4" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT5" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT6" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+            </TTS>
+          </Node>
+          <Node V="5" ID="B" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                MuteOut="0">
+            <VCOs>
+              <EditTreeVCO V="1" ID="B_EditTreeVCO_NodeTNode" isOpen="1"/>
+            </VCOs>
+            <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+              <VCOs>
+                <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+              </VCOs>
+              <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT1" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT3" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT4" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT5" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT6" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+            </TTS>
+          </Node>
+          <Node V="5" ID="A" Behaviour="Continuous" Direction="Bi" MuteIn="0"
+                MuteOut="0">
+            <VCOs>
+              <EditTreeVCO V="1" ID="A_EditTreeVCO_NodeTNode" isOpen="1"/>
+            </VCOs>
+            <TTS V="4" ID="TTS" PreferredHandling="NoPreference">
+              <VCOs>
+                <EditTreeVCO V="1" ID="TTS_EditTreeVCO_TTTS" isOpen="1"/>
+              </VCOs>
+              <TT V="4" ID="TT" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT1" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT3" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT4" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT5" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+              <TT V="4" ID="TT6" Min="0.0" Max="0.0" Clip="0" Tag="i" Default="0"
+                  UseRanges="0"/>
+            </TTS>
+          </Node>
+        </Node>
+      </Node>
+    </Composite>
+    <Composite V="1" ID="Addresses">
+      <OSC_Address_Root V="3" ID="QLab_OSC_Address" Creator="2" Colour="212" Trigger="1"
+                        StoreSwitch="1" MuteIn="0" MuteOut="0" Echo="1" EchoDefaults="0"
+                        Node="/TWO/Nodes/QLab_OSC" OSC_AddressPart="" Location="/TWO/Locations/QLab_OSC_IO"
+                        resetAddressPattern="Reset" addressAddedAddressPattern="Added"
+                        addressRemovedAddressPattern="Removed" addressMovedAddressPattern="Moved"
+                        addressRenamedAddressPattern="Renamed" queryModelAddressPattern="?"
+                        EchoOnLoad="1">
+        <VCOs>
+          <CTVA_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_TV_A" ScrollPosition="-1"
+                    Visible="1" SelectedValue="0"/>
+          <EditTreeVCO V="1" ID="Address_AT_EditTreeVCO" isOpen="1"/>
+          <EditTreeVCO V="1" ID="QLab_OSC_Address_AT_EditTreeVCO" isOpen="1"/>
+          <CTVA_VCO V="1" ID="Address_C_TV_A" ScrollPosition="-1" Visible="1" SelectedValue="0"/>
+          <EditTreeVCO V="1" ID="QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+          <EditTreeVCO V="1" ID="OSC_Address_AT_EditTreeVCO" isOpen="1"/>
+          <CTVA_VCO V="1" ID="OSC_Address_C_TV_A" ScrollPosition="0" Visible="1"
+                    SelectedValue="0"/>
+          <CTVA_VCO V="1" ID="QLab_OSC_Address_C_TV_A" ScrollPosition="0" Visible="1"
+                    SelectedValue="1"/>
+          <CTVA_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_TV_A" ScrollPosition="0"
+                    Visible="1" SelectedValue="0"/>
+        </VCOs>
+        <Composite V="1" ID="AddressInstances">
+          <AddressInstance V="3" ID="AI" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="1" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="AI_Matrix_MATRIX_TV_AI" isOpen="1"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI1" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI1_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI3" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI3_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI4" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI4_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI5" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI5_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI6" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI6_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI7" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="AI7_Matrix_MATRIX_TV_AI" isOpen="1"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI7_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI7_TT_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="0" value=""/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI7_TT1" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI7_TT1_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="8" value="now"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI8" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI8_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="0" value=""/>
+                <Var name="MessageValue" type="0" value=""/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI8_TT1" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI9" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI9_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="8" value="0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI10" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="AI10_Matrix_MATRIX_TV_AI" isOpen="1"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI10_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI11" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI11_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="0" value=""/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI12" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="AI12_Matrix_MATRIX_TV_AI" isOpen="1"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI12_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI13" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI13_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="0" value=""/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI14" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="AI14_Matrix_MATRIX_TV_AI" isOpen="1"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI14_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI14_TT_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="8" value="/bang"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI15" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI15_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI16" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI16_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI17" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI17_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="8" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI17_TT1" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI18" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI18_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="8" value="A1"/>
+                <Var name="MessageValue" type="8" value="A1"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI18_TT1" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="-inf"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI19" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI19_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI20" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI20_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI21" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI21_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI22" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI22_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="3" value="0.0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI23" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/po"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI23_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI24" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/po"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI24_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="3"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI25" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS1"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="QLab_OSC_Address_QLab_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI25_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS1/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="0" value=""/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI26" Address="/TWO/Addresses/QLab_OSC_Address" Node="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                           TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS1"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="" MuteIn="0" HasBeenSet="1">
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI26_TT" TypeTag="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS1/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="0" value=""/>
+                <Var name="MessageValue" type="0" value=""/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+        </Composite>
+        <Composite V="1" ID="SubAddresses"/>
+      </OSC_Address_Root>
+      <OSC_Address_Root V="3" ID="DSS_OSC_Address" Creator="2" Colour="32" Trigger="1"
+                        StoreSwitch="1" MuteIn="0" MuteOut="0" Echo="1" EchoDefaults="0"
+                        Node="/TWO/Nodes/DSS_OSC" OSC_AddressPart="" Location="/TWO/Locations/DSS_OSC_IO"
+                        resetAddressPattern="Reset" addressAddedAddressPattern="Added"
+                        addressRemovedAddressPattern="Removed" addressMovedAddressPattern="Moved"
+                        addressRenamedAddressPattern="Renamed" queryModelAddressPattern="?"
+                        EchoOnLoad="1">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Address_AT_EditTreeVCO" isOpen="1"/>
+          <CTVA_VCO V="1" ID="DSS_OSC_Address_GlobalEditor_C_TV_A" ScrollPosition="0"
+                    Visible="1" SelectedValue="0"/>
+          <CTVA_VCO V="1" ID="Address_C_TV_A" ScrollPosition="0" Visible="1" SelectedValue="0"/>
+          <EditTreeVCO V="1" ID="DSS_OSC_Address_AT_EditTreeVCO" isOpen="1"/>
+          <EditTreeVCO V="1" ID="DSS_OSC_Address_EditTreeVCO" isOpen="1"/>
+          <CTVA_VCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_C_TV_A" ScrollPosition="-1"
+                    Visible="1" SelectedValue="0"/>
+          <CTVA_VCO V="1" ID="DSS_OSC_Address_C_TV_A" ScrollPosition="0" Visible="1"
+                    SelectedValue="1"/>
+        </VCOs>
+        <Composite V="1" ID="AddressInstances">
+          <AddressInstance V="3" ID="AI" Address="/TWO/Addresses/DSS_OSC_Address" Node="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                           TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI_TT" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI_TT1" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI_TT3" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT3"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI_TT4" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT4"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI_TT5" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT5"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI_TT6" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT6"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI1" Address="/TWO/Addresses/DSS_OSC_Address" Node="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                           TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI1_TT" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI1_TT1" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI1_TT3" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT3"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI1_TT4" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT4"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="1"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI1_TT5" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT5"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI1_TT6" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS/TypeTags/TT6"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI3" Address="/TWO/Addresses/DSS_OSC_Address" Node="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                           TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI3_TT" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI3_TT1" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI3_TT3" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT3"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI3_TT4" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT4"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI3_TT5" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT5"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI3_TT6" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT6"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI4" Address="/TWO/Addresses/DSS_OSC_Address" Node="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                           TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <EditTreeVCO V="1" ID="AI4_Matrix_MATRIX_TV_AI" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI4_TT" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI4_TT_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI4_TT1" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI4_TT1_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI4_TT3" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT3"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI4_TT3_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI4_TT4" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT4"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI4_TT4_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI4_TT5" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT5"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI4_TT5_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI4_TT6" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS/TypeTags/TT6"
+                               Trigger="1">
+                <VCOs>
+                  <EditTreeVCO V="1" ID="AI4_TT6_Matrix_EditTreeVCO" isOpen="1"/>
+                </VCOs>
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="1"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI5" Address="/TWO/Addresses/DSS_OSC_Address" Node="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                           TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS"
+                           MessageDirection="1" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_GlobalEditor_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_GlobalEditor_C_AI_TV_AI"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI5_TT" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI5_TT1" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI5_TT3" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT3"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI5_TT4" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT4"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI5_TT5" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT5"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI5_TT6" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT6"
+                               Trigger="0">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+          <AddressInstance V="3" ID="AI6" Address="/TWO/Addresses/DSS_OSC_Address" Node="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                           TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS"
+                           MessageDirection="2" Expression="result=0;&#10;for (i = 0; i &lt; messages.length; i++) {&#10;result += messages[i];&#10;}"
+                           UseExpression="0" MuteIn="0" HasBeenSet="1">
+            <VCOs>
+              <EditTreeVCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_EditTreeVCO" isOpen="1"/>
+              <AI_TV_VCO V="1" ID="DSS_OSC_Address_DSS_OSC_Address_C_AI_TV_AI"/>
+            </VCOs>
+            <Composite V="1" ID="TypeTagInstances">
+              <TypeTagInstance V="2" ID="AI6_TT" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="1"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI6_TT1" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT1"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI6_TT3" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT3"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI6_TT4" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT4"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI6_TT5" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT5"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+              <TypeTagInstance V="2" ID="AI6_TT6" TypeTag="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS/TypeTags/TT6"
+                               Trigger="1">
+                <Var name="Value" type="4" value="0"/>
+                <Var name="MessageValue" type="4" value="0"/>
+              </TypeTagInstance>
+            </Composite>
+          </AddressInstance>
+        </Composite>
+        <Composite V="1" ID="SubAddresses"/>
+      </OSC_Address_Root>
+    </Composite>
+    <Composite V="1" ID="Controllers">
+      <RouterME V="1" ID="Router">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Router_EditTreeVCO_ME_Tree" isOpen="1"/>
+        </VCOs>
+        <Collection V="2" ID="SourceAI_Collection"/>
+        <Collection V="2" ID="DestinationAI_Collection"/>
+        <Collection V="2" ID="SourceLocation_Collection">
+          <CollectionItem childID="/TWO/Locations/QLab_OSC_IO"/>
+          <CollectionItem childID="/TWO/Locations/DSS_OSC_IO"/>
+        </Collection>
+        <Collection V="2" ID="DestinationLocation_Collection"/>
+      </RouterME>
+    </Composite>
+    <Composite V="1" ID="States"/>
+    <Collection V="2" ID="Global">
+      <CollectionItem childID="/ZombieContainer/OwnedComponents_Collection/InterpolationSpeed"/>
+      <CollectionItem childID="/ZombieContainer/OwnedComponents_Collection/Multiplier"/>
+    </Collection>
+    <Composite V="1" ID="GlobalTransport">
+      <GlobalTransport V="4" ID="GlobalTransport" Start="0" CurrentTime="0" End="120000"
+                       TotalDuration="120000" LoopPoints="true" Zoom="2.67" ViewPosition="0"
+                       PlaybackSpeed="1" TimeFormat="HoursMinutesSeconds" TimesigNumerator="4"
+                       TimesigDenominator="4" FollowScroll="true" Snap="1" LaneChoice="Key"/>
+    </Composite>
+    <Composite V="1" ID="TimelineLanes">
+      <StateTimelineLane V="1" ID="State_TimelineLane">
+        <VCOs>
+          <TL_TVA_VCO V="1" ID="State_TimelineLane_TL_TV_A" ScrollPosition="1103495168"
+                      Visible="1"/>
+        </VCOs>
+        <Composite V="1" ID="Keyframes"/>
+      </StateTimelineLane>
+    </Composite>
+    <Composite V="1" ID="Recordings">
+      <Recording V="1" ID="Clip" TimeOfRecording="26/08/2021 18:42" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+              <Keyframes>
+                <Key Time="2626">
+                  <Val Val="-2.713375091552734"/>
+                </Key>
+                <Key Time="2790">
+                  <Val Val="-3.612352848052979"/>
+                </Key>
+                <Key Time="2801">
+                  <Val Val="-3.80387806892395"/>
+                </Key>
+                <Key Time="2824">
+                  <Val Val="-3.999722242355347"/>
+                </Key>
+                <Key Time="2835">
+                  <Val Val="-4.200084209442139"/>
+                </Key>
+                <Key Time="2846">
+                  <Val Val="-4.405177116394043"/>
+                </Key>
+                <Key Time="2857">
+                  <Val Val="-4.615230083465576"/>
+                </Key>
+                <Key Time="2880">
+                  <Val Val="-4.830489158630371"/>
+                </Key>
+                <Key Time="3026">
+                  <Val Val="-5.05121898651123"/>
+                </Key>
+                <Key Time="3037">
+                  <Val Val="-5.277704238891602"/>
+                </Key>
+                <Key Time="3049">
+                  <Val Val="-5.277704238891602"/>
+                </Key>
+                <Key Time="3068">
+                  <Val Val="-5.51025390625"/>
+                </Key>
+                <Key Time="3071">
+                  <Val Val="-5.74920129776001"/>
+                </Key>
+                <Key Time="3127">
+                  <Val Val="-5.994908332824707"/>
+                </Key>
+                <Key Time="3150">
+                  <Val Val="-6.247768878936768"/>
+                </Key>
+                <Key Time="3172">
+                  <Val Val="-6.508211612701416"/>
+                </Key>
+                <Key Time="3195">
+                  <Val Val="-6.776706218719482"/>
+                </Key>
+                <Key Time="3229">
+                  <Val Val="-7.053765773773193"/>
+                </Key>
+                <Key Time="3251">
+                  <Val Val="-7.339954376220703"/>
+                </Key>
+                <Key Time="3275">
+                  <Val Val="-7.635895252227783"/>
+                </Key>
+                <Key Time="3296">
+                  <Val Val="-7.942276000976562"/>
+                </Key>
+                <Key Time="3398">
+                  <Val Val="-7.942276000976562"/>
+                </Key>
+                <Key Time="3409">
+                  <Val Val="-7.635895252227783"/>
+                </Key>
+                <Key Time="3440">
+                  <Val Val="-7.339954376220703"/>
+                </Key>
+                <Key Time="3442">
+                  <Val Val="-7.053765773773193"/>
+                </Key>
+                <Key Time="3454">
+                  <Val Val="-6.776706218719482"/>
+                </Key>
+                <Key Time="3472">
+                  <Val Val="-6.247768878936768"/>
+                </Key>
+                <Key Time="3476">
+                  <Val Val="-5.74920129776001"/>
+                </Key>
+                <Key Time="3488">
+                  <Val Val="-5.277704238891602"/>
+                </Key>
+                <Key Time="3508">
+                  <Val Val="-4.830489158630371"/>
+                </Key>
+                <Key Time="3510">
+                  <Val Val="-4.405177116394043"/>
+                </Key>
+                <Key Time="3521">
+                  <Val Val="-4.200084209442139"/>
+                </Key>
+                <Key Time="3541">
+                  <Val Val="-3.999722242355347"/>
+                </Key>
+                <Key Time="3543">
+                  <Val Val="-3.80387806892395"/>
+                </Key>
+                <Key Time="3555">
+                  <Val Val="-3.612352848052979"/>
+                </Key>
+                <Key Time="3577">
+                  <Val Val="-3.424959421157837"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+              <Keyframes>
+                <Key Time="2626">
+                  <Val Val="-2.713375091552734"/>
+                </Key>
+                <Key Time="2790">
+                  <Val Val="-3.612352848052979"/>
+                </Key>
+                <Key Time="2802">
+                  <Val Val="-3.80387806892395"/>
+                </Key>
+                <Key Time="2824">
+                  <Val Val="-3.999722242355347"/>
+                </Key>
+                <Key Time="2835">
+                  <Val Val="-4.200084209442139"/>
+                </Key>
+                <Key Time="2846">
+                  <Val Val="-4.405177116394043"/>
+                </Key>
+                <Key Time="2858">
+                  <Val Val="-4.615230083465576"/>
+                </Key>
+                <Key Time="2880">
+                  <Val Val="-4.830489158630371"/>
+                </Key>
+                <Key Time="3026">
+                  <Val Val="-5.05121898651123"/>
+                </Key>
+                <Key Time="3038">
+                  <Val Val="-5.277704238891602"/>
+                </Key>
+                <Key Time="3049">
+                  <Val Val="-5.277704238891602"/>
+                </Key>
+                <Key Time="3068">
+                  <Val Val="-5.51025390625"/>
+                </Key>
+                <Key Time="3071">
+                  <Val Val="-5.74920129776001"/>
+                </Key>
+                <Key Time="3128">
+                  <Val Val="-5.994908332824707"/>
+                </Key>
+                <Key Time="3150">
+                  <Val Val="-6.247768878936768"/>
+                </Key>
+                <Key Time="3173">
+                  <Val Val="-6.508211612701416"/>
+                </Key>
+                <Key Time="3195">
+                  <Val Val="-6.776706218719482"/>
+                </Key>
+                <Key Time="3229">
+                  <Val Val="-7.053765773773193"/>
+                </Key>
+                <Key Time="3252">
+                  <Val Val="-7.339954376220703"/>
+                </Key>
+                <Key Time="3275">
+                  <Val Val="-7.635895252227783"/>
+                </Key>
+                <Key Time="3296">
+                  <Val Val="-7.942276000976562"/>
+                </Key>
+                <Key Time="3398">
+                  <Val Val="-7.942276000976562"/>
+                </Key>
+                <Key Time="3409">
+                  <Val Val="-7.635895252227783"/>
+                </Key>
+                <Key Time="3440">
+                  <Val Val="-7.339954376220703"/>
+                </Key>
+                <Key Time="3442">
+                  <Val Val="-7.053765773773193"/>
+                </Key>
+                <Key Time="3454">
+                  <Val Val="-6.776706218719482"/>
+                </Key>
+                <Key Time="3472">
+                  <Val Val="-6.247768878936768"/>
+                </Key>
+                <Key Time="3476">
+                  <Val Val="-5.74920129776001"/>
+                </Key>
+                <Key Time="3488">
+                  <Val Val="-5.277704238891602"/>
+                </Key>
+                <Key Time="3508">
+                  <Val Val="-4.830489158630371"/>
+                </Key>
+                <Key Time="3510">
+                  <Val Val="-4.405177116394043"/>
+                </Key>
+                <Key Time="3521">
+                  <Val Val="-4.200084209442139"/>
+                </Key>
+                <Key Time="3542">
+                  <Val Val="-3.999722242355347"/>
+                </Key>
+                <Key Time="3544">
+                  <Val Val="-3.80387806892395"/>
+                </Key>
+                <Key Time="3555">
+                  <Val Val="-3.612352848052979"/>
+                </Key>
+                <Key Time="3578">
+                  <Val Val="-3.424959421157837"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip1" TimeOfRecording="26/08/2021 18:42" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip1_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC"/>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip3" TimeOfRecording="26/08/2021 18:44" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip3_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+              <Keyframes>
+                <Key Time="2244">
+                  <Val Val="-0.7440837621688843"/>
+                </Key>
+                <Key Time="2374">
+                  <Val Val="-1.4530189037323"/>
+                </Key>
+                <Key Time="2397">
+                  <Val Val="-1.4530189037323"/>
+                </Key>
+                <Key Time="2408">
+                  <Val Val="-1.602023720741272"/>
+                </Key>
+                <Key Time="2438">
+                  <Val Val="-1.753629326820374"/>
+                </Key>
+                <Key Time="2453">
+                  <Val Val="-1.907928228378296"/>
+                </Key>
+                <Key Time="2464">
+                  <Val Val="-2.065017700195312"/>
+                </Key>
+                <Key Time="2475">
+                  <Val Val="-2.225000858306885"/>
+                </Key>
+                <Key Time="2490">
+                  <Val Val="-2.387985706329346"/>
+                </Key>
+                <Key Time="2588">
+                  <Val Val="-2.55408787727356"/>
+                </Key>
+                <Key Time="2599">
+                  <Val Val="-2.723428249359131"/>
+                </Key>
+                <Key Time="2610">
+                  <Val Val="-2.896135807037354"/>
+                </Key>
+                <Key Time="2622">
+                  <Val Val="-3.072347164154053"/>
+                </Key>
+                <Key Time="2634">
+                  <Val Val="-3.435871362686157"/>
+                </Key>
+                <Key Time="2644">
+                  <Val Val="-3.623502731323242"/>
+                </Key>
+                <Key Time="2655">
+                  <Val Val="-3.815276861190796"/>
+                </Key>
+                <Key Time="2667">
+                  <Val Val="-4.212015151977539"/>
+                </Key>
+                <Key Time="2678">
+                  <Val Val="-4.417393207550049"/>
+                </Key>
+                <Key Time="2689">
+                  <Val Val="-4.627745628356934"/>
+                </Key>
+                <Key Time="2701">
+                  <Val Val="-5.064379215240479"/>
+                </Key>
+                <Key Time="2712">
+                  <Val Val="-5.291212558746338"/>
+                </Key>
+                <Key Time="2723">
+                  <Val Val="-5.524128913879395"/>
+                </Key>
+                <Key Time="2734">
+                  <Val Val="-5.763463497161865"/>
+                </Key>
+                <Key Time="2757">
+                  <Val Val="-6.262874603271484"/>
+                </Key>
+                <Key Time="2779">
+                  <Val Val="-6.523777961730957"/>
+                </Key>
+                <Key Time="2791">
+                  <Val Val="-6.792761325836182"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip4" TimeOfRecording="26/08/2021 18:44" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip4_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="159">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="460">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="761">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="1062">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="1363">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="1664">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="1965">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2306">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="2610">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2908">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="3209">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="3510">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="3810">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="4112">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="4413">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="4714">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="5015">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="5316">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="5617">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="5918">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="6219">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="6520">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="6821">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="7122">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="7423">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="7727">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="8025">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="8326">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="8627">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="8928">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="9229">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="9530">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="9831">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="10132">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="10433">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="10734">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="11035">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="11336">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="11637">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="11938">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="12239">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="12540">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="6450">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="7956">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="9418">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="10217">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip5" TimeOfRecording="07/09/2021 21:11" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip5_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T4" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS">
+              <Value Tag="N" Val=""/>
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T5" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T6" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS">
+              <Value Tag="I" Val=""/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T7" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS">
+              <Value Tag="I" Val=""/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T8" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T9" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T10" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T11" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T12" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/po"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="102911">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="106995">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="108335">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="117177">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="118471">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="126852">
+                  <Val Val="3"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip6" TimeOfRecording="07/09/2021 21:11" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip6_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="5673">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="6063">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="29216">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="29606">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="49826">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="50456">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="51106">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="51756">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="52396">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="64373">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="65003">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="65653">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="66303">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="66943">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="1763">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2503">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="3403">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="3983">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="25306">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="26046">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="26946">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="27526">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="44196">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="44806">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="45406">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="46046">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="46696">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="47316">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="58743">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="59353">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="59953">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="60593">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="61243">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="61863">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2575410">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2576510">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2576950">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2577370">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2577840">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2587011">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2588691">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2589701">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip7" TimeOfRecording="07/09/2021 21:11" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip7_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T4" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS">
+              <Value Tag="N" Val=""/>
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T5" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T6" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS">
+              <Value Tag="I" Val=""/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T7" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS">
+              <Value Tag="I" Val=""/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T8" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T9" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T10" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T11" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip8" TimeOfRecording="07/09/2021 21:11" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip8_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip9" TimeOfRecording="07/09/2021 21:12" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip9_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T4" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS">
+              <Value Tag="N" Val=""/>
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T5" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T6" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS">
+              <Value Tag="I" Val=""/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T7" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS">
+              <Value Tag="I" Val=""/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T8" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T9" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T10" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T11" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0.0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T12" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/po"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="60271">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="64355">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="65695">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="74537">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="75831">
+                  <Val Val="3"/>
+                </Key>
+                <Key Time="84212">
+                  <Val Val="3"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip10" TimeOfRecording="07/09/2021 21:12" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip10_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="7187">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="7817">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="8467">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="9117">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="9757">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="21734">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="22364">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="23014">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="23664">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="24304">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Keyframes>
+                <Key Time="1557">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2167">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2767">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="3407">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="4057">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="4677">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="16104">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="16714">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="17314">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="17954">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="18604">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                </Key>
+                <Key Time="19224">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2532771">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2533871">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2534311">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2534731">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2535201">
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2544372">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2546052">
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+                <Key Time="2547062">
+                  <Val Val="1"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                  <Val Val="0"/>
+                </Key>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip11" TimeOfRecording="09/09/2021 21:59" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip11_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T4" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS">
+              <Value Tag="N" Val="0"/>
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T5" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T6" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS">
+              <Value Tag="I" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T7" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS">
+              <Value Tag="I" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T8" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T9" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T10" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T11" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T12" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/po"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T13" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS1">
+              <Value Tag="N" Val="0"/>
+              <Keyframes>
+                <Key Time="2559"/>
+                <Key Time="4184"/>
+                <Key Time="5810"/>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip12" TimeOfRecording="09/09/2021 21:59" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip12_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip13" TimeOfRecording="09/09/2021 22:00" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip13_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T4" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS">
+              <Value Tag="N" Val="0"/>
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T5" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T6" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS">
+              <Value Tag="I" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T7" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS">
+              <Value Tag="I" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T8" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T9" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T10" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T11" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T12" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/po"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T13" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS1">
+              <Value Tag="N" Val="0"/>
+              <Keyframes>
+                <Key Time="2637"/>
+                <Key Time="4501"/>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip14" TimeOfRecording="09/09/2021 22:00" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip14_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip15" TimeOfRecording="09/09/2021 22:01" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip15_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T4" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS">
+              <Value Tag="N" Val="0"/>
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T5" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T6" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS">
+              <Value Tag="I" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T7" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS">
+              <Value Tag="I" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T8" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T9" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T10" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T11" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T12" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/po"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T13" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS1">
+              <Value Tag="N" Val="0"/>
+              <Keyframes>
+                <Key Time="6267"/>
+                <Key Time="10329"/>
+              </Keyframes>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip16" TimeOfRecording="09/09/2021 22:01" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip16_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip17" TimeOfRecording="09/09/2021 22:03" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip17_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/QLab_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/18/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.N}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.F}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T4" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS">
+              <Value Tag="N" Val="0"/>
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T5" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/yo"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/yo/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T6" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/bang"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/bang/TypeTagStrings/TTS">
+              <Value Tag="I" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T7" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/button"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/button/TypeTagStrings/TTS">
+              <Value Tag="I" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T8" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.Sub}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T9" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/TypeTagStrings/TTS">
+              <Value Tag="s" Val="0"/>
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T10" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.AB}/SubNodes/sliderLevel/SubNodes/19/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T11" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/cue/SubNodes/{*.K}/SubNodes/sliderLevel/SubNodes/0/TypeTagStrings/TTS">
+              <Value Tag="f" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T12" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/po"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/po/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T13" NodeIDP="/TWO/Nodes/QLab_OSC/SubNodes/go"
+                   TypeTagString="/TWO/Nodes/QLab_OSC/SubNodes/go/TypeTagStrings/TTS1">
+              <Value Tag="N" Val="0"/>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+      <Recording V="1" ID="Clip18" TimeOfRecording="09/09/2021 22:03" Current="0"
+                 LaneChoice="Key">
+        <VCOs>
+          <EditTreeVCO V="1" ID="Clip18_EditTreeVCO_ClipT" isOpen="1"/>
+        </VCOs>
+        <Composite V="1" ID="States">
+          <Node_State V="3" ID="AddressState" NodeIDP="/TWO/Nodes/DSS_OSC">
+            <Tuple V="6" ID="Node_P_T" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/X/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T1" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/B/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+            <Tuple V="6" ID="Node_P_T3" NodeIDP="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A"
+                   TypeTagString="/TWO/Nodes/DSS_OSC/SubNodes/DSS/SubNodes/A/TypeTagStrings/TTS">
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+              <Value Tag="i" Val="0"/>
+            </Tuple>
+          </Node_State>
+        </Composite>
+      </Recording>
+    </Composite>
+    <Composite V="1" ID="RecordingLanes">
+      <RecordingLane V="4" ID="RecordingLane" Arm="1" Address="/TWO/Addresses/QLab_OSC_Address">
+        <VCOs>
+          <TL_TVA_VCO V="1" ID="RecordingLane_TL_TV_A" ScrollPosition="-1" Visible="1"/>
+          <EditTreeVCO V="1" ID="RecordingLane_EditTreeVCO" isOpen="1"/>
+          <TL_TVA_VCO V="1" ID="_TL_TV_A" ScrollPosition="1134294112" Visible="1"/>
+        </VCOs>
+        <Composite V="1" ID="EditingLanes"/>
+        <Composite V="1" ID="TimelineLanes">
+          <TimelineLane V="1" ID="RecordingLane_Key">
+            <Composite V="1" ID="Keyframes"/>
+          </TimelineLane>
+          <TimelineLane V="1" ID="RecordingLane_Interpolated">
+            <Composite V="1" ID="Keyframes"/>
+          </TimelineLane>
+        </Composite>
+      </RecordingLane>
+      <RecordingLane V="4" ID="RecordingLane1" Arm="1" Address="/TWO/Addresses/DSS_OSC_Address">
+        <VCOs>
+          <EditTreeVCO V="1" ID="RecordingLane1_EditTreeVCO" isOpen="1"/>
+          <TL_TVA_VCO V="1" ID="RecordingLane1_TL_TV_A" ScrollPosition="0" Visible="1"/>
+          <TL_TVA_VCO V="1" ID="_TL_TV_A" ScrollPosition="24576" Visible="1"/>
+        </VCOs>
+        <Composite V="1" ID="EditingLanes"/>
+        <Composite V="1" ID="TimelineLanes">
+          <TimelineLane V="1" ID="RecordingLane_Key">
+            <Composite V="1" ID="Keyframes"/>
+          </TimelineLane>
+          <TimelineLane V="1" ID="RecordingLane_Interpolated">
+            <Composite V="1" ID="Keyframes"/>
+          </TimelineLane>
+        </Composite>
+      </RecordingLane>
+    </Composite>
+    <Composite V="1" ID="TimelineInterpolator">
+      <TimelineInterpolator V="1" ID="TimelineInterpolator">
+        <Composite V="1" ID="RunningPairs"/>
+      </TimelineInterpolator>
+    </Composite>
+    <Var name="InterpolationSpeed" type="3" value="5.0"/>
+    <Var name="Multiplier" type="3" value="1.0"/>
+  </Model>
+</Mediator-Model>
