@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 601.0, 105.0, 1275.0, 806.0 ],
+		"rect" : [ -1652.0, 65.0, 1234.0, 954.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 333.0, 321.5, 29.5, 22.0 ],
+					"text" : "/go"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.588235294117647, 0.317647058823529, 0.815686274509804, 1.0 ],
+					"id" : "obj-94",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 381.5, 370.0, 57.0, 22.0 ],
+					"text" : "s toQLab"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.686274509803922, 0.101960784313725, 0.101960784313725, 1.0 ],
+					"id" : "obj-64",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1009.550000000000182, 722.0, 142.0, 22.0 ],
+					"text" : "udpsend localhost 53802"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.686274509803922, 0.101960784313725, 0.101960784313725, 1.0 ],
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1009.550000000000182, 378.5, 142.0, 22.0 ],
+					"text" : "udpsend localhost 53801"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"linecount" : 2,
@@ -274,7 +322,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 986.549999999999955, 668.0, 51.0, 22.0 ],
+					"patching_rect" : [ 986.549999999999955, 667.0, 51.0, 22.0 ],
 					"text" : "r toDSS"
 				}
 
@@ -1641,18 +1689,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-163",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 323.5, 321.5, 29.5, 22.0 ],
-					"text" : "/go"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-147",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2004,7 +2040,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 826.5, 531.0, 69.0, 22.0 ],
+					"patching_rect" : [ 856.5, 537.5, 69.0, 22.0 ],
 					"text" : "counter 1 6"
 				}
 
@@ -2097,7 +2133,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 679.5, 626.5, 72.0, 22.0 ],
-					"text" : "0 0 1 0 0 0"
+					"text" : "0 0 0 0 0 1"
 				}
 
 			}
@@ -2437,7 +2473,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 986.549999999999955, 699.0, 165.0, 22.0 ],
+					"patching_rect" : [ 986.549999999999955, 744.5, 165.0, 22.0 ],
 					"text" : "udpsend 192.168.42.68 1336"
 				}
 
@@ -2492,7 +2528,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 269.0, 626.5, 72.0, 22.0 ],
-					"text" : "0 0 1 0 0 0"
+					"text" : "0 1 0 0 0 0"
 				}
 
 			}
@@ -4110,7 +4146,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 986.5, 366.5, 171.0, 22.0 ],
+					"patching_rect" : [ 986.5, 402.5, 171.0, 22.0 ],
 					"text" : "udpsend 192.168.42.68 53000"
 				}
 
@@ -4217,8 +4253,26 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-75", 0 ],
+					"destination" : [ "obj-133", 0 ],
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"order" : 0,
 					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"order" : 1,
+					"source" : [ "obj-109", 0 ],
+					"watchpoint_flags" : 1,
+					"watchpoint_id" : 2
 				}
 
 			}
@@ -4274,6 +4328,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-129", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 0,
 					"source" : [ "obj-129", 0 ]
 				}
 
@@ -4646,13 +4709,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-133", 0 ],
-					"source" : [ "obj-163", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-173", 0 ],
 					"order" : 0,
 					"source" : [ "obj-164", 0 ]
@@ -4677,7 +4733,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-163", 0 ],
+					"destination" : [ "obj-103", 0 ],
 					"source" : [ "obj-165", 0 ]
 				}
 
@@ -4768,7 +4824,7 @@
 					"destination" : [ "obj-107", 0 ],
 					"source" : [ "obj-174", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 1
+					"watchpoint_id" : 3
 				}
 
 			}
@@ -5887,6 +5943,20 @@
 				"bootpath" : "~/Documents/GitHub/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ClearBankLEDs.maxpat",
+				"bootpath" : "~/Documents/GitHub/AudiuMax",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SetBankLED.maxpat",
+				"bootpath" : "~/Documents/GitHub/AudiuMax",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
