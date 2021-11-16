@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 63.0, 91.0, 959.0, 818.0 ],
+		"rect" : [ -1355.0, 137.0, 959.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 62.50000011920929, 253.666659235954285, 74.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "getcolumn 0"
 				}
 
@@ -288,8 +287,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.00000011920929, 94.416659235954285, 167.0, 22.0 ],
-					"text" : "loadmess /lobby/1/multi_input"
+					"patching_rect" : [ 107.50000011920929, 67.625, 202.0, 22.0 ],
+					"text" : "loadmess /lobby/1/multi_input_lobby"
 				}
 
 			}
@@ -786,7 +785,7 @@
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-15", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 11
+					"watchpoint_id" : 20
 				}
 
 			}
@@ -809,7 +808,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-230", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 10
+					"watchpoint_id" : 21
 				}
 
 			}
@@ -818,7 +817,7 @@
 					"destination" : [ "obj-240", 0 ],
 					"source" : [ "obj-231", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 3
+					"watchpoint_id" : 22
 				}
 
 			}
@@ -827,7 +826,7 @@
 					"destination" : [ "obj-231", 0 ],
 					"source" : [ "obj-232", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 1
+					"watchpoint_id" : 23
 				}
 
 			}
@@ -980,7 +979,7 @@
 					"destination" : [ "obj-122", 0 ],
 					"source" : [ "obj-9", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 12
+					"watchpoint_id" : 24
 				}
 
 			}
@@ -1019,7 +1018,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : 0.0
+						"live.gain~" : -10.528846740722656
 					}
 
 				}
@@ -1040,7 +1039,7 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : 0.0
+									"live.gain~" : -10.528846740722656
 								}
 
 							}
