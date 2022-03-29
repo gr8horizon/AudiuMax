@@ -1,0 +1,28 @@
+How to setup a backup show in xx easy steps:
+3/29/22
+
+
+x New ShowBackup Account
+
+x static IP assigned to ackbook ethernet dongle (192.168.42.111)
+
+x DSS Bridge IP
+x Install Python 3.9
+x Pip3 install rumps, pyserial, python-osc
+x open DSS_Bridge_Laptop.py w/ python launcher, add alias
+
+x QLAB audio bundle
+x QLAB IP change --> NewVoicesLaptop
+x QLAB network adapter --> Ethernet
+
+x Ableton: collect + save 
+x Ableton: M4L (IP)
+x Ableton: MIDI FromMax
+x Ableton Audio Device
+
+x Victoria Audio transfer
+x Victoria audio file location
+x Victoria MIDI interface
+ 
+x iPad pointing to 111
+
