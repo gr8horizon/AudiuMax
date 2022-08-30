@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 7,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1047.0, 163.0, 788.0, 766.0 ],
+		"rect" : [ 65.0, 178.0, 1303.0, 766.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1104.0, 186.0, 32.0, 22.0 ],
+					"text" : "pfft~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attack" : 0,
+					"id" : "obj-15",
+					"markers" : [ -60, -48, -36, -24, -12, -6, 0, 6 ],
+					"markersused" : 8,
+					"maxclass" : "levelmeter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1129.0, 371.0, 128.0, 64.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 204.0, 209.0, 106.0, 22.0 ],
 					"text" : "OSC-route /page2"
 				}
@@ -167,8 +192,8 @@
 					"id" : "obj-71",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 154.0, 284.0, 107.0, 22.0 ],
 					"text" : "OSC-route /2/sync"
 				}
@@ -299,8 +324,8 @@
 					"id" : "obj-149",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 661.382022023200989, 47.269661664962769, 109.0, 22.0 ],
 					"text" : "OSC-route /DSS/X"
 				}
@@ -467,8 +492,8 @@
 					"id" : "obj-133",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 525.382022023200989, 47.269661664962769, 109.0, 22.0 ],
 					"text" : "OSC-route /DSS/B"
 				}
@@ -575,8 +600,8 @@
 					"id" : "obj-88",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 377.382022023200989, 47.269661664962769, 109.0, 22.0 ],
 					"text" : "OSC-route /DSS/A"
 				}
@@ -628,7 +653,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 378.573100924491882, 625.5, 165.0, 22.0 ],
-					"text" : "udpsend 192.168.42.68 1336"
+					"text" : "udpsend 192.168.42.90 1336"
 				}
 
 			}
@@ -678,29 +703,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 910.5, 468.269669651985168, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-59",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 819.5, 401.769669651985168, 87.0, 22.0 ],
-					"text" : "adstatus driver"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-57",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 794.0, 370.769669651985168, 50.0, 22.0 ]
 				}
 
 			}
@@ -816,8 +818,8 @@
 					"id" : "obj-87",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 26.0, 479.0, 98.0, 22.0 ],
 					"text" : "OSC-route /2/TX"
 				}
@@ -840,8 +842,8 @@
 					"id" : "obj-85",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 26.0, 440.0, 99.0, 22.0 ],
 					"text" : "OSC-route /2/TN"
 				}
@@ -864,8 +866,8 @@
 					"id" : "obj-79",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 26.0, 402.0, 98.0, 22.0 ],
 					"text" : "OSC-route /2/TS"
 				}
@@ -883,8 +885,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 7,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -965,8 +967,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 7,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1066,8 +1068,8 @@
 													"id" : "obj-19",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 134.0, 79.0, 22.0 ],
 													"text" : "OSC-route /1"
 												}
@@ -1219,8 +1221,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 7,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1320,8 +1322,8 @@
 													"id" : "obj-19",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 134.0, 79.0, 22.0 ],
 													"text" : "OSC-route /1"
 												}
@@ -1473,8 +1475,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 7,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1574,8 +1576,8 @@
 													"id" : "obj-19",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 134.0, 79.0, 22.0 ],
 													"text" : "OSC-route /1"
 												}
@@ -1703,8 +1705,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 7,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1804,8 +1806,8 @@
 													"id" : "obj-19",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 134.0, 79.0, 22.0 ],
 													"text" : "OSC-route /1"
 												}
@@ -2129,8 +2131,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 7,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2253,8 +2255,8 @@
 									"id" : "obj-19",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 134.0, 79.0, 22.0 ],
 									"text" : "OSC-route /1"
 								}
@@ -2371,8 +2373,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 7,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2472,8 +2474,8 @@
 									"id" : "obj-19",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 134.0, 79.0, 22.0 ],
 									"text" : "OSC-route /1"
 								}
@@ -2590,8 +2592,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 7,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2691,8 +2693,8 @@
 									"id" : "obj-19",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 134.0, 79.0, 22.0 ],
 									"text" : "OSC-route /1"
 								}
@@ -2802,8 +2804,8 @@
 					"id" : "obj-64",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 284.0, 109.0, 22.0 ],
 					"text" : "OSC-route /2/clear"
 				}
@@ -2882,7 +2884,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 785.0, 299.769669651985168, 114.0, 58.0 ],
+					"patching_rect" : [ 788.5, 306.769669651985168, 114.0, 58.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 440.0, 230.0, 114.0, 58.0 ],
 					"range" : [ -1.0, 1.001 ]
@@ -2944,7 +2946,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 788.5, 70.269669651985168, 45.0, 22.0 ],
-					"text" : "adc~ 3"
+					"text" : "adc~ 1"
 				}
 
 			}
@@ -2976,18 +2978,6 @@
 					"patching_rect" : [ 799.0, 468.269669651985168, 98.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 448.0, 317.0, 98.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 859.5, 605.769669651985168, 74.0, 22.0 ],
-					"text" : "mc.adc~ 1 2"
 				}
 
 			}
@@ -3035,7 +3025,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "list" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 799.0, 643.769669651985168, 100.0, 22.0 ],
 					"text" : "mcs.matrix~ 1 19"
 				}
@@ -3468,13 +3458,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
 					"order" : 0,
 					"source" : [ "obj-18", 0 ]
@@ -3528,7 +3511,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"order" : 4,
+					"order" : 5,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -3536,7 +3519,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -3544,10 +3527,10 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"order" : 5,
+					"order" : 6,
 					"source" : [ "obj-22", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 4
+					"watchpoint_id" : 5
 				}
 
 			}
@@ -3563,7 +3546,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"midpoints" : [ 19.0, 270.0, 39.5, 270.0 ],
-					"order" : 6,
+					"order" : 3,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -3612,8 +3595,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -3621,7 +3612,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -4069,10 +4060,6 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0
