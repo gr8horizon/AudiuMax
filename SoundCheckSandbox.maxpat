@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 167.0, 167.0, 916.0, 761.0 ],
+		"rect" : [ 167.0, 167.0, 1277.0, 761.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "spectroscope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 532.0, 629.268307685852051, 300.0, 100.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "signal" ],
+					"patching_rect" : [ 925.756097793579102, 200.0, 40.0, 22.0 ],
+					"text" : "fft~"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-117",
 					"maxclass" : "button",
@@ -153,7 +176,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 890.731706619262695, 579.317072153091431, 50.0, 22.0 ]
+					"patching_rect" : [ 929.756097793579102, 582.317072153091431, 50.0, 22.0 ]
 				}
 
 			}
@@ -189,7 +212,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 578.0, 48.0, 280.0, 100.0 ],
+					"patching_rect" : [ 562.609753131866455, 33.0, 199.0, 100.0 ],
 					"text" : "OSC msg (for switching)\ndac speaker output channel\nbang in to start\nlist of n reference values + total\nlist of n measured values + total\npass fails\n"
 				}
 
@@ -226,7 +249,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 773.292679786682129, 579.317072153091431, 50.0, 22.0 ]
+					"patching_rect" : [ 812.317070960998535, 582.317072153091431, 50.0, 22.0 ]
 				}
 
 			}
@@ -275,7 +298,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 651.658533096313477, 579.317072153091431, 50.0, 22.0 ]
+					"patching_rect" : [ 690.682924270629883, 582.317072153091431, 50.0, 22.0 ]
 				}
 
 			}
@@ -324,7 +347,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 527.585361957550049, 579.317072153091431, 50.0, 22.0 ]
+					"patching_rect" : [ 566.609753131866455, 582.317072153091431, 50.0, 22.0 ]
 				}
 
 			}
@@ -397,7 +420,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 393.75609302520752, 579.317072153091431, 50.0, 22.0 ]
+					"patching_rect" : [ 432.780484199523926, 582.317072153091431, 50.0, 22.0 ]
 				}
 
 			}
@@ -433,7 +456,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 291.0, 142.0, 32.0, 22.0 ],
+					"patching_rect" : [ 299.975610017776489, 132.0, 32.0, 22.0 ],
 					"text" : "start"
 				}
 
@@ -445,7 +468,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 313.0, 199.0, 111.0, 22.0 ],
+					"patching_rect" : [ 299.975610017776489, 162.0, 111.0, 22.0 ],
 					"text" : "play~ test_buffer_1"
 				}
 
@@ -458,7 +481,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 263.341462135314941, 582.975608825683594, 50.0, 22.0 ]
+					"patching_rect" : [ 302.365853309631348, 585.975608825683594, 50.0, 22.0 ]
 				}
 
 			}
@@ -518,7 +541,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 69.5, 227.0, 98.0, 22.0 ],
+					"patching_rect" : [ 47.0, 236.0, 98.0, 22.0 ],
 					"text" : "set test_buffer_1"
 				}
 
@@ -531,7 +554,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 6,
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 69.5, 256.5, 178.5, 74.5 ],
+					"patching_rect" : [ 47.0, 269.5, 178.5, 74.5 ],
 					"setunit" : 1,
 					"ticks" : 1,
 					"vticks" : 0
@@ -567,7 +590,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 94.0, 109.0, 45.0, 22.0 ],
+					"patching_rect" : [ 236.0, 214.0, 45.0, 22.0 ],
 					"text" : "adc~ 1"
 				}
 
@@ -679,6 +702,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
+					"order" : 1,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
