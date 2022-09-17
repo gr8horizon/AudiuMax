@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 7,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -200,9 +200,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 528.50000011920929, 198.916659235954285, 116.0, 22.0 ],
-					"text" : "OSC-route /1/faders"
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 528.50000011920929, 198.916659235954285, 96.0, 22.0 ],
+					"text" : "o.route /1/faders"
 				}
 
 			}
@@ -261,9 +261,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 210.50000011920929, 327.666659235954285, 105.0, 22.0 ],
-					"text" : "OSC-route /1/gain"
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 210.50000011920929, 327.666659235954285, 85.0, 22.0 ],
+					"text" : "o.route /1/gain"
 				}
 
 			}
@@ -304,8 +304,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 7,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -339,6 +339,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -406,9 +407,9 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 134.0, 79.0, 22.0 ],
-									"text" : "OSC-route /1"
+									"outlettype" : [ "", "FullPacket" ],
+									"patching_rect" : [ 50.0, 134.0, 59.0, 22.0 ],
+									"text" : "o.route /1"
 								}
 
 							}
@@ -582,7 +583,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "list" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 281.00000011920929, 211.416659235954285, 94.0, 22.0 ],
 					"text" : "mcs.matrix~ 8 2"
 				}
@@ -661,7 +662,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "list" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 528.50000011920929, 377.666659235954285, 107.0, 22.0 ],
 					"text" : "mcs.matrix~ 1 8 0."
 				}
@@ -994,14 +995,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FSPv1_20211018.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OSC-route.mxo",
+				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
  ],
@@ -1018,7 +1012,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -10.528846740722656
+						"live.gain~" : -60.0
 					}
 
 				}
@@ -1031,15 +1025,15 @@
 						"filetype" : "C74Snapshot",
 						"version" : 2,
 						"minorversion" : 0,
-						"name" : "FSPv1",
+						"name" : "LobbyControlFaders_v1.1",
 						"origin" : "LobbyControlFaders_v1.1",
 						"type" : "patcher",
 						"subtype" : "Undefined",
-						"embed" : 0,
+						"embed" : 1,
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -10.528846740722656
+									"live.gain~" : -60.0
 								}
 
 							}
@@ -1047,11 +1041,11 @@
 						}
 ,
 						"fileref" : 						{
-							"name" : "FSPv1",
-							"filename" : "FSPv1_20211018.maxsnap",
+							"name" : "LobbyControlFaders_v1.1",
+							"filename" : "LobbyControlFaders_v1.1.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "80f529261078edd85a8ee78e5f5ebbca"
+							"snapshotfileid" : "dd7973d06c67d903b6512134041f8f73"
 						}
 
 					}
