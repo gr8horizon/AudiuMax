@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -167,8 +167,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -883,8 +883,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 858.499977707862854, 891.166682362556458, 177.0, 22.0 ],
-					"text" : "udpsend 192.168.42.110 53000"
+					"patching_rect" : [ 858.499977707862854, 891.166682362556458, 171.0, 22.0 ],
+					"text" : "udpsend 192.168.42.90 53000"
 				}
 
 			}
@@ -963,8 +963,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1398,8 +1398,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1669,8 +1669,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1894,8 +1894,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 167.499979972839355, 758.833336114883423, 170.0, 22.0 ],
-					"text" : "udpsend 192.168.42.110 1336"
+					"patching_rect" : [ 167.499979972839355, 758.833336114883423, 165.0, 22.0 ],
+					"text" : "udpsend 192.168.42.90 1336"
 				}
 
 			}
@@ -2542,20 +2542,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.1_20220308_1.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.1_20220308_2.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
@@ -2576,9 +2562,9 @@
 						"slider" : 50.418663024902344,
 						"slider[2]" : 100.0,
 						"slider[3]" : 51.0,
-						"slider[4]" : 50.0,
+						"slider[4]" : 49.0,
 						"slider[5]" : 49.0,
-						"slider[6]" : 50.0
+						"slider[6]" : 51.0
 					}
 
 				}
@@ -2602,9 +2588,9 @@
 									"slider" : 50.418663024902344,
 									"slider[2]" : 100.0,
 									"slider[3]" : 51.0,
-									"slider[4]" : 50.0,
+									"slider[4]" : 49.0,
 									"slider[5]" : 49.0,
-									"slider[6]" : 50.0
+									"slider[6]" : 51.0
 								}
 
 							}
@@ -2617,69 +2603,6 @@
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
 							"snapshotfileid" : "a38a8b5ad78237c442976182aafb6ec1"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.1",
-						"origin" : "AlexaController_v0.3",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"slider[2]" : 100.0,
-									"slider[3]" : 100.0,
-									"slider[4]" : 100.0,
-									"slider[5]" : 100.0,
-									"slider[6]" : 100.0
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.1",
-							"filename" : "FSPv1.1_20220308_1.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "25a2dc5f7b9e3cd88ead94c5f332877d"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.1",
-						"origin" : "AlexaController_v0.3",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~" : -29.615837097167969,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -60.0
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.1",
-							"filename" : "FSPv1.1_20220308_2.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "fa7292e140e78ab4857a7ebbf47c6423"
 						}
 
 					}

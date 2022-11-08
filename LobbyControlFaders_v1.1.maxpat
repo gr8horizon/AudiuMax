@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1355.0, 137.0, 959.0, 818.0 ],
+		"rect" : [ -1355.0, 170.0, 959.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 341.00000011920929, 103.0, 150.0, 20.0 ],
+					"text" : "Above 3 AVB streams (?)"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -339,7 +350,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -809,7 +819,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-230", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 21
+					"watchpoint_id" : 1
 				}
 
 			}
@@ -818,7 +828,7 @@
 					"destination" : [ "obj-240", 0 ],
 					"source" : [ "obj-231", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 22
+					"watchpoint_id" : 10
 				}
 
 			}
@@ -827,7 +837,7 @@
 					"destination" : [ "obj-231", 0 ],
 					"source" : [ "obj-232", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 23
+					"watchpoint_id" : 11
 				}
 
 			}
@@ -980,7 +990,7 @@
 					"destination" : [ "obj-122", 0 ],
 					"source" : [ "obj-9", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 24
+					"watchpoint_id" : 12
 				}
 
 			}
@@ -995,6 +1005,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "LobbyControlFaders_v1.1.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
@@ -1012,7 +1029,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -60.0
+						"live.gain~" : -14.163463592529297
 					}
 
 				}
@@ -1033,7 +1050,7 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -60.0
+									"live.gain~" : -14.163463592529297
 								}
 
 							}
