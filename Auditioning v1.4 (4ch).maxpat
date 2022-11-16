@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 24.0, 131.0, 1375.0, 888.0 ],
+		"rect" : [ 81.0, 87.0, 1375.0, 888.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,20 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 35.0,
-					"id" : "obj-562",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1196.63514475027705, 1979.999811172485352, 736.0, 202.0 ],
-					"text" : "PROBLEMS\n1. All tracks only work in quadrant 1. Fix by restoring dummy 4-channel matrix...?\n2. DSS Shenanigans. Probably only multiple patchers open. Try again"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-560",
 					"maxclass" : "newobj",
@@ -133,7 +119,7 @@
 					"patching_rect" : [ 412.292691707611084, 2006.991912007331848, 56.0, 19.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-168", "attrui", "attr", "one/matrix", 5, "obj-168", "attrui", "int", 0, 22, "obj-46", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 22, "obj-51", "matrixctrl", "list", 0, 0, 0.0, 0, 1, 0.0, 0, 2, 1.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 16, "obj-141", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 1.0, 5, "obj-164", "toggle", "int", 1, 5, "obj-63", "toggle", "int", 1, 5, "obj-58", "toggle", "int", 1, 5, "obj-59", "toggle", "int", 0, 5, "obj-60", "toggle", "int", 0, 5, "obj-72", "toggle", "int", 1, 5, "obj-71", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 1, 5, "obj-83", "live.gain~", "float", -60.0, 5, "obj-96", "live.gain~", "float", -60.0, 5, "obj-107", "live.gain~", "float", -60.0, 5, "obj-108", "live.gain~", "float", -60.0, 5, "obj-80", "live.gain~", "float", 0.0, 5, "obj-9", "toggle", "int", 1, 6, "obj-4", "gain~", "list", 0, 10.0, 6, "obj-162", "pictslider", "list", 0, 100, 6, "obj-281", "pictslider", "list", 0, 100, 5, "obj-222", "toggle", "int", 1, 5, "obj-221", "toggle", "int", 1, 5, "obj-220", "toggle", "int", 0, 5, "obj-219", "toggle", "int", 0, 5, "obj-214", "live.gain~", "float", -60.0, 5, "obj-212", "live.gain~", "float", -60.0, 5, "obj-207", "live.gain~", "float", -60.0, 5, "obj-206", "live.gain~", "float", -60.0, 5, "obj-148", "live.gain~", "float", 0.0, 6, "obj-131", "gain~", "list", 0, 10.0, 6, "obj-116", "pictslider", "list", 0, 100, 6, "obj-47", "pictslider", "list", 0, 100, 5, "obj-420", "toggle", "int", 1, 5, "obj-419", "toggle", "int", 1, 5, "obj-418", "toggle", "int", 0, 5, "obj-417", "toggle", "int", 0, 5, "obj-412", "live.gain~", "float", -60.0, 5, "obj-410", "live.gain~", "float", -60.0, 5, "obj-405", "live.gain~", "float", -60.0, 5, "obj-404", "live.gain~", "float", -60.0, 5, "obj-373", "live.gain~", "float", 0.0, 6, "obj-369", "gain~", "list", 0, 10.0, 6, "obj-360", "pictslider", "list", 0, 100, 6, "obj-352", "pictslider", "list", 0, 100, 5, "obj-509", "toggle", "int", 1, 5, "obj-508", "toggle", "int", 1, 5, "obj-507", "toggle", "int", 0, 5, "obj-506", "toggle", "int", 0, 5, "obj-501", "live.gain~", "float", -60.0, 5, "obj-499", "live.gain~", "float", -60.0, 5, "obj-494", "live.gain~", "float", -60.0, 5, "obj-493", "live.gain~", "float", -60.0, 5, "obj-462", "live.gain~", "float", 0.0, 6, "obj-458", "gain~", "list", 0, 10.0, 6, "obj-449", "pictslider", "list", 0, 100, 6, "obj-444", "pictslider", "list", 0, 100, 5, "obj-542", "toggle", "int", 1, 5, "obj-541", "toggle", "int", 1, 5, "obj-540", "toggle", "int", 1, 5, "obj-539", "toggle", "int", 1, 5, "obj-546", "toggle", "int", 1, 5, "obj-545", "toggle", "int", 1, 5, "obj-544", "toggle", "int", 1, 5, "obj-543", "toggle", "int", 1, 5, "obj-550", "toggle", "int", 1, 5, "obj-549", "toggle", "int", 1, 5, "obj-548", "toggle", "int", 1, 5, "obj-547", "toggle", "int", 1 ]
+							"data" : [ 5, "obj-168", "attrui", "attr", "one/matrix", 5, "obj-168", "attrui", "int", 0, 22, "obj-46", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 22, "obj-51", "matrixctrl", "list", 0, 0, 0.0, 0, 1, 0.0, 0, 2, 1.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 16, "obj-141", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 1.0, 5, "obj-164", "toggle", "int", 1, 5, "obj-63", "toggle", "int", 1, 5, "obj-58", "toggle", "int", 1, 5, "obj-59", "toggle", "int", 1, 5, "obj-60", "toggle", "int", 1, 5, "obj-72", "toggle", "int", 1, 5, "obj-71", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 1, 5, "obj-83", "live.gain~", "float", -60.0, 5, "obj-96", "live.gain~", "float", -60.0, 5, "obj-107", "live.gain~", "float", -60.0, 5, "obj-108", "live.gain~", "float", -60.0, 5, "obj-80", "live.gain~", "float", 0.0, 5, "obj-9", "toggle", "int", 1, 6, "obj-4", "gain~", "list", 0, 10.0, 6, "obj-162", "pictslider", "list", 0, 100, 6, "obj-281", "pictslider", "list", 11, 99, 5, "obj-222", "toggle", "int", 1, 5, "obj-221", "toggle", "int", 1, 5, "obj-220", "toggle", "int", 0, 5, "obj-219", "toggle", "int", 0, 5, "obj-214", "live.gain~", "float", -60.0, 5, "obj-212", "live.gain~", "float", -60.0, 5, "obj-207", "live.gain~", "float", -60.0, 5, "obj-206", "live.gain~", "float", -60.0, 5, "obj-148", "live.gain~", "float", 0.0, 6, "obj-131", "gain~", "list", 0, 10.0, 6, "obj-116", "pictslider", "list", 2, 99, 6, "obj-47", "pictslider", "list", 0, 99, 5, "obj-420", "toggle", "int", 1, 5, "obj-419", "toggle", "int", 1, 5, "obj-418", "toggle", "int", 0, 5, "obj-417", "toggle", "int", 0, 5, "obj-412", "live.gain~", "float", -60.0, 5, "obj-410", "live.gain~", "float", -60.0, 5, "obj-405", "live.gain~", "float", -60.0, 5, "obj-404", "live.gain~", "float", -60.0, 5, "obj-373", "live.gain~", "float", 0.0, 6, "obj-369", "gain~", "list", 0, 10.0, 6, "obj-360", "pictslider", "list", 0, 100, 6, "obj-352", "pictslider", "list", 0, 100, 5, "obj-509", "toggle", "int", 1, 5, "obj-508", "toggle", "int", 1, 5, "obj-507", "toggle", "int", 0, 5, "obj-506", "toggle", "int", 0, 5, "obj-501", "live.gain~", "float", -60.0, 5, "obj-499", "live.gain~", "float", -60.0, 5, "obj-494", "live.gain~", "float", -60.0, 5, "obj-493", "live.gain~", "float", -60.0, 5, "obj-462", "live.gain~", "float", 0.0, 6, "obj-458", "gain~", "list", 0, 10.0, 6, "obj-449", "pictslider", "list", 0, 100, 6, "obj-444", "pictslider", "list", 0, 100, 5, "obj-542", "toggle", "int", 1, 5, "obj-541", "toggle", "int", 1, 5, "obj-540", "toggle", "int", 1, 5, "obj-539", "toggle", "int", 1, 5, "obj-546", "toggle", "int", 1, 5, "obj-545", "toggle", "int", 1, 5, "obj-544", "toggle", "int", 1, 5, "obj-543", "toggle", "int", 1, 5, "obj-550", "toggle", "int", 1, 5, "obj-549", "toggle", "int", 1, 5, "obj-548", "toggle", "int", 1, 5, "obj-547", "toggle", "int", 1 ]
 						}
 , 						{
 							"number" : 2,
@@ -1189,7 +1175,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2301.93046247959137, 1742.842925310134888, 54.000001192092896, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 18 $1 1 18 $1 2 18 $1 3 18 $1"
 				}
 
@@ -1203,7 +1188,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2246.43046247959137, 1742.842925310134888, 52.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 17 $1 1 17 $1 2 17 $1 3 17 $1"
 				}
 
@@ -1277,7 +1261,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2188.93046247959137, 1742.842925310134888, 52.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 16 $1 1 16 $1 2 16 $1 3 16 $1"
 				}
 
@@ -1428,9 +1411,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2017.581987619400024, 1635.744454026222229, 55.0, 116.0 ],
-					"presentation_linecount" : 8,
-					"text" : "0 8 $1 1 9 $2 2 10 $3 3 11 $4 0 12 $5 1 13 $6 2 14 $7 3 15 $8"
+					"patching_rect" : [ 2017.581987619400024, 1635.744454026222229, 52.0, 116.0 ],
+					"text" : "0 8 $1 0 9 $2 0 10 $3 0 11 $4 0 12 $5 0 13 $6 0 14 $7 0 15 $8"
 				}
 
 			}
@@ -1467,7 +1449,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2183.349898099899292, 1476.933834552764893, 75.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "$1 $2 $3 $4 $1 $2 $3 $4 $1 $2 $3 $4 $1 $2 $3 $4"
 				}
 
@@ -1493,7 +1474,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1953.415313005447388, 1481.933834552764893, 75.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "$1 $1 $1 $1 $2 $2 $2 $2 $3 $3 $3 $3 $4 $4 $4 $4"
 				}
 
@@ -1545,8 +1525,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1952.445623993873596, 1635.744454026222229, 47.969689011573792, 116.0 ],
-					"presentation_linecount" : 8,
-					"text" : "0 0 $1 1 1 $2 2 2 $3 3 3 $4 0 4 $5 1 5 $6 2 6 $7 3 7 $8"
+					"text" : "0 0 $1 0 1 $2 0 2 $3 0 3 $4 0 4 $5 0 5 $6 0 6 $7 0 7 $8"
 				}
 
 			}
@@ -2403,7 +2382,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1163.331190029779918, 1736.024743556976318, 54.000001192092896, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 18 $1 1 18 $1 2 18 $1 3 18 $1"
 				}
 
@@ -2417,7 +2395,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1107.831190029779918, 1736.024743556976318, 52.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 17 $1 1 17 $1 2 17 $1 3 17 $1"
 				}
 
@@ -2491,7 +2468,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1050.331190029779918, 1736.024743556976318, 52.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 16 $1 1 16 $1 2 16 $1 3 16 $1"
 				}
 
@@ -2642,9 +2618,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 878.982715169588687, 1628.92627227306366, 55.0, 116.0 ],
-					"presentation_linecount" : 8,
-					"text" : "0 8 $1 1 9 $2 2 10 $3 3 11 $4 0 12 $5 1 13 $6 2 14 $7 3 15 $8"
+					"patching_rect" : [ 878.982715169588687, 1628.92627227306366, 52.0, 116.0 ],
+					"text" : "0 8 $1 0 9 $2 0 10 $3 0 11 $4 0 12 $5 0 13 $6 0 14 $7 0 15 $8"
 				}
 
 			}
@@ -2681,7 +2656,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1044.750625650087841, 1470.115652799606323, 75.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "$1 $2 $3 $4 $1 $2 $3 $4 $1 $2 $3 $4 $1 $2 $3 $4"
 				}
 
@@ -2707,7 +2681,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 814.81604055563605, 1475.115652799606323, 75.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "$1 $1 $1 $1 $2 $2 $2 $2 $3 $3 $3 $3 $4 $4 $4 $4"
 				}
 
@@ -2759,8 +2732,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 813.846351544062259, 1628.92627227306366, 47.969689011573792, 116.0 ],
-					"presentation_linecount" : 8,
-					"text" : "0 0 $1 1 1 $2 2 2 $3 3 3 $4 0 4 $5 1 5 $6 2 6 $7 3 7 $8"
+					"text" : "0 0 $1 0 1 $2 0 2 $3 0 3 $4 0 4 $5 0 5 $6 0 6 $7 0 7 $8"
 				}
 
 			}
@@ -3641,7 +3613,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2298.93046247959137, 783.752025365829468, 54.000001192092896, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 18 $1 1 18 $1 2 18 $1 3 18 $1"
 				}
 
@@ -3655,7 +3626,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2243.43046247959137, 783.752025365829468, 52.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 17 $1 1 17 $1 2 17 $1 3 17 $1"
 				}
 
@@ -3729,7 +3699,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2185.93046247959137, 783.752025365829468, 52.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 16 $1 1 16 $1 2 16 $1 3 16 $1"
 				}
 
@@ -3880,9 +3849,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2014.581987619400024, 676.653554081916809, 55.0, 116.0 ],
-					"presentation_linecount" : 8,
-					"text" : "0 8 $1 1 9 $2 2 10 $3 3 11 $4 0 12 $5 1 13 $6 2 14 $7 3 15 $8"
+					"patching_rect" : [ 2014.581987619400024, 676.653554081916809, 52.0, 116.0 ],
+					"text" : "0 8 $1 0 9 $2 0 10 $3 0 11 $4 0 12 $5 0 13 $6 0 14 $7 0 15 $8"
 				}
 
 			}
@@ -3919,7 +3887,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2180.349898099899292, 517.842934608459473, 75.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "$1 $2 $3 $4 $1 $2 $3 $4 $1 $2 $3 $4 $1 $2 $3 $4"
 				}
 
@@ -3945,7 +3912,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1950.415313005447388, 522.842934608459473, 75.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "$1 $1 $1 $1 $2 $2 $2 $2 $3 $3 $3 $3 $4 $4 $4 $4"
 				}
 
@@ -3997,8 +3963,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1949.445623993873596, 676.653554081916809, 47.969689011573792, 116.0 ],
-					"presentation_linecount" : 8,
-					"text" : "0 0 $1 1 1 $2 2 2 $3 3 3 $4 0 4 $5 1 5 $6 2 6 $7 3 7 $8"
+					"text" : "0 0 $1 0 1 $2 0 2 $3 0 3 $4 0 4 $5 0 5 $6 0 6 $7 0 7 $8"
 				}
 
 			}
@@ -4499,7 +4464,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 823.64936351776123, 892.200657367706299, 54.0, 22.0 ],
+					"patching_rect" : [ 822.64936351776123, 892.200657367706299, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -5470,8 +5435,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 886.816038131713867, 659.525894522666931, 55.0, 116.0 ],
-					"text" : "0 8 $1 1 9 $2 2 10 $3 3 11 $4 0 12 $5 1 13 $6 2 14 $7 3 15 $8"
+					"patching_rect" : [ 886.816038131713867, 659.525894522666931, 52.0, 116.0 ],
+					"text" : "0 8 $1 0 9 $2 0 10 $3 0 11 $4 0 12 $5 0 13 $6 0 14 $7 0 15 $8"
 				}
 
 			}
@@ -5596,7 +5561,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 821.679674506187439, 659.525894522666931, 47.969689011573792, 116.0 ],
-					"text" : "0 0 $1 1 1 $2 2 2 $3 3 3 $4 0 4 $5 1 5 $6 2 6 $7 3 7 $8"
+					"text" : "0 0 $1 0 1 $2 0 2 $3 0 3 $4 0 4 $5 0 5 $6 0 6 $7 0 7 $8"
 				}
 
 			}
@@ -5743,7 +5708,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.667371392250061, 1452.282334208488464, 120.0, 76.0 ],
-					"text" : "/DSS/X \"0000000000000000000000000000001000000000000000000000000000000010\""
+					"text" : "/DSS/B \"1111000000000000111100000000000011110000000000001111000000000000\""
 				}
 
 			}
@@ -6891,7 +6856,7 @@
 					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-105", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 17
+					"watchpoint_id" : 1
 				}
 
 			}
@@ -7069,7 +7034,7 @@
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-125", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 4
+					"watchpoint_id" : 10
 				}
 
 			}
@@ -7151,7 +7116,7 @@
 					"order" : 0,
 					"source" : [ "obj-137", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 19
+					"watchpoint_id" : 11
 				}
 
 			}
@@ -7233,7 +7198,7 @@
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-144", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 21
+					"watchpoint_id" : 12
 				}
 
 			}
@@ -7737,7 +7702,7 @@
 					"destination" : [ "obj-219", 0 ],
 					"source" : [ "obj-200", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 29
+					"watchpoint_id" : 13
 				}
 
 			}
@@ -8100,7 +8065,7 @@
 					"destination" : [ "obj-240", 0 ],
 					"source" : [ "obj-232", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 16
+					"watchpoint_id" : 30
 				}
 
 			}
@@ -8116,7 +8081,7 @@
 					"destination" : [ "obj-232", 0 ],
 					"source" : [ "obj-235", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 30
+					"watchpoint_id" : 31
 				}
 
 			}
@@ -8227,7 +8192,7 @@
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-252", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 6
+					"watchpoint_id" : 32
 				}
 
 			}
@@ -8244,7 +8209,7 @@
 					"order" : 4,
 					"source" : [ "obj-27", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 2
+					"watchpoint_id" : 33
 				}
 
 			}
@@ -8352,7 +8317,7 @@
 					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-29", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 3
+					"watchpoint_id" : 34
 				}
 
 			}
@@ -8827,7 +8792,7 @@
 					"destination" : [ "obj-417", 0 ],
 					"source" : [ "obj-398", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 32
+					"watchpoint_id" : 35
 				}
 
 			}
@@ -9155,7 +9120,7 @@
 					"destination" : [ "obj-428", 0 ],
 					"source" : [ "obj-421", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 33
+					"watchpoint_id" : 38
 				}
 
 			}
@@ -9178,7 +9143,7 @@
 					"destination" : [ "obj-432", 0 ],
 					"source" : [ "obj-424", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 34
+					"watchpoint_id" : 39
 				}
 
 			}
@@ -9222,7 +9187,7 @@
 					"destination" : [ "obj-434", 0 ],
 					"source" : [ "obj-429", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 35
+					"watchpoint_id" : 40
 				}
 
 			}
@@ -9254,7 +9219,7 @@
 					"destination" : [ "obj-429", 0 ],
 					"source" : [ "obj-432", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 31
+					"watchpoint_id" : 41
 				}
 
 			}
@@ -9582,7 +9547,7 @@
 					"destination" : [ "obj-471", 0 ],
 					"source" : [ "obj-466", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 38
+					"watchpoint_id" : 42
 				}
 
 			}
@@ -9770,7 +9735,7 @@
 					"order" : 4,
 					"source" : [ "obj-489", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 39
+					"watchpoint_id" : 44
 				}
 
 			}
@@ -9803,7 +9768,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-49", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 22
+					"watchpoint_id" : 45
 				}
 
 			}
@@ -10066,7 +10031,7 @@
 					"destination" : [ "obj-517", 0 ],
 					"source" : [ "obj-510", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 42
+					"watchpoint_id" : 46
 				}
 
 			}
@@ -10089,7 +10054,7 @@
 					"destination" : [ "obj-521", 0 ],
 					"source" : [ "obj-513", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 41
+					"watchpoint_id" : 47
 				}
 
 			}
@@ -10133,7 +10098,7 @@
 					"destination" : [ "obj-523", 0 ],
 					"source" : [ "obj-518", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 40
+					"watchpoint_id" : 48
 				}
 
 			}
@@ -10165,7 +10130,7 @@
 					"destination" : [ "obj-518", 0 ],
 					"source" : [ "obj-521", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 44
+					"watchpoint_id" : 49
 				}
 
 			}
@@ -10409,7 +10374,7 @@
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-56", 0 ],
 					"watchpoint_flags" : 5,
-					"watchpoint_id" : 23
+					"watchpoint_id" : 50
 				}
 
 			}
@@ -10503,7 +10468,7 @@
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-65", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 24
+					"watchpoint_id" : 51
 				}
 
 			}
@@ -10512,7 +10477,7 @@
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-66", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 25
+					"watchpoint_id" : 52
 				}
 
 			}
@@ -10577,7 +10542,7 @@
 					"destination" : [ "obj-105", 0 ],
 					"source" : [ "obj-76", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 26
+					"watchpoint_id" : 53
 				}
 
 			}
@@ -10746,7 +10711,7 @@
 					"order" : 3,
 					"source" : [ "obj-90", 0 ],
 					"watchpoint_flags" : 5,
-					"watchpoint_id" : 27
+					"watchpoint_id" : 54
 				}
 
 			}
@@ -10755,7 +10720,7 @@
 					"destination" : [ "obj-109", 0 ],
 					"source" : [ "obj-91", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 28
+					"watchpoint_id" : 55
 				}
 
 			}
@@ -10764,7 +10729,7 @@
 					"destination" : [ "obj-94", 0 ],
 					"source" : [ "obj-93", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 9
+					"watchpoint_id" : 56
 				}
 
 			}
@@ -10915,26 +10880,26 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~[10]" : -60.0,
+						"live.gain~[10]" : -1.728514516347387,
 						"live.gain~[11]" : -60.0,
 						"live.gain~[13]" : 0.0,
-						"live.gain~[14]" : -60.0,
-						"live.gain~[15]" : -60.0,
-						"live.gain~[16]" : -60.0,
-						"live.gain~[17]" : -60.0,
+						"live.gain~[14]" : 0.0,
+						"live.gain~[15]" : -12.544868469238281,
+						"live.gain~[16]" : -48.834083557128906,
+						"live.gain~[17]" : -2.216052041587749,
 						"live.gain~[18]" : 0.0,
 						"live.gain~[19]" : -60.0,
 						"live.gain~[1]" : 0.0,
-						"live.gain~[20]" : -60.0,
-						"live.gain~[21]" : -60.0,
+						"live.gain~[20]" : 0.0,
+						"live.gain~[21]" : -2.732603634515109,
 						"live.gain~[2]" : -60.0,
-						"live.gain~[3]" : -60.0,
-						"live.gain~[4]" : -60.0,
-						"live.gain~[5]" : -60.0,
+						"live.gain~[3]" : -8.679779052734375,
+						"live.gain~[4]" : 0.0,
+						"live.gain~[5]" : -2.978087508757208,
 						"live.gain~[6]" : 0.0,
 						"live.gain~[7]" : -60.0,
 						"live.gain~[8]" : -60.0,
-						"live.gain~[9]" : -60.0
+						"live.gain~[9]" : 0.0
 					}
 
 				}
@@ -10955,26 +10920,26 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~[10]" : -60.0,
+									"live.gain~[10]" : -1.728514516347387,
 									"live.gain~[11]" : -60.0,
 									"live.gain~[13]" : 0.0,
-									"live.gain~[14]" : -60.0,
-									"live.gain~[15]" : -60.0,
-									"live.gain~[16]" : -60.0,
-									"live.gain~[17]" : -60.0,
+									"live.gain~[14]" : 0.0,
+									"live.gain~[15]" : -12.544868469238281,
+									"live.gain~[16]" : -48.834083557128906,
+									"live.gain~[17]" : -2.216052041587749,
 									"live.gain~[18]" : 0.0,
 									"live.gain~[19]" : -60.0,
 									"live.gain~[1]" : 0.0,
-									"live.gain~[20]" : -60.0,
-									"live.gain~[21]" : -60.0,
+									"live.gain~[20]" : 0.0,
+									"live.gain~[21]" : -2.732603634515109,
 									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -60.0,
-									"live.gain~[5]" : -60.0,
+									"live.gain~[3]" : -8.679779052734375,
+									"live.gain~[4]" : 0.0,
+									"live.gain~[5]" : -2.978087508757208,
 									"live.gain~[6]" : 0.0,
 									"live.gain~[7]" : -60.0,
 									"live.gain~[8]" : -60.0,
-									"live.gain~[9]" : -60.0
+									"live.gain~[9]" : 0.0
 								}
 
 							}
