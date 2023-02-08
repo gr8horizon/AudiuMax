@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 5,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 44.0, 87.0, 1799.0, 888.0 ],
+		"rect" : [ 160.0, 118.0, 1799.0, 888.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-176",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 384.692511916160583, 491.627273559570312, 150.0, 74.0 ],
+					"text" : "[X]\nCenter-Hanging\nWall\nFloor\nCenter-Obelisk"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-171",
 					"maxclass" : "newobj",
@@ -998,7 +1010,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1956.968523263931274, 815.438759446144218, 120.0, 76.0 ],
-					"text" : "/DSS/B \"0000000000000000000000000000000000000000000000000000000000000000\""
+					"text" : "/DSS/X \"0000000000000000000000000000000000001100000000000011110000000000\""
 				}
 
 			}
@@ -1241,7 +1253,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1323,7 +1335,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
+											"minor" : 5,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -1577,7 +1589,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
+											"minor" : 5,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -1831,7 +1843,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
+											"minor" : 5,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -2061,7 +2073,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
+											"minor" : 5,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -2487,7 +2499,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -2729,7 +2741,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -2948,7 +2960,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -4286,7 +4298,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -5176,7 +5188,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.667371392250061, 1274.782296895980835, 120.0, 76.0 ],
-					"text" : "/DSS/B \"0000000000000000000000000000000000000000000000000000000000000000\""
+					"text" : "/DSS/X \"0000000000000000000000000000000000001100000000000011110000000000\""
 				}
 
 			}
@@ -5401,7 +5413,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -5793,7 +5805,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -6066,7 +6078,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -8556,21 +8568,28 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20221004.maxsnap",
+				"name" : "FSPv1.4_20221031.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20221004_1.maxsnap",
+				"name" : "FSPv1.4_20221031_1.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20221004_2.maxsnap",
+				"name" : "FSPv1.4_20221031_2.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FSPv1.4_20221031_3.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
@@ -8640,7 +8659,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.3",
+						"origin" : "Auditioning plus PassThru v1.3",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 1,
@@ -8663,7 +8682,7 @@
 							"filename" : ".maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "6f0a55df432a836cbbc7711913308cd1"
+							"snapshotfileid" : "b32532bcf0481204794fa40a3d7792d8"
 						}
 
 					}
@@ -8672,16 +8691,16 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.3",
+						"origin" : "Auditioning plus PassThru v1.3",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221004.maxsnap",
+							"filename" : "FSPv1.4_20221031.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "75d129c71063b80899713e342bffe778"
+							"snapshotfileid" : "ff3c372672de11b20da21ab641275acf"
 						}
 
 					}
@@ -8690,16 +8709,16 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.3",
+						"origin" : "Auditioning plus PassThru v1.3",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221004_1.maxsnap",
+							"filename" : "FSPv1.4_20221031_1.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "d410f411253f415b68b14039bae09b56"
+							"snapshotfileid" : "10595934914cffa47b238f39308314f6"
 						}
 
 					}
@@ -8708,16 +8727,34 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.3",
+						"origin" : "Auditioning plus PassThru v1.3",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221004_2.maxsnap",
+							"filename" : "FSPv1.4_20221031_2.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "8d1ebfc1ca2905ce75e530bd2b1136bf"
+							"snapshotfileid" : "0b6dfabe30740d7ac7e0db02affe0890"
+						}
+
+					}
+, 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "FSPv1.4",
+						"origin" : "Auditioning plus PassThru v1.3",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"fileref" : 						{
+							"name" : "FSPv1.4",
+							"filename" : "FSPv1.4_20221031_3.maxsnap",
+							"filepath" : "~/Documents/Max 8/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "3c6d3194adc3474a9c768a17bef543fc"
 						}
 
 					}

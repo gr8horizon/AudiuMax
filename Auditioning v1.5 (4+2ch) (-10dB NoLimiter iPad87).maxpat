@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 135.0, 87.0, 1299.0, 878.0 ],
+		"rect" : [ -1448.0, 149.0, 1299.0, 878.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,7 +40,162 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"channels" : 8,
+					"id" : "obj-581",
+					"lastchannelcount" : 19,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 3014.225560188293457, 964.36353611946106, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~[8]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "mc.live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~[7]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-575",
+					"lastchannelcount" : 19,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 2082.415313005447388, 1882.111863613128662, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~[7]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "mc.live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~[6]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-573",
+					"lastchannelcount" : 19,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 833.816040555635936, 1947.299512267112732, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~[6]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "mc.live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~[5]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-571",
+					"lastchannelcount" : 19,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 2079.415313005447388, 909.328316926956177, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~[5]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "mc.live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~[4]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-570",
+					"lastchannelcount" : 19,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 981.666703561941631, 892.200657367706299, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~[4]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "mc.live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~[3]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-563",
+					"lastchannelcount" : 1,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 15.0, 15.0, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~[3]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "mc.live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-562",
 					"lastchannelcount" : 8,
 					"maxclass" : "mc.live.gain~",
@@ -48,7 +203,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1589.415313998857982, 1877.813861608505249, 48.0, 136.0 ],
+					"patching_rect" : [ 1314.81479287147522, 1911.111079216003418, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "mc.live.gain~[2]",
@@ -61,7 +216,33 @@
 
 					}
 ,
-					"varname" : "mc.live.gain~[2]"
+					"varname" : "mc.live.gain~[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-289",
+					"lastchannelcount" : 12,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 912.313638488451488, 1959.706918716430664, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "mc.live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~"
 				}
 
 			}
@@ -223,50 +404,11 @@
 			}
 , 			{
 				"box" : 				{
-					"channels" : 8,
-					"id" : "obj-563",
-					"lastchannelcount" : 8,
-					"maxclass" : "mc.live.gain~",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 1644.415313998857982, 1877.813861608505249, 48.0, 136.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "mc.live.gain~[1]",
-							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
-							"parameter_shortname" : "mc.live.gain~",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
-						}
-
-					}
-,
-					"varname" : "mc.live.gain~[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-289",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1326.917428175608165, 1923.15855860710144, 233.0, 22.0 ],
-					"text" : "mc.limi~ @lookahead 100 @threshold -30"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-247",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 995.331190625826366, 2047.312273979187012, 247.0, 22.0 ],
+					"patching_rect" : [ 995.331190625826366, 2078.793754935264587, 247.0, 22.0 ],
 					"text" : "mc.dac~ 9 10 11 12 13 14 15 16 17 18 19 20"
 				}
 
@@ -278,7 +420,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 995.331190625826366, 1999.325245380401611, 247.0, 22.0 ],
+					"patching_rect" : [ 986.831190625826366, 1928.293681859970093, 247.0, 22.0 ],
 					"text" : "mc.adc~ 9 10 11 12 13 14 15 16 17 18 19 20"
 				}
 
@@ -590,7 +732,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3033.477962255477905, 1034.507529616355896, 54.0, 22.0 ],
+					"patching_rect" : [ 2916.727962255477905, 1136.950933575630188, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -1726,7 +1868,7 @@
 					"patching_rect" : [ 497.292739868164062, 1956.093129515647888, 56.0, 19.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-168", "attrui", "attr", "one/matrix", 5, "obj-168", "attrui", "int", 0, 22, "obj-46", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 22, "obj-51", "matrixctrl", "list", 0, 0, 0.0, 0, 1, 0.0, 0, 2, 1.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 16, "obj-141", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 1.0, 5, "obj-164", "toggle", "int", 1, 5, "obj-63", "toggle", "int", 1, 5, "obj-58", "toggle", "int", 1, 5, "obj-59", "toggle", "int", 0, 5, "obj-60", "toggle", "int", 0, 5, "obj-72", "toggle", "int", 1, 5, "obj-71", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 1, 5, "obj-83", "live.gain~", "float", -60.0, 5, "obj-96", "live.gain~", "float", -60.0, 5, "obj-107", "live.gain~", "float", -60.0, 5, "obj-108", "live.gain~", "float", -60.0, 5, "obj-80", "live.gain~", "float", 0.0, 5, "obj-9", "toggle", "int", 1, 6, "obj-4", "gain~", "list", 0, 10.0, 6, "obj-162", "pictslider", "list", 0, 100, 6, "obj-281", "pictslider", "list", 0, 100, 5, "obj-222", "toggle", "int", 1, 5, "obj-221", "toggle", "int", 1, 5, "obj-220", "toggle", "int", 0, 5, "obj-219", "toggle", "int", 0, 5, "obj-214", "live.gain~", "float", -60.0, 5, "obj-212", "live.gain~", "float", -60.0, 5, "obj-207", "live.gain~", "float", -59.892635345458984, 5, "obj-206", "live.gain~", "float", -60.0, 5, "obj-148", "live.gain~", "float", 0.0, 6, "obj-131", "gain~", "list", 0, 10.0, 6, "obj-116", "pictslider", "list", 0, 100, 6, "obj-47", "pictslider", "list", 0, 100, 5, "obj-420", "toggle", "int", 1, 5, "obj-419", "toggle", "int", 1, 5, "obj-418", "toggle", "int", 0, 5, "obj-417", "toggle", "int", 0, 5, "obj-412", "live.gain~", "float", -60.0, 5, "obj-410", "live.gain~", "float", -60.0, 5, "obj-405", "live.gain~", "float", -60.0, 5, "obj-404", "live.gain~", "float", -60.0, 5, "obj-373", "live.gain~", "float", 0.0, 6, "obj-369", "gain~", "list", 0, 10.0, 6, "obj-360", "pictslider", "list", 0, 100, 6, "obj-352", "pictslider", "list", 0, 100, 5, "obj-509", "toggle", "int", 1, 5, "obj-508", "toggle", "int", 1, 5, "obj-507", "toggle", "int", 0, 5, "obj-506", "toggle", "int", 0, 5, "obj-501", "live.gain~", "float", -60.0, 5, "obj-499", "live.gain~", "float", -60.0, 5, "obj-494", "live.gain~", "float", -60.0, 5, "obj-493", "live.gain~", "float", -60.0, 5, "obj-462", "live.gain~", "float", 0.0, 6, "obj-458", "gain~", "list", 0, 10.0, 6, "obj-449", "pictslider", "list", 0, 100, 6, "obj-444", "pictslider", "list", 0, 100, 5, "obj-542", "toggle", "int", 1, 5, "obj-541", "toggle", "int", 1, 5, "obj-540", "toggle", "int", 1, 5, "obj-539", "toggle", "int", 1, 5, "obj-546", "toggle", "int", 1, 5, "obj-545", "toggle", "int", 1, 5, "obj-544", "toggle", "int", 1, 5, "obj-543", "toggle", "int", 1, 5, "obj-550", "toggle", "int", 1, 5, "obj-549", "toggle", "int", 1, 5, "obj-548", "toggle", "int", 1, 5, "obj-547", "toggle", "int", 1, 5, "obj-331", "toggle", "int", 1, 5, "obj-330", "toggle", "int", 1, 5, "obj-329", "toggle", "int", 0, 5, "obj-328", "toggle", "int", 0, 5, "obj-324", "live.gain~", "float", -60.0, 5, "obj-322", "live.gain~", "float", -60.0, 5, "obj-317", "live.gain~", "float", -60.0, 5, "obj-316", "live.gain~", "float", -60.0, 5, "obj-284", "live.gain~", "float", 0.0, 6, "obj-274", "gain~", "list", 0, 10.0, 6, "obj-265", "pictslider", "list", 0, 100, 6, "obj-260", "pictslider", "list", 0, 100, 5, "obj-254", "toggle", "int", 1, 5, "obj-253", "toggle", "int", 1, 5, "obj-251", "toggle", "int", 1, 5, "obj-249", "toggle", "int", 1, 5, "<invalid>", "mc.live.gain~", "float", -14.781326293945312, 5, "obj-563", "mc.live.gain~", "float", 0.0, 5, "obj-565", "attrui", "attr", "bypass", 5, "obj-565", "attrui", "int", 0 ]
+							"data" : [ 5, "obj-168", "attrui", "attr", "one/matrix", 5, "obj-168", "attrui", "int", 0, 22, "obj-46", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 22, "obj-51", "matrixctrl", "list", 0, 0, 0.0, 0, 1, 0.0, 0, 2, 1.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 16, "obj-141", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 1.0, 5, "obj-164", "toggle", "int", 1, 5, "obj-63", "toggle", "int", 1, 5, "obj-58", "toggle", "int", 1, 5, "obj-59", "toggle", "int", 0, 5, "obj-60", "toggle", "int", 0, 5, "obj-72", "toggle", "int", 1, 5, "obj-71", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 1, 5, "obj-83", "live.gain~", "float", -60.0, 5, "obj-96", "live.gain~", "float", -60.0, 5, "obj-107", "live.gain~", "float", -60.0, 5, "obj-108", "live.gain~", "float", -60.0, 5, "obj-80", "live.gain~", "float", 0.0, 5, "obj-9", "toggle", "int", 1, 6, "obj-4", "gain~", "list", 0, 10.0, 6, "obj-162", "pictslider", "list", 0, 100, 6, "obj-281", "pictslider", "list", 0, 100, 5, "obj-222", "toggle", "int", 1, 5, "obj-221", "toggle", "int", 1, 5, "obj-220", "toggle", "int", 0, 5, "obj-219", "toggle", "int", 0, 5, "obj-214", "live.gain~", "float", -60.0, 5, "obj-212", "live.gain~", "float", -60.0, 5, "obj-207", "live.gain~", "float", -59.892635345458984, 5, "obj-206", "live.gain~", "float", -60.0, 5, "obj-148", "live.gain~", "float", 0.0, 6, "obj-131", "gain~", "list", 0, 10.0, 6, "obj-116", "pictslider", "list", 0, 100, 6, "obj-47", "pictslider", "list", 0, 100, 5, "obj-420", "toggle", "int", 1, 5, "obj-419", "toggle", "int", 1, 5, "obj-418", "toggle", "int", 0, 5, "obj-417", "toggle", "int", 0, 5, "obj-412", "live.gain~", "float", -60.0, 5, "obj-410", "live.gain~", "float", -60.0, 5, "obj-405", "live.gain~", "float", -60.0, 5, "obj-404", "live.gain~", "float", -60.0, 5, "obj-373", "live.gain~", "float", 0.0, 6, "obj-369", "gain~", "list", 0, 10.0, 6, "obj-360", "pictslider", "list", 0, 100, 6, "obj-352", "pictslider", "list", 0, 100, 5, "obj-509", "toggle", "int", 1, 5, "obj-508", "toggle", "int", 1, 5, "obj-507", "toggle", "int", 0, 5, "obj-506", "toggle", "int", 0, 5, "obj-501", "live.gain~", "float", -60.0, 5, "obj-499", "live.gain~", "float", -60.0, 5, "obj-494", "live.gain~", "float", -60.0, 5, "obj-493", "live.gain~", "float", -60.0, 5, "obj-462", "live.gain~", "float", 0.0, 6, "obj-458", "gain~", "list", 0, 10.0, 6, "obj-449", "pictslider", "list", 0, 100, 6, "obj-444", "pictslider", "list", 0, 100, 5, "obj-542", "toggle", "int", 1, 5, "obj-541", "toggle", "int", 1, 5, "obj-540", "toggle", "int", 1, 5, "obj-539", "toggle", "int", 1, 5, "obj-546", "toggle", "int", 1, 5, "obj-545", "toggle", "int", 1, 5, "obj-544", "toggle", "int", 1, 5, "obj-543", "toggle", "int", 1, 5, "obj-550", "toggle", "int", 1, 5, "obj-549", "toggle", "int", 1, 5, "obj-548", "toggle", "int", 1, 5, "obj-547", "toggle", "int", 1, 5, "obj-331", "toggle", "int", 1, 5, "obj-330", "toggle", "int", 1, 5, "obj-329", "toggle", "int", 0, 5, "obj-328", "toggle", "int", 0, 5, "obj-324", "live.gain~", "float", -60.0, 5, "obj-322", "live.gain~", "float", -60.0, 5, "obj-317", "live.gain~", "float", -60.0, 5, "obj-316", "live.gain~", "float", -60.0, 5, "obj-284", "live.gain~", "float", 0.0, 6, "obj-274", "gain~", "list", 0, 10.0, 6, "obj-265", "pictslider", "list", 0, 100, 6, "obj-260", "pictslider", "list", 0, 100, 5, "obj-254", "toggle", "int", 1, 5, "obj-253", "toggle", "int", 1, 5, "obj-251", "toggle", "int", 1, 5, "obj-249", "toggle", "int", 1, 5, "<invalid>", "mc.live.gain~", "float", -14.781326293945312, 5, "<invalid>", "mc.live.gain~", "float", 0.0, 5, "obj-565", "attrui", "attr", "bypass", 5, "obj-565", "attrui", "int", 0 ]
 						}
 , 						{
 							"number" : 2,
@@ -2156,7 +2298,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1954.415313005447388, 1868.419216871261597, 54.0, 22.0 ],
+					"patching_rect" : [ 1960.502877116203308, 1928.293681859970093, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -3363,7 +3505,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 815.81604055563605, 1861.601035118103027, 54.0, 22.0 ],
+					"patching_rect" : [ 821.679674506187439, 1895.759795188903809, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -4570,7 +4712,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1951.415313005447388, 909.328316926956177, 54.0, 22.0 ],
+					"patching_rect" : [ 1950.415313005447388, 964.36353611946106, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -6071,7 +6213,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 822.64936351776123, 892.200657367706299, 54.0, 22.0 ],
+					"patching_rect" : [ 847.64936351776123, 928.282096743583679, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -7315,7 +7457,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.667371392250061, 1452.282334208488464, 120.0, 76.0 ],
-					"text" : "/DSS/B \"1111110000000000111111000000000011111100000000001111110000000000\""
+					"text" : "/DSS/A \"1111010000000000111101000000000011110100000000001111010000000000\""
 				}
 
 			}
@@ -7815,8 +7957,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.677419424057007, 1145.377419471740723, 171.0, 22.0 ],
-					"text" : "udpsend 192.168.42.127 9000"
+					"patching_rect" : [ 18.677419424057007, 1145.377419471740723, 165.0, 22.0 ],
+					"text" : "udpsend 192.168.42.87 9000"
 				}
 
 			}
@@ -8514,7 +8656,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
+					"destination" : [ "obj-570", 0 ],
 					"order" : 0,
 					"source" : [ "obj-109", 0 ]
 				}
@@ -9069,16 +9211,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-289", 0 ],
-					"order" : 1,
-					"source" : [ "obj-169", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-562", 0 ],
-					"order" : 0,
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -9748,16 +9881,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-117", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-123", 0 ],
+					"order" : 1,
 					"source" : [ "obj-240", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-123", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-571", 0 ],
+					"order" : 0,
 					"source" : [ "obj-240", 0 ]
 				}
 
@@ -9808,7 +9941,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-247", 0 ],
+					"destination" : [ "obj-289", 0 ],
 					"source" : [ "obj-248", 0 ]
 				}
 
@@ -10255,17 +10388,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-171", 0 ],
-					"order" : 1,
-					"source" : [ "obj-289", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-563", 0 ],
-					"midpoints" : [ 1563.750056783358104, 1972.394644737243652, 1563.750056783358104, 1855.394644737243652, 1653.915313998857982, 1855.394644737243652 ],
-					"order" : 0,
+					"destination" : [ "obj-247", 0 ],
 					"source" : [ "obj-289", 0 ]
 				}
 
@@ -10863,16 +10986,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-266", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-271", 0 ],
+					"order" : 1,
 					"source" : [ "obj-345", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-271", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-581", 0 ],
+					"order" : 0,
 					"source" : [ "obj-345", 0 ]
 				}
 
@@ -11756,16 +11879,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-361", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-366", 0 ],
+					"order" : 1,
 					"source" : [ "obj-434", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-366", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-573", 0 ],
+					"order" : 0,
 					"source" : [ "obj-434", 0 ]
 				}
 
@@ -12717,16 +12840,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-450", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-455", 0 ],
+					"order" : 1,
 					"source" : [ "obj-523", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-455", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-575", 0 ],
+					"order" : 0,
 					"source" : [ "obj-523", 0 ]
 				}
 
@@ -12975,6 +13098,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-171", 0 ],
+					"source" : [ "obj-562", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-274", 0 ],
 					"order" : 0,
 					"source" : [ "obj-564", 0 ]
@@ -12986,13 +13116,6 @@
 					"destination" : [ "obj-324", 0 ],
 					"order" : 1,
 					"source" : [ "obj-564", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-289", 0 ],
-					"source" : [ "obj-565", 0 ]
 				}
 
 			}
@@ -13019,8 +13142,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-570", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"source" : [ "obj-571", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-361", 0 ],
+					"source" : [ "obj-573", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-273", 0 ],
 					"source" : [ "obj-574", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-450", 0 ],
+					"source" : [ "obj-575", 0 ]
 				}
 
 			}
@@ -13072,6 +13223,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-291", 0 ],
 					"source" : [ "obj-580", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-266", 0 ],
+					"source" : [ "obj-581", 0 ]
 				}
 
 			}
@@ -13490,6 +13648,7 @@
 			"obj-212" : [ "live.gain~[9]", "live.gain~", 0 ],
 			"obj-214" : [ "live.gain~[10]", "live.gain~", 0 ],
 			"obj-284" : [ "live.gain~[22]", "live.gain~", 0 ],
+			"obj-289" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
 			"obj-316" : [ "live.gain~[12]", "live.gain~", 0 ],
 			"obj-317" : [ "live.gain~[23]", "live.gain~", 0 ],
 			"obj-322" : [ "live.gain~[24]", "live.gain~", 0 ],
@@ -13505,7 +13664,12 @@
 			"obj-499" : [ "live.gain~[20]", "live.gain~", 0 ],
 			"obj-501" : [ "live.gain~[21]", "live.gain~", 0 ],
 			"obj-562" : [ "mc.live.gain~[2]", "mc.live.gain~", 0 ],
-			"obj-563" : [ "mc.live.gain~[1]", "mc.live.gain~", 0 ],
+			"obj-563" : [ "mc.live.gain~[3]", "mc.live.gain~", 0 ],
+			"obj-570" : [ "mc.live.gain~[4]", "mc.live.gain~", 0 ],
+			"obj-571" : [ "mc.live.gain~[5]", "mc.live.gain~", 0 ],
+			"obj-573" : [ "mc.live.gain~[6]", "mc.live.gain~", 0 ],
+			"obj-575" : [ "mc.live.gain~[7]", "mc.live.gain~", 0 ],
+			"obj-581" : [ "mc.live.gain~[8]", "mc.live.gain~", 0 ],
 			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-83" : [ "live.gain~[5]", "live.gain~", 0 ],
 			"obj-96" : [ "live.gain~[4]", "live.gain~", 0 ],
@@ -13517,35 +13681,35 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FSPv1.4_20221115.maxsnap",
+				"name" : "FSPv1.4_20230205.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20221115_1.maxsnap",
+				"name" : "FSPv1.4_20230205_1.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20221115_2.maxsnap",
+				"name" : "FSPv1.4_20230205_2.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20221115_3.maxsnap",
+				"name" : "FSPv1.4_20230205_3.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20221115_4.maxsnap",
+				"name" : "FSPv1.4_20230205_4.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
@@ -13603,13 +13767,19 @@
 						"live.gain~[2]" : -60.0,
 						"live.gain~[3]" : -60.0,
 						"live.gain~[4]" : 0.0,
-						"live.gain~[5]" : -0.729242976927571,
+						"live.gain~[5]" : 0.0,
 						"live.gain~[6]" : 0.0,
 						"live.gain~[7]" : -60.0,
 						"live.gain~[8]" : 0.0,
 						"live.gain~[9]" : -47.760440826416016,
-						"mc.live.gain~[1]" : 0.0,
-						"mc.live.gain~[2]" : 0.0
+						"mc.live.gain~" : -10.226683573885779,
+						"mc.live.gain~[2]" : 0.0,
+						"mc.live.gain~[3]" : 0.0,
+						"mc.live.gain~[4]" : 0.0,
+						"mc.live.gain~[5]" : 0.0,
+						"mc.live.gain~[6]" : 0.0,
+						"mc.live.gain~[7]" : 0.0,
+						"mc.live.gain~[8]" : 0.0
 					}
 
 				}
@@ -13623,7 +13793,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
+						"origin" : "Auditioning v1.5 (4+2ch) (-10dB NoLimiter iPad87)",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 1,
@@ -13650,13 +13820,19 @@
 									"live.gain~[2]" : -60.0,
 									"live.gain~[3]" : -60.0,
 									"live.gain~[4]" : 0.0,
-									"live.gain~[5]" : -0.729242976927571,
+									"live.gain~[5]" : 0.0,
 									"live.gain~[6]" : 0.0,
 									"live.gain~[7]" : -60.0,
 									"live.gain~[8]" : 0.0,
 									"live.gain~[9]" : -47.760440826416016,
-									"mc.live.gain~[1]" : 0.0,
-									"mc.live.gain~[2]" : 0.0
+									"mc.live.gain~" : -10.226683573885779,
+									"mc.live.gain~[2]" : 0.0,
+									"mc.live.gain~[3]" : 0.0,
+									"mc.live.gain~[4]" : 0.0,
+									"mc.live.gain~[5]" : 0.0,
+									"mc.live.gain~[6]" : 0.0,
+									"mc.live.gain~[7]" : 0.0,
+									"mc.live.gain~[8]" : 0.0
 								}
 
 							}
@@ -13665,10 +13841,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115.maxsnap",
+							"filename" : "FSPv1.4_20230205.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "7d58f8b38faeb11e20f86378ca1ff918"
+							"snapshotfileid" : "da6a520e1fd46dda46bba39517a81a4f"
 						}
 
 					}
@@ -13677,7 +13853,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
+						"origin" : "Auditioning v1.5 (4+2ch) (-10dB NoLimiter iPad87)",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
@@ -13697,10 +13873,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115_1.maxsnap",
+							"filename" : "FSPv1.4_20230205_1.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "33731c32d998a908a6b91af30c611fa8"
+							"snapshotfileid" : "9a3e68c528d0f12781c4f72b2346e8be"
 						}
 
 					}
@@ -13709,7 +13885,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
+						"origin" : "Auditioning v1.5 (4+2ch) (-10dB NoLimiter iPad87)",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
@@ -13729,10 +13905,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115_2.maxsnap",
+							"filename" : "FSPv1.4_20230205_2.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "0911d57253b473e5eaa3f14d72c81e42"
+							"snapshotfileid" : "d02717c8a064a9ca9e70012d8b11370d"
 						}
 
 					}
@@ -13741,7 +13917,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
+						"origin" : "Auditioning v1.5 (4+2ch) (-10dB NoLimiter iPad87)",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
@@ -13761,10 +13937,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115_3.maxsnap",
+							"filename" : "FSPv1.4_20230205_3.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "b876a2616f0f28c3db9dededbfdb35eb"
+							"snapshotfileid" : "2e68a5eb9fa2493874ff5ed7c1579a18"
 						}
 
 					}
@@ -13773,7 +13949,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
+						"origin" : "Auditioning v1.5 (4+2ch) (-10dB NoLimiter iPad87)",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
@@ -13793,10 +13969,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115_4.maxsnap",
+							"filename" : "FSPv1.4_20230205_4.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "2368092bcc1d9f64bb98fe76d85e9813"
+							"snapshotfileid" : "0ed082d008a24a88954ca2959991ad4a"
 						}
 
 					}
