@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 193.0, 147.0, 1395.0, 878.0 ],
+		"rect" : [ 194.0, 146.0, 1395.0, 878.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-583",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 18.677419424057007, 1303.800872921943665, 171.0, 22.0 ],
+					"text" : "udpsend 192.168.42.100 1336"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-570",
 					"maxclass" : "newobj",
@@ -69,8 +80,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.649364511171939, 62.303802609443665, 743.0, 22.0 ],
-					"text" : "loadunique \"/Users/audiumadmin/Documents/Compositions/New Voices Show #2/Sharmi/Max Stuff/newvoices sharmi lobby quiet.maxpat\""
+					"patching_rect" : [ 208.649364511171939, 62.303802609443665, 640.0, 22.0 ],
+					"text" : "loadunique \"~/Documents/Compositions/New Voices Show #2/Sharmi/Max Stuff/newvoices sharmi lobby quiet.maxpat\""
 				}
 
 			}
@@ -105,8 +116,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.649364511171939, 32.303802609443665, 713.0, 22.0 ],
-					"text" : "loadunique \"/Users/audiumadmin/Documents/Compositions/New Voices Show #2/Sharmi/Max Stuff/newvoices sharmi lobby.maxpat\""
+					"patching_rect" : [ 208.649364511171939, 32.303802609443665, 610.0, 22.0 ],
+					"text" : "loadunique \"~/Documents/Compositions/New Voices Show #2/Sharmi/Max Stuff/newvoices sharmi lobby.maxpat\""
 				}
 
 			}
@@ -204,8 +215,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 204.982687473297119, 2.805194854736328, 859.0, 22.0 ],
-					"text" : "loadunique \"/Users/audiumadmin/Documents/Compositions/New Voices Show #2/Sharmi/Max Stuff/Max Enabled/2023 Audium/newvoices sharmi show.maxpat\""
+					"patching_rect" : [ 204.982687473297119, 2.805194854736328, 756.0, 22.0 ],
+					"text" : "loadunique \"~/Documents/Compositions/New Voices Show #2/Sharmi/Max Stuff/Max Enabled/2023 Audium/newvoices sharmi show.maxpat\""
 				}
 
 			}
@@ -7385,12 +7396,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 209.667371392250061, 1452.282334208488464, 120.0, 22.0 ],
-					"text" : "/5/battery2 1."
+					"patching_rect" : [ 209.667371392250061, 1452.282334208488464, 120.0, 76.0 ],
+					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
 				}
 
 			}
@@ -7592,8 +7604,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 0,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7958,8 +7970,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 0,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8229,8 +8241,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 0,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8804,10 +8816,18 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-137", 0 ],
 					"watchpoint_flags" : 1,
 					"watchpoint_id" : 11
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-583", 0 ],
+					"order" : 1,
+					"source" : [ "obj-137", 0 ]
 				}
 
 			}
@@ -13612,41 +13632,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FSPv1.4_20230130.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.4_20230130_1.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.4_20230130_2.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.4_20230130_3.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.4_20230130_4.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MS_Quad_Pan_2.maxpat",
 				"bootpath" : "~/Documents/GitHub/AudiuMax",
 				"patcherrelativepath" : ".",
@@ -13697,7 +13682,7 @@
 						"live.gain~[25]" : -60.0,
 						"live.gain~[2]" : -60.0,
 						"live.gain~[3]" : -60.0,
-						"live.gain~[4]" : 0.0,
+						"live.gain~[4]" : -60.0,
 						"live.gain~[5]" : -60.0,
 						"live.gain~[6]" : 0.0,
 						"live.gain~[7]" : -60.0,
@@ -13742,7 +13727,7 @@
 									"live.gain~[25]" : -60.0,
 									"live.gain~[2]" : -60.0,
 									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : 0.0,
+									"live.gain~[4]" : -60.0,
 									"live.gain~[5]" : -60.0,
 									"live.gain~[6]" : 0.0,
 									"live.gain~[7]" : -60.0,
@@ -13759,135 +13744,7 @@
 							"filename" : "FSPv1.4_20230130.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "f7737b71bb1c64b486eb2aec4373862c"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.4",
-						"origin" : "New Voices Show #2",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -50.429458618164062,
-									"live.gain~[5]" : -1.788563251495361
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20230130_1.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "785218b694522d35872a70f0a04c3d53"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.4",
-						"origin" : "New Voices Show #2",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -50.429458618164062,
-									"live.gain~[5]" : -1.788563251495361
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20230130_2.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "a10fd1ada4c8bd4b3ea54582845fd712"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.4",
-						"origin" : "New Voices Show #2",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -50.429458618164062,
-									"live.gain~[5]" : -1.788563251495361
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20230130_3.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "046a9264ede04c56a155c1f74c11e8d6"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.4",
-						"origin" : "New Voices Show #2",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -50.429458618164062,
-									"live.gain~[5]" : -1.788563251495361
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20230130_4.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "0015ceee37b96eb10c937e363afd12e5"
+							"snapshotfileid" : "a40b0a2b3893debfc6f10205d62239c6"
 						}
 
 					}
