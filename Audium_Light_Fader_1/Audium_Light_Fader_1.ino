@@ -16,7 +16,8 @@ const double FADE_EXP = log(255 - DARK_LEVEL) / log(FADE_STEPS) + 1;
 void setup() {
   pinMode(pwm_pin, OUTPUT);
   Serial.begin(1000000);
-  analogWrite(pwm_pin, 0); // LightsUp at start (inverted)
+  // analogWrite(pwm_pin, 0); // LightsUp at start (inverted)
+  analogWrite(pwm_pin, 255); // LightsDown at start (inverted)
 //  setupPWM16();
   //analogWrite16(pwm_pin, 0); // LightsUp at start (inverted)
 }
