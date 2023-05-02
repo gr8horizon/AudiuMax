@@ -6,8 +6,8 @@
 // Paul Barton
 // December 30, 2020
 //
-// Serial speed: 57600, Newline Only, DTS=on (for MAX)
-// Each switch takes 4 frames (e.g. A01/n) = 4 * 0.17 ms = 0.7 ms at 57600
+// Serial speed: 1000000, Newline Only, DTS=on (for MAX) ... btw MAX serial object can't directly handle 1Mbaud
+// Each switch takes 4 frames (e.g. A01/n) = 4 * 0.17 ms = 0.7 ms at 57600 (change to 1000000)
 //
 // [ COMMANDS ]
 // ?    returns DSS ID character
