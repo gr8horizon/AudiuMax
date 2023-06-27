@@ -18,6 +18,7 @@
 // A^   save output state of DSS 'A' in non-volatile memory
 // A+   load output state of DSS 'A' from non-volatile memory
 // A##  toggle output state of DSS 'A' output ## (2-digits required: 00-63)
+// A##b set speaker state of DSS 'A' output ## to binary state b
 // A010...101  set state of all 64 outputs of DSS 'A'
 //
 // [ EEPROM Map ]
