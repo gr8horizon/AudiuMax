@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 151.0, 87.0, 1394.0, 885.0 ],
+		"rect" : [ -1501.0, 141.0, 1394.0, 885.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-232",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 940.724556803703308, 316.5, 191.0, 22.0 ],
+					"text" : "prepend /cue/{*.AB}/sliderLevel/20"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-304",
 					"maxclass" : "newobj",
@@ -847,7 +859,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1095.0, 656.0, 84.0, 22.0 ],
-					"text" : "0 0 0 0 1 0"
+					"text" : "0 0 0 1 0 0"
 				}
 
 			}
@@ -1375,7 +1387,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 825.401098847389221, 892.098945140838623, 128.0, 22.0 ],
-					"text" : "0 0 0 0 1 0 1 0 0 1"
+					"text" : "0 0 0 1 0 0 1 0 0 1"
 				}
 
 			}
@@ -6189,6 +6201,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-125", 0 ],
+					"order" : 1,
+					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-232", 0 ],
+					"order" : 0,
 					"source" : [ "obj-123", 0 ]
 				}
 
@@ -6730,7 +6751,7 @@
 					"destination" : [ "obj-107", 0 ],
 					"source" : [ "obj-174", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 1
+					"watchpoint_id" : 3
 				}
 
 			}
@@ -7124,6 +7145,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-132", 0 ],
+					"source" : [ "obj-232", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
 					"source" : [ "obj-236", 0 ]
 				}
@@ -7346,7 +7374,7 @@
 					"order" : 1,
 					"source" : [ "obj-264", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 2
+					"watchpoint_id" : 4
 				}
 
 			}
