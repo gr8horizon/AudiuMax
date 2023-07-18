@@ -29,8 +29,8 @@
 		"toolbars_unpinned_last_save" : 0,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
+		"enablehscroll" : 0,
+		"enablevscroll" : 0,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
@@ -147,7 +147,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1584.241270065307617, 898.872275710105896, 82.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "/ALS/fade -60"
 				}
 
@@ -171,7 +170,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1572.241270065307617, 870.566551685333252, 82.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "/ALS/fade -20"
 				}
 
@@ -234,7 +232,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 941.666694283485413, 86.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "/ALS/level 255"
 				}
 
@@ -2934,12 +2931,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 241.92543613910675, 956.040587663650513, 120.0, 22.0 ],
-					"text" : "/5/battery2 0.435556"
+					"patching_rect" : [ 241.92543613910675, 956.040587663650513, 120.0, 76.0 ],
+					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
 				}
 
 			}
@@ -5740,10 +5738,10 @@
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
 						"live.gain~[1]" : 0.0,
-						"live.gain~[2]" : -60.0,
+						"live.gain~[2]" : -0.107315063476562,
 						"live.gain~[3]" : -60.0,
-						"live.gain~[4]" : -60.0,
-						"live.gain~[5]" : 3.0
+						"live.gain~[4]" : 0.0,
+						"live.gain~[5]" : 0.0
 					}
 
 				}
@@ -5765,10 +5763,10 @@
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
+									"live.gain~[2]" : -0.107315063476562,
 									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -60.0,
-									"live.gain~[5]" : 3.0
+									"live.gain~[4]" : 0.0,
+									"live.gain~[5]" : 0.0
 								}
 
 							}
