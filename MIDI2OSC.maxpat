@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1228.0, 95.0, 659.0, 825.0 ],
+		"rect" : [ -1598.0, 128.0, 1065.0, 825.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,39 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 709.0, 92.0, 52.0, 20.0 ],
+					"text" : "c = C5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 548.0, 92.0, 52.0, 20.0 ],
+					"text" : "J = C4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 333.0, 92.0, 52.0, 20.0 ],
+					"text" : "E = C3"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-100",
 					"maxclass" : "newobj",
