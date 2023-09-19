@@ -40,6 +40,164 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-229",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1648.648538589477539, 225.675660610198975, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-221",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1829.729607582092285, 264.471861362457275, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-219",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1780.141785621643294, 310.471861362457275, 29.5, 22.0 ],
+					"text" : "*~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-216",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 1879.621506690979004, 108.9496750831604, 122.0, 22.0 ],
+					"text" : "o.route /2/fdr_freq_lvl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-214",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1734.891785621643066, 64.666666984558105, 45.144927620887756, 22.0 ],
+					"text" : "r osc"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-169",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1906.891785621643066, 199.9496750831604, 109.0, 22.0 ],
+					"text" : "prepend /2/lbl_freq"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-182",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1906.891785621643066, 242.9496750831604, 165.0, 22.0 ],
+					"text" : "udpsend 192.168.42.87 9000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-197",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 1734.891785621643066, 108.9496750831604, 120.0, 22.0 ],
+					"text" : "o.route /2/fdr_freq"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-208",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1734.891785621643066, 150.9496750831604, 103.0, 22.0 ],
+					"text" : "scale 0 1 20 2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-210",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1734.891785621643066, 199.9496750831604, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-211",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1734.891785621643066, 356.166666984558105, 77.0, 97.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[5]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-213",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1734.891785621643066, 252.9496750831604, 66.0, 22.0 ],
+					"text" : "cycle~ 220"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 0.945098039215686, 0.733333333333333, 0.090196078431373, 1.0 ],
 					"id" : "obj-205",
 					"maxclass" : "newobj",
@@ -1971,7 +2129,7 @@
 									"destination" : [ "obj-19", 0 ],
 									"source" : [ "obj-34", 0 ],
 									"watchpoint_flags" : 1,
-									"watchpoint_id" : 2
+									"watchpoint_id" : 5
 								}
 
 							}
@@ -2937,7 +3095,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 241.92543613910675, 956.040587663650513, 120.0, 76.0 ],
-					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
+					"text" : "/DSS/X \"1000000000000000000000000000000000000000000000000010000000000000\""
 				}
 
 			}
@@ -4223,7 +4381,7 @@
 					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-105", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 3
+					"watchpoint_id" : 15
 				}
 
 			}
@@ -4451,7 +4609,7 @@
 					"destination" : [ "obj-97", 0 ],
 					"source" : [ "obj-131", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 9
+					"watchpoint_id" : 16
 				}
 
 			}
@@ -4481,7 +4639,7 @@
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-137", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 11
+					"watchpoint_id" : 17
 				}
 
 			}
@@ -4527,7 +4685,7 @@
 					"order" : 0,
 					"source" : [ "obj-141", 1 ],
 					"watchpoint_flags" : 5,
-					"watchpoint_id" : 13
+					"watchpoint_id" : 18
 				}
 
 			}
@@ -4550,7 +4708,7 @@
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-144", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 7
+					"watchpoint_id" : 19
 				}
 
 			}
@@ -4623,6 +4781,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-168", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-182", 0 ],
+					"source" : [ "obj-169", 0 ]
 				}
 
 			}
@@ -4811,6 +4976,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-208", 0 ],
+					"source" : [ "obj-197", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-199", 0 ],
 					"source" : [ "obj-198", 0 ]
 				}
@@ -4881,8 +5053,90 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-169", 0 ],
+					"order" : 0,
+					"source" : [ "obj-208", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-210", 0 ],
+					"order" : 1,
+					"source" : [ "obj-208", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-213", 0 ],
+					"source" : [ "obj-210", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-219", 0 ],
+					"source" : [ "obj-213", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-197", 0 ],
+					"order" : 1,
+					"source" : [ "obj-214", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-216", 0 ],
+					"order" : 0,
+					"source" : [ "obj-214", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-221", 0 ],
+					"source" : [ "obj-216", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-211", 0 ],
+					"source" : [ "obj-219", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 1,
+					"source" : [ "obj-219", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-136", 0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-219", 1 ],
+					"source" : [ "obj-221", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-213", 0 ],
+					"source" : [ "obj-229", 0 ]
 				}
 
 			}
@@ -5216,7 +5470,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-49", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 1
+					"watchpoint_id" : 20
 				}
 
 			}
@@ -5299,7 +5553,7 @@
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-56", 0 ],
 					"watchpoint_flags" : 5,
-					"watchpoint_id" : 12
+					"watchpoint_id" : 21
 				}
 
 			}
@@ -5393,7 +5647,7 @@
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-65", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 10
+					"watchpoint_id" : 22
 				}
 
 			}
@@ -5402,7 +5656,7 @@
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-66", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 4
+					"watchpoint_id" : 23
 				}
 
 			}
@@ -5483,7 +5737,7 @@
 					"destination" : [ "obj-105", 0 ],
 					"source" : [ "obj-76", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 6
+					"watchpoint_id" : 24
 				}
 
 			}
@@ -5606,7 +5860,7 @@
 					"destination" : [ "obj-89", 0 ],
 					"source" : [ "obj-90", 0 ],
 					"watchpoint_flags" : 5,
-					"watchpoint_id" : 8
+					"watchpoint_id" : 25
 				}
 
 			}
@@ -5615,7 +5869,7 @@
 					"destination" : [ "obj-109", 0 ],
 					"source" : [ "obj-91", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 14
+					"watchpoint_id" : 26
 				}
 
 			}
@@ -5681,6 +5935,7 @@
 		"parameters" : 		{
 			"obj-107" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-108" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-211" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-83" : [ "live.gain~[5]", "live.gain~", 0 ],
 			"obj-96" : [ "live.gain~[4]", "live.gain~", 0 ],
@@ -5737,11 +5992,12 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
+						"live.gain~" : -22.125984251968482,
 						"live.gain~[1]" : 0.0,
-						"live.gain~[2]" : -0.107315063476562,
+						"live.gain~[2]" : -60.0,
 						"live.gain~[3]" : -60.0,
-						"live.gain~[4]" : 0.0,
-						"live.gain~[5]" : 0.0
+						"live.gain~[4]" : -60.0,
+						"live.gain~[5]" : 3.0
 					}
 
 				}
@@ -5762,11 +6018,12 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
+									"live.gain~" : -22.125984251968482,
 									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -0.107315063476562,
+									"live.gain~[2]" : -60.0,
 									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : 0.0,
-									"live.gain~[5]" : 0.0
+									"live.gain~[4]" : -60.0,
+									"live.gain~[5]" : 3.0
 								}
 
 							}
