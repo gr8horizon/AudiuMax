@@ -1236,7 +1236,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-96",
-									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -1320,6 +1319,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-103",
+									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -1486,6 +1486,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-117",
+									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -2067,7 +2068,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-57",
-									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -3820,7 +3820,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 648.0, 80.0, 97.0, 22.0 ],
-					"text" : "scale 1 127 0. 1."
+					"text" : "scale 5 105 0. 1."
 				}
 
 			}
@@ -3832,7 +3832,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 561.5, 61.625, 97.0, 22.0 ],
-					"text" : "scale 1 127 0. 1."
+					"text" : "scale 5 105 0. 1."
 				}
 
 			}
@@ -3899,8 +3899,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 450.5, 67.0, 97.0, 22.0 ],
-					"text" : "scale 1 127 1. 0."
+					"patching_rect" : [ 450.5, 67.0, 96.0, 22.0 ],
+					"text" : "scale 1 110 1. 0."
 				}
 
 			}
@@ -3911,8 +3911,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 319.0, 29.0, 97.0, 22.0 ],
-					"text" : "scale 1 127 0. 1."
+					"patching_rect" : [ 319.0, 29.0, 96.0, 22.0 ],
+					"text" : "scale 1 110 0. 1."
 				}
 
 			}
@@ -5527,7 +5527,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 322.0, 543.0, 43.0, 75.0 ],
+					"patching_rect" : [ 322.0, 547.0, 43.0, 75.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 46.5, 87.75, 36.0, 120.0 ],
 					"saved_attribute_attributes" : 					{
@@ -7531,7 +7531,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -60.0,
+						"live.gain~" : -23.727272727272727,
 						"live.gain~[2]" : -60.0,
 						"live.gain~[3]" : -60.0,
 						"live.gain~[4]" : -60.0,
@@ -7556,7 +7556,7 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -60.0,
+									"live.gain~" : -23.727272727272727,
 									"live.gain~[2]" : -60.0,
 									"live.gain~[3]" : -60.0,
 									"live.gain~[4]" : -60.0,

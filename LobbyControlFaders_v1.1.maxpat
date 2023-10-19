@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 5,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1355.0, 170.0, 959.0, 818.0 ],
+		"rect" : [ -1441.0, 251.0, 959.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,20 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 14.0,
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 116.0, 10.625, 404.0, 22.0 ],
+					"text" : "Routing Preset: Audium Open Phone + DAW",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "comment",
@@ -103,8 +117,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.00000011920929, 298.416659235954285, 159.0, 22.0 ],
-					"text" : "prepend /lobby/1/multi_input"
+					"patching_rect" : [ 20.00000011920929, 298.416659235954285, 163.0, 22.0 ],
+					"text" : "prepend /1/multi_input_lobby"
 				}
 
 			}
@@ -298,8 +312,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.50000011920929, 67.625, 202.0, 22.0 ],
-					"text" : "loadmess /lobby/1/multi_input_lobby"
+					"patching_rect" : [ 107.50000011920929, 67.625, 170.0, 22.0 ],
+					"text" : "loadmess /1/multi_input_lobby"
 				}
 
 			}
@@ -315,7 +329,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -540,7 +554,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 43.625, 37.0, 22.0 ],
+					"patching_rect" : [ 9.0, 53.625, 37.0, 22.0 ],
 					"text" : "s osc"
 				}
 
@@ -582,8 +596,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 281.00000011920929, 127.416659235954285, 188.0, 22.0 ],
-					"text" : "mc.adc~ 25 26 27 28 29 30 31 32"
+					"patching_rect" : [ 281.00000011920929, 127.416659235954285, 134.0, 22.0 ],
+					"text" : "mc.adc~ 1 2 3 4 5 6 7 8"
 				}
 
 			}
@@ -1029,7 +1043,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -14.163463592529297
+						"live.gain~" : 0.0
 					}
 
 				}
@@ -1050,7 +1064,7 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -14.163463592529297
+									"live.gain~" : 0.0
 								}
 
 							}
