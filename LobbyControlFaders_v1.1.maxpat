@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 5,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1355.0, 137.0, 959.0, 818.0 ],
+		"rect" : [ -1441.0, 251.0, 959.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,31 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 14.0,
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 116.0, 10.625, 404.0, 22.0 ],
+					"text" : "Routing Preset: Audium Open Phone + DAW",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 341.00000011920929, 103.0, 150.0, 20.0 ],
+					"text" : "Above 3 AVB streams (?)"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -92,8 +117,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.00000011920929, 298.416659235954285, 159.0, 22.0 ],
-					"text" : "prepend /lobby/1/multi_input"
+					"patching_rect" : [ 20.00000011920929, 298.416659235954285, 163.0, 22.0 ],
+					"text" : "prepend /1/multi_input_lobby"
 				}
 
 			}
@@ -287,8 +312,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.50000011920929, 67.625, 202.0, 22.0 ],
-					"text" : "loadmess /lobby/1/multi_input_lobby"
+					"patching_rect" : [ 107.50000011920929, 67.625, 170.0, 22.0 ],
+					"text" : "loadmess /1/multi_input_lobby"
 				}
 
 			}
@@ -304,7 +329,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 5,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -339,7 +364,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -530,7 +554,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 43.625, 37.0, 22.0 ],
+					"patching_rect" : [ 9.0, 53.625, 37.0, 22.0 ],
 					"text" : "s osc"
 				}
 
@@ -572,8 +596,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 281.00000011920929, 127.416659235954285, 188.0, 22.0 ],
-					"text" : "mc.adc~ 25 26 27 28 29 30 31 32"
+					"patching_rect" : [ 281.00000011920929, 127.416659235954285, 134.0, 22.0 ],
+					"text" : "mc.adc~ 1 2 3 4 5 6 7 8"
 				}
 
 			}
@@ -809,7 +833,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-230", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 21
+					"watchpoint_id" : 1
 				}
 
 			}
@@ -818,7 +842,7 @@
 					"destination" : [ "obj-240", 0 ],
 					"source" : [ "obj-231", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 22
+					"watchpoint_id" : 10
 				}
 
 			}
@@ -827,7 +851,7 @@
 					"destination" : [ "obj-231", 0 ],
 					"source" : [ "obj-232", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 23
+					"watchpoint_id" : 11
 				}
 
 			}
@@ -980,7 +1004,7 @@
 					"destination" : [ "obj-122", 0 ],
 					"source" : [ "obj-9", 0 ],
 					"watchpoint_flags" : 1,
-					"watchpoint_id" : 24
+					"watchpoint_id" : 12
 				}
 
 			}
@@ -995,6 +1019,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "LobbyControlFaders_v1.1.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
@@ -1012,7 +1043,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -60.0
+						"live.gain~" : 0.0
 					}
 
 				}
@@ -1033,7 +1064,7 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -60.0
+									"live.gain~" : 0.0
 								}
 
 							}

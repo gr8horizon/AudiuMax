@@ -975,7 +975,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1956.968523263931274, 815.438759446144218, 120.0, 76.0 ],
-					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
+					"text" : "/DSS/X \"1111110000000000000000000000000000001100000000000011110000000000\""
 				}
 
 			}
@@ -5153,7 +5153,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.667371392250061, 1274.782296895980835, 120.0, 76.0 ],
-					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
+					"text" : "/DSS/X \"1111110000000000000000000000000000001100000000000011110000000000\""
 				}
 
 			}
@@ -5700,8 +5700,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.677419424057007, 994.473126649856567, 165.0, 22.0 ],
-					"text" : "udpsend 192.168.42.75 9000"
+					"patching_rect" : [ 18.677419424057007, 994.473126649856567, 171.0, 22.0 ],
+					"text" : "udpsend 192.168.42.127 9000"
 				}
 
 			}
@@ -8526,14 +8526,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20220927.maxsnap",
+				"name" : "FSPv1.4_20221004.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20220927_1.maxsnap",
+				"name" : "FSPv1.4_20221004_1.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FSPv1.4_20221004_2.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
@@ -8603,7 +8610,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.2",
+						"origin" : "Auditioning v1.3",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 1,
@@ -8626,7 +8633,7 @@
 							"filename" : ".maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "03063cbdfb2a73529ca1779580aaa1e7"
+							"snapshotfileid" : "6f0a55df432a836cbbc7711913308cd1"
 						}
 
 					}
@@ -8635,16 +8642,16 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.2",
+						"origin" : "Auditioning v1.3",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20220927.maxsnap",
+							"filename" : "FSPv1.4_20221004.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "99215568ce96a4873e5322922b1cd7d2"
+							"snapshotfileid" : "75d129c71063b80899713e342bffe778"
 						}
 
 					}
@@ -8653,16 +8660,34 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.2",
+						"origin" : "Auditioning v1.3",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20220927_1.maxsnap",
+							"filename" : "FSPv1.4_20221004_1.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "e16c027098e900ba40c7c54b780f4037"
+							"snapshotfileid" : "d410f411253f415b68b14039bae09b56"
+						}
+
+					}
+, 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "FSPv1.4",
+						"origin" : "Auditioning v1.3",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"fileref" : 						{
+							"name" : "FSPv1.4",
+							"filename" : "FSPv1.4_20221004_2.maxsnap",
+							"filepath" : "~/Documents/Max 8/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "8d1ebfc1ca2905ce75e530bd2b1136bf"
 						}
 
 					}

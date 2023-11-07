@@ -16,7 +16,8 @@ const double FADE_EXP = log(255 - DARK_LEVEL) / log(FADE_STEPS) + 1;
 void setup() {
   pinMode(pwm_pin, OUTPUT);
   Serial.begin(1000000);
-  analogWrite(pwm_pin, 0); // LightsUp at start (inverted)
+  // analogWrite(pwm_pin, 0); // LightsUp at start (inverted)
+  analogWrite(pwm_pin, 255); // LightsDown at start (inverted)
 //  setupPWM16();
   //analogWrite16(pwm_pin, 0); // LightsUp at start (inverted)
 }
@@ -58,7 +59,7 @@ void fade(const long seconds)
 {  
   long delay_ms;
   delay_ms = (seconds * 1000) / FADE_STEPS;
-  Serial.println(delay_ms);
+  //Serial.println(delay_ms);
   
   for (int i = 0; i < FADE_STEPS; i++) {
     //brightness = brightness + fadeAmount; // linear
@@ -73,7 +74,7 @@ void fade(const long seconds)
     
     // *** add in the minimum value of 034, below which lights are off
     
-    Serial.println(brightness);
+    //Serial.println(brightness);
     
     if (brightness < 0) {
       brightness = 0;
@@ -88,7 +89,7 @@ void fade(const long seconds)
     
     delay(delay_ms);
   }
-  Serial.println("LightsFaded");
+  //Serial.println("LightsFaded");
 }
 
 
@@ -102,6 +103,9 @@ void process_data (const char * data)
     switch (data[0]) {
       case '?':  // query board ID
         Serial.println("L");
+        break;
+      case 'L':  // query brightness
+        Serial.println(brightness);
         break;
     }
   }
@@ -119,13 +123,13 @@ void process_data (const char * data)
     
       if (data[0] == '-') {
         fadeAmount = -1;
-        Serial.println("FadingOut...");
+        //Serial.println("FadingOut...");
         fade(atol(two_chr));
         
       }
       else if (data[0] == '+') {
         fadeAmount = +1;
-        Serial.println("FadingIn...");
+        //Serial.println("FadingIn...");
         fade(atol(two_chr));
         
       }
@@ -141,8 +145,8 @@ void process_data (const char * data)
       if (atol(three_chr) < 256) {
         brightness = atol(three_chr);
         analogWrite(pwm_pin, 255 - brightness);
-        Serial.println("Set to:");
-        Serial.println(three_chr);
+        //Serial.println("Set to:");
+        //Serial.println(three_chr);
       }
     }
   }
