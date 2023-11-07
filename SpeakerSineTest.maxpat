@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 192.0, 910.0, 752.0 ],
+		"rect" : [ 100.0, 192.0, 858.0, 527.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,58 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 126.0, 73.0, 106.0, 22.0 ],
+					"text" : "o.route /1/fdr_gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 499.0, 349.0, 78.0, 22.0 ],
+					"text" : "/DSS/B reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 499.0, 391.0, 165.0, 22.0 ],
+					"text" : "udpsend 192.168.42.90 1336"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 334.0, 391.0, 45.0, 22.0 ],
+					"text" : "dac~ 6"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 223.0, 173.0, 101.0, 22.0 ],
+					"patching_rect" : [ 375.0, 175.0, 101.0, 22.0 ],
 					"text" : "prepend /1/label1"
 				}
 
@@ -56,7 +102,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 223.0, 216.0, 165.0, 22.0 ],
+					"patching_rect" : [ 375.0, 218.0, 165.0, 22.0 ],
 					"text" : "udpsend 192.168.42.87 9000"
 				}
 
@@ -67,7 +113,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 223.0, 114.0, 312.0, 20.0 ],
+					"patching_rect" : [ 375.0, 116.0, 312.0, 20.0 ],
 					"text" : "scale the slider range [0,1] to frequencies [20, 2000] Hz"
 				}
 
@@ -78,8 +124,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 223.0, 71.0, 365.0, 20.0 ],
-					"text" : "Filter out all OSC messages that match the address \"/1/fader1\""
+					"patching_rect" : [ 375.0, 73.0, 365.0, 20.0 ],
+					"text" : "Filter out all OSC messages that match the address \"/1/fdr_freq\""
 				}
 
 			}
@@ -89,7 +135,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 223.0, 31.0, 330.0, 20.0 ],
+					"patching_rect" : [ 375.0, 33.0, 330.0, 20.0 ],
 					"text" : "Accept all messages on Port 8000 (from iPad here)"
 				}
 
@@ -101,8 +147,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 104.0, 71.0, 97.0, 22.0 ],
-					"text" : "o.route /1/fader1"
+					"patching_rect" : [ 256.0, 73.0, 104.0, 22.0 ],
+					"text" : "o.route /1/fdr_freq"
 				}
 
 			}
@@ -113,7 +159,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.0, 118.0, 103.0, 22.0 ],
+					"patching_rect" : [ 256.0, 120.0, 103.0, 22.0 ],
 					"text" : "scale 0 1 20 2000"
 				}
 
@@ -125,7 +171,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.0, 31.0, 97.0, 22.0 ],
+					"patching_rect" : [ 256.0, 33.0, 97.0, 22.0 ],
 					"text" : "udpreceive 8000"
 				}
 
@@ -138,7 +184,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 104.0, 173.0, 50.0, 22.0 ]
+					"patching_rect" : [ 256.0, 175.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -151,7 +197,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 104.0, 267.0, 51.0, 94.0 ],
+					"patching_rect" : [ 256.0, 269.0, 51.0, 94.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -28.656167979002561 ],
@@ -176,7 +222,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.0, 389.0, 52.0, 22.0 ],
+					"patching_rect" : [ 256.0, 426.0, 52.0, 22.0 ],
 					"text" : "dac~ 33"
 				}
 
@@ -188,7 +234,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 104.0, 220.0, 66.0, 22.0 ],
+					"patching_rect" : [ 256.0, 222.0, 66.0, 22.0 ],
 					"text" : "cycle~ 220"
 				}
 
@@ -203,6 +249,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -210,7 +270,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -247,7 +316,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
