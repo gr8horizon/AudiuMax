@@ -145,8 +145,8 @@ void process_data (const char * data)
       if (atol(three_chr) < 256) {
         brightness = atol(three_chr);
         analogWrite(pwm_pin, 255 - brightness);
-        //Serial.println("Set to:");
-        //Serial.println(three_chr);
+        Serial.print("ALS set to: ");
+        Serial.println(three_chr);
       }
     }
   }
@@ -157,7 +157,9 @@ void processIncomingByte(const byte inByte)
 {
   static char input_line[MAX_INPUT];
   static unsigned int input_pos = 0;
+  //Serial.print(inByte);
   switch (inByte) {
+    
     case '\n':
       input_line [input_pos] = 0;  
       process_data(input_line);     
