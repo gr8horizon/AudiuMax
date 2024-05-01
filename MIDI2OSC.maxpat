@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 6,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -39,6 +39,20 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-3",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 182.0, 115.0, 159.0, 33.0 ],
+					"text" : "DOUBLE CLICK HERE:\nIt should say \"to Max 1\"",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-42",
 					"maxclass" : "comment",
@@ -78,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 52.0, 92.0, 142.0, 22.0 ],
+					"patching_rect" : [ 52.0, 80.0, 142.0, 22.0 ],
 					"text" : "loadmess port \"to Max 1\""
 				}
 
@@ -91,7 +105,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 52.0, 51.0, 24.0, 24.0 ]
+					"patching_rect" : [ 52.0, 39.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -193,7 +207,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 52.0, 164.0, 63.0, 22.0 ],
+					"patching_rect" : [ 52.0, 181.0, 63.0, 22.0 ],
 					"text" : "split 60 71"
 				}
 
@@ -580,7 +594,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 52.0, 127.0, 120.0, 22.0 ],
+					"patching_rect" : [ 52.0, 115.0, 120.0, 22.0 ],
 					"text" : "notein @matchport 1"
 				}
 

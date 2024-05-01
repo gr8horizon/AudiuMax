@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 6,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -155,7 +155,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -389,7 +389,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -833,7 +833,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1263,7 +1263,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1530,7 +1530,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 173.225767374038696, 593.716993212699776, 129.0, 22.0 ],
-					"text" : "/DSS/B 0. 0. 1. 0. 0. 0."
+					"text" : "/DSS/B 0. 0. 1. 1. 0. 0."
 				}
 
 			}
@@ -2375,13 +2375,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 6,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 89.0 ],
-					"text" : "/DSS/A \"0000000000000000000000000000000000000000000000000000000000000000\""
+					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 62.0 ],
+					"text" : "/DSS/A \"000000100000000000000000000000000\""
 				}
 
 			}
@@ -2571,7 +2571,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -2885,12 +2885,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-48",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.5, 853.721234728664172, 165.0, 35.0 ],
-					"text" : "udpsend 192.168.42.87 9000"
+					"patching_rect" : [ 14.5, 853.721234728664172, 175.0, 22.0 ],
+					"text" : "udpsend 192.168.42.186 9000"
 				}
 
 			}
@@ -2962,7 +2961,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -3238,7 +3237,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -4590,8 +4589,8 @@
 			}
 , 			{
 				"name" : "panning.maxpat",
-				"bootpath" : "~/Documents/Compositions/New Voices Show #2/Sharmi/Max Stuff/Max Enabled/RTC-lib_6.0/put content into patches/Envelopes",
-				"patcherrelativepath" : "../../Compositions/New Voices Show #2/Sharmi/Max Stuff/Max Enabled/RTC-lib_6.0/put content into patches/Envelopes",
+				"bootpath" : "~/Documents/GitHub/AudiuMax",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4609,12 +4608,12 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~[2]" : -32.473335266113281,
-						"live.gain~[3]" : -18.020355224609375,
-						"live.gain~[4]" : 0.0,
-						"live.gain~[5]" : -22.009742736816406,
-						"live.gain~[6]" : -29.896717071533203,
-						"live.slider" : 0.039532482624054
+						"live.gain~[2]" : -60.0,
+						"live.gain~[3]" : -60.0,
+						"live.gain~[4]" : -60.0,
+						"live.gain~[5]" : -60.0,
+						"live.gain~[6]" : -60.0,
+						"live.slider" : 1.0
 					}
 
 				}
@@ -4635,12 +4634,12 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~[2]" : -32.473335266113281,
-									"live.gain~[3]" : -18.020355224609375,
-									"live.gain~[4]" : 0.0,
-									"live.gain~[5]" : -22.009742736816406,
-									"live.gain~[6]" : -29.896717071533203,
-									"live.slider" : 0.039532482624054
+									"live.gain~[2]" : -60.0,
+									"live.gain~[3]" : -60.0,
+									"live.gain~[4]" : -60.0,
+									"live.gain~[5]" : -60.0,
+									"live.gain~[6]" : -60.0,
+									"live.slider" : 1.0
 								}
 
 							}
