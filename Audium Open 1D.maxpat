@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 62.0, 98.0, 1227.0, 884.0 ],
+		"rect" : [ 176.0, 98.0, 1227.0, 884.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 1,
 		"default_fontname" : "Arial",
@@ -1530,7 +1530,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 173.225767374038696, 593.716993212699776, 129.0, 22.0 ],
-					"text" : "/DSS/B 0. 0. 1. 1. 0. 0."
+					"text" : "/DSS/B 0. 0. 1. 0. 0. 0."
 				}
 
 			}
@@ -2375,13 +2375,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 4,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 62.0 ],
-					"text" : "/DSS/A \"000000100000000000000000000000000\""
+					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 89.0 ],
+					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
 				}
 
 			}

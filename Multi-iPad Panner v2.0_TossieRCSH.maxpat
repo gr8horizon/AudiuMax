@@ -40,6 +40,41 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-61",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 711.046433170636647, 7.912648389964943, 150.0, 33.0 ],
+					"text" : "PASSTHROUGH FROM SPACE"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 375.424266775448814, 39.0, 330.0, 22.0 ],
+					"text" : "mc.dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 375.424266775448814, 7.912648389964943, 330.0, 22.0 ],
+					"text" : "mc.adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -7510,6 +7545,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-335", 0 ],
 					"source" : [ "obj-300", 0 ]
 				}
@@ -8533,7 +8575,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Multi-iPad Panner v2.0",
+						"origin" : "Multi-iPad Panner v2.0_TossieRCSH",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 1,
@@ -8566,10 +8608,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20231203_2.maxsnap",
+							"filename" : "FSPv1.4_20240528.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "4e87eea98933975c60f5889c9f863543"
+							"snapshotfileid" : "0c3acaa7cc8cc7ecb39d442f8d38324d"
 						}
 
 					}
