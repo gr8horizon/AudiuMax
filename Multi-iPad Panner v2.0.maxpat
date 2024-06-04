@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 6,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1627.0, 117.0, 1339.0, 909.0 ],
+		"rect" : [ 34.0, 117.0, 1339.0, 909.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,8 +44,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.5, 900.0, 169.0, 22.0 ],
-					"text" : "udpsend 192.168.42.66 9000"
+					"patching_rect" : [ 60.5, 905.0, 169.0, 22.0 ],
+					"text" : "udpsend 192.168.42.82 9000"
 				}
 
 			}
@@ -82,18 +82,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 939.00530628363299, 126.462169478565102, 113.0, 22.0 ],
 					"text" : "sprintf /1%s %f %f"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-329",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 188.833332359790802, 908.224587629466896, 150.0, 60.0 ],
-					"text" : "When additional iPads are purchased add additional udp sends\n"
 				}
 
 			}
@@ -307,8 +295,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -734,8 +722,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1705,8 +1693,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2132,8 +2120,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2977,8 +2965,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3211,8 +3199,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3631,8 +3619,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4061,8 +4049,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5166,7 +5154,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 89.0 ],
-					"text" : "/DSS/A \"1000000000000000100000000000000010000000000000001000000000000000\""
+					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
 				}
 
 			}
@@ -5340,8 +5328,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5654,12 +5642,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-48",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.5, 853.721234728664172, 165.0, 35.0 ],
-					"text" : "udpsend 192.168.42.87 9000"
+					"patching_rect" : [ 14.5, 871.721234728664172, 169.0, 22.0 ],
+					"text" : "udpsend 192.168.42.81 9000"
 				}
 
 			}
@@ -5731,8 +5718,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6007,8 +5994,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 6,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8457,24 +8444,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FSPv1.4_20231203_2.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MS_Quad_Pan_2.maxpat",
-				"bootpath" : "~/Documents/GitHub/AudiuMax",
+				"bootpath" : "~/Documents/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Q1_PlanView.png",
-				"bootpath" : "~/Documents",
-				"patcherrelativepath" : "../..",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -8483,7 +8456,7 @@
 			}
 , 			{
 				"name" : "panning.maxpat",
-				"bootpath" : "~/Documents/GitHub/AudiuMax",
+				"bootpath" : "~/Documents/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -8569,7 +8542,7 @@
 							"filename" : "FSPv1.4_20231203_2.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "4e87eea98933975c60f5889c9f863543"
+							"snapshotfileid" : "de8e16674ebccc96898fb13d62d053fd"
 						}
 
 					}

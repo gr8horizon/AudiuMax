@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 135.0, 87.0, 1299.0, 878.0 ],
+		"rect" : [ 135.0, 94.0, 1299.0, 878.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -180,7 +180,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 194.667371392250061, 1145.377419471740723, 150.0, 20.0 ],
-					"text" : "Audium iPad"
+					"text" : "Audium iPad 1"
 				}
 
 			}
@@ -191,7 +191,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 194.667371392250061, 1177.497239112854004, 150.0, 20.0 ],
-					"text" : "Sharmi iPad"
+					"text" : "Sharmi iPad 2"
 				}
 
 			}
@@ -202,7 +202,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 18.677419424057007, 1177.497239112854004, 165.0, 22.0 ],
-					"text" : "udpsend 192.168.42.71 9000"
+					"text" : "udpsend 192.168.42.82 9000"
 				}
 
 			}
@@ -7315,7 +7315,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.667371392250061, 1452.282334208488464, 120.0, 76.0 ],
-					"text" : "/DSS/B \"1111110000000000111111000000000011111100000000001111110000000000\""
+					"text" : "/DSS/X \"1111110000000000000000000000000000001100000000000011110000000000\""
 				}
 
 			}
@@ -7518,7 +7518,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7815,8 +7815,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.677419424057007, 1145.377419471740723, 171.0, 22.0 ],
-					"text" : "udpsend 192.168.42.127 9000"
+					"patching_rect" : [ 18.677419424057007, 1145.377419471740723, 165.0, 22.0 ],
+					"text" : "udpsend 192.168.42.81 9000"
 				}
 
 			}
@@ -7884,7 +7884,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8155,7 +8155,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -13517,50 +13517,15 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FSPv1.4_20221115.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.4_20221115_1.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.4_20221115_2.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.4_20221115_3.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FSPv1.4_20221115_4.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MS_Quad_Pan_2.maxpat",
-				"bootpath" : "~/Documents/GitHub/AudiuMax",
+				"bootpath" : "~/Documents/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MS_Quad_Pan_3.maxpat",
-				"bootpath" : "~/Documents/GitHub/AudiuMax",
+				"bootpath" : "~/Documents/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -13668,135 +13633,7 @@
 							"filename" : "FSPv1.4_20221115.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "7d58f8b38faeb11e20f86378ca1ff918"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -50.429458618164062,
-									"live.gain~[5]" : -1.788563251495361
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115_1.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "33731c32d998a908a6b91af30c611fa8"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -50.429458618164062,
-									"live.gain~[5]" : -1.788563251495361
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115_2.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "0911d57253b473e5eaa3f14d72c81e42"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -50.429458618164062,
-									"live.gain~[5]" : -1.788563251495361
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115_3.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "b876a2616f0f28c3db9dededbfdb35eb"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "FSPv1.4",
-						"origin" : "Auditioning v1.5 (4+2ch)",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~[1]" : 0.0,
-									"live.gain~[2]" : -60.0,
-									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -50.429458618164062,
-									"live.gain~[5]" : -1.788563251495361
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20221115_4.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "2368092bcc1d9f64bb98fe76d85e9813"
+							"snapshotfileid" : "242bab561152a768dec3c44239a2bb66"
 						}
 
 					}
