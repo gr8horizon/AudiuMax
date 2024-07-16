@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 5,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 176.0, 98.0, 1362.0, 953.0 ],
+		"rect" : [ 176.0, 87.0, 1590.0, 896.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -166,8 +166,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -400,8 +400,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -730,7 +730,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1169.333368182182312, 147.166656076908112, 355.33333945274353, 20.0 ],
+					"patching_rect" : [ 1208.0, 111.307919929653053, 355.33333945274353, 20.0 ],
 					"text" : "Add Audium 4_WithZ zip/vortex here"
 				}
 
@@ -791,18 +791,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-276",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 702.649357914924622, 186.725694368511085, 30.0, 22.0 ],
-					"text" : "!- 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-275",
 					"maxclass" : "live.slider",
 					"numinlets" : 1,
@@ -810,7 +798,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 702.649357914924622, 218.98827586234836, 50.0, 18.0 ],
+					"patching_rect" : [ 702.649357914924622, 260.48827586234836, 50.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 194.864459148616845, 144.971647846316273, 108.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
@@ -844,8 +832,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1274,8 +1262,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2392,7 +2380,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 89.0 ],
-					"text" : "/DSS/A \"1000000000000000100000000000000010000000000000001000000000000000\""
+					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
 				}
 
 			}
@@ -2582,8 +2570,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2972,8 +2960,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3248,8 +3236,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3658,7 +3646,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-276", 0 ],
+					"destination" : [ "obj-275", 0 ],
 					"order" : 0,
 					"source" : [ "obj-113", 0 ]
 				}
@@ -4055,13 +4043,6 @@
 					"destination" : [ "obj-239", 0 ],
 					"disabled" : 1,
 					"source" : [ "obj-275", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-275", 0 ],
-					"source" : [ "obj-276", 0 ]
 				}
 
 			}
@@ -4610,10 +4591,24 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "FSPv1.4_20230918.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MS_Quad_Pan_2.maxpat",
-				"bootpath" : "~/Documents/AudiuMax",
+				"bootpath" : "~/Documents/GitHub/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Q1_PlanView.png",
+				"bootpath" : "~/Documents",
+				"patcherrelativepath" : "../..",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -4622,7 +4617,7 @@
 			}
 , 			{
 				"name" : "panning.maxpat",
-				"bootpath" : "~/Documents/AudiuMax",
+				"bootpath" : "~/Documents/GitHub/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4684,7 +4679,25 @@
 							"filename" : "FSPv1.4_20230918.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "6a5f460274adb9795cb731050ce06d75"
+							"snapshotfileid" : "cad2a715e51c1379c24bfa83400e44d1"
+						}
+
+					}
+, 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "FSPv1.4",
+						"origin" : "Audium Open 1D",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"fileref" : 						{
+							"name" : "FSPv1.4",
+							"filename" : "FSPv1.4_20230918.maxsnap",
+							"filepath" : "~/Documents/Max 8/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "cad2a715e51c1379c24bfa83400e44d1"
 						}
 
 					}
