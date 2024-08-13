@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 5,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 355.0, 94.0, 1339.0, 909.0 ],
+		"rect" : [ 355.0, 87.0, 1339.0, 896.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -67,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.424266775448814, 39.0, 330.0, 22.0 ],
+					"patching_rect" : [ 375.424266775448814, 37.0, 330.0, 22.0 ],
 					"text" : "mc.dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"
 				}
 
@@ -341,8 +341,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -768,8 +768,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1739,8 +1739,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2166,8 +2166,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3011,8 +3011,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3245,8 +3245,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3665,8 +3665,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4095,8 +4095,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4337,7 +4337,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.666664958000183, 593.716993212699776, 132.634146690368652, 22.0 ],
-					"text" : "/DSS/A 1. 0. 0. 0. 0. 0."
+					"text" : "/DSS/A 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -4362,7 +4362,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 173.225767374038696, 593.716993212699776, 129.0, 22.0 ],
-					"text" : "/DSS/B 0. 0. 1. 0. 0. 0."
+					"text" : "/DSS/B 1. 1. 0. 0. 0. 1."
 				}
 
 			}
@@ -4387,7 +4387,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 324.83197033405304, 593.716993212699776, 114.23357629776001, 22.0 ],
-					"text" : "/DSS/X 1. 0. 0. 1."
+					"text" : "/DSS/X 1. 0. 1. 1."
 				}
 
 			}
@@ -5194,13 +5194,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 89.0 ],
-					"text" : "/DSS/A \"1000000000000000100000000000000010000000000000001000000000000000\""
+					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 76.0 ],
+					"text" : "/DSS/B \"1100010000000000110001000000000011000100000000001100010000000000\""
 				}
 
 			}
@@ -5275,8 +5275,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 500.590917865435131, 378.542863438754921, 87.0, 22.0 ],
-					"text" : "mc.adc~ 1 2 3"
+					"patching_rect" : [ 500.590917865435131, 378.542863438754921, 94.0, 22.0 ],
+					"text" : "mc.adc~ 30 2 3"
 				}
 
 			}
@@ -5374,8 +5374,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5765,8 +5765,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6041,8 +6041,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8530,10 +8530,24 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "FSPv1.4_20240528.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MS_Quad_Pan_2.maxpat",
-				"bootpath" : "~/Documents/AudiuMax",
+				"bootpath" : "~/Documents/GitHub/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Q1_PlanView.png",
+				"bootpath" : "~/Documents",
+				"patcherrelativepath" : "../..",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -8542,7 +8556,7 @@
 			}
 , 			{
 				"name" : "panning.maxpat",
-				"bootpath" : "~/Documents/AudiuMax",
+				"bootpath" : "~/Documents/GitHub/AudiuMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -8568,15 +8582,15 @@
 						"live.gain~[17]" : -60.0,
 						"live.gain~[18]" : -80.0,
 						"live.gain~[19]" : -60.0,
-						"live.gain~[2]" : -80.0,
+						"live.gain~[2]" : -40.777839660644531,
 						"live.gain~[3]" : -60.0,
-						"live.gain~[4]" : -60.0,
-						"live.gain~[5]" : -60.0,
+						"live.gain~[4]" : -3.520107269287109,
+						"live.gain~[5]" : -59.728462219238281,
 						"live.gain~[6]" : -80.0,
 						"live.gain~[7]" : -80.0,
 						"live.gain~[8]" : -60.0,
 						"live.gain~[9]" : -60.0,
-						"live.slider" : 0.009357929229736,
+						"live.slider" : 0.084784865379333,
 						"live.slider[1]" : 0.024025082588196,
 						"live.slider[2]" : 0.00446891784668
 					}
@@ -8606,15 +8620,15 @@
 									"live.gain~[17]" : -60.0,
 									"live.gain~[18]" : -80.0,
 									"live.gain~[19]" : -60.0,
-									"live.gain~[2]" : -80.0,
+									"live.gain~[2]" : -40.777839660644531,
 									"live.gain~[3]" : -60.0,
-									"live.gain~[4]" : -60.0,
-									"live.gain~[5]" : -60.0,
+									"live.gain~[4]" : -3.520107269287109,
+									"live.gain~[5]" : -59.728462219238281,
 									"live.gain~[6]" : -80.0,
 									"live.gain~[7]" : -80.0,
 									"live.gain~[8]" : -60.0,
 									"live.gain~[9]" : -60.0,
-									"live.slider" : 0.009357929229736,
+									"live.slider" : 0.084784865379333,
 									"live.slider[1]" : 0.024025082588196,
 									"live.slider[2]" : 0.00446891784668
 								}
@@ -8628,7 +8642,7 @@
 							"filename" : "FSPv1.4_20240528.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "5bbd63ee80ebed1360ce1200b77f3226"
+							"snapshotfileid" : "0c3acaa7cc8cc7ecb39d442f8d38324d"
 						}
 
 					}

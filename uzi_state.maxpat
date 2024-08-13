@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 105.0, 505.0, 480.0 ],
+		"rect" : [ 59.0, 105.0, 463.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 294.0, 19.0, 24.0, 24.0 ]
+					"patching_rect" : [ 72.0, 57.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
-					"patching_rect" : [ 294.0, 59.0, 41.0, 22.0 ],
+					"patching_rect" : [ 72.0, 97.0, 41.0, 22.0 ],
 					"text" : "uzi 10"
 				}
 
@@ -68,7 +68,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 343.0, 264.0, 32.0, 22.0 ],
+					"patching_rect" : [ 121.0, 281.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -80,7 +80,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
-					"patching_rect" : [ 294.0, 166.0, 51.0, 22.0 ],
+					"patching_rect" : [ 72.0, 183.0, 51.0, 22.0 ],
 					"text" : "uzi 64 0"
 				}
 
@@ -93,19 +93,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 294.0, 98.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 346.0, 114.0, 50.0, 22.0 ]
+					"patching_rect" : [ 72.0, 136.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -116,7 +104,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 294.0, 230.0, 74.0, 22.0 ],
+					"patching_rect" : [ 72.0, 241.0, 74.0, 22.0 ],
 					"presentation_linecount" : 2,
 					"text" : "/DSS/A $1 1"
 				}
@@ -128,7 +116,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 294.0, 300.0, 165.0, 22.0 ],
+					"patching_rect" : [ 72.0, 317.0, 165.0, 22.0 ],
 					"text" : "udpsend 192.168.42.90 1336"
 				}
 
@@ -154,13 +142,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-21", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 1 ],
-					"source" : [ "obj-23", 0 ]
 				}
 
 			}
