@@ -2999,18 +2999,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-185",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1273.590917865435131, 378.542863438754921, 137.0, 22.0 ],
-					"text" : "mc.adc~ 1 2 3 4 5 6 7 8"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 20.0,
 					"id" : "obj-24",
@@ -5351,18 +5339,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-166",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 500.590917865435131, 378.542863438754921, 137.0, 22.0 ],
-					"text" : "mc.adc~ 1 2 3 4 5 6 7 8"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-38",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -7013,16 +6989,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-166", 0 ],
-					"order" : 0,
-					"source" : [ "obj-164", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"order" : 1,
 					"source" : [ "obj-164", 0 ]
 				}
 
@@ -7163,16 +7130,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-185", 0 ],
-					"order" : 0,
-					"source" : [ "obj-184", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
-					"order" : 1,
 					"source" : [ "obj-184", 0 ]
 				}
 
@@ -8651,14 +8609,14 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FSPv1.4_20250217.maxsnap",
+				"name" : "FSPv1.4_20250225.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FSPv1.4_20250217_1.maxsnap",
+				"name" : "FSPv1.4_20250225_1.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
@@ -8734,7 +8692,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Multi-iPad Panner v2.0_Wiley20250217",
+						"origin" : "Multi-iPad Panner v2.0_Wiley20250223",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 1,
@@ -8767,10 +8725,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20250217.maxsnap",
+							"filename" : "FSPv1.4_20250225.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "f788f56dcac3cfba03313763a06353de"
+							"snapshotfileid" : "a76b31df2c8dcfbc7dc5fda1be64649f"
 						}
 
 					}
@@ -8779,7 +8737,7 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Multi-iPad Panner v2.0_Wiley20250217",
+						"origin" : "Multi-iPad Panner v2.0_Wiley20250223",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 0,
@@ -8812,10 +8770,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20250217_1.maxsnap",
+							"filename" : "FSPv1.4_20250225_1.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "5a0ae308e0bbbe834a54bb26a072426d"
+							"snapshotfileid" : "8cedfac77c010fc46b143e9c8aabee59"
 						}
 
 					}
