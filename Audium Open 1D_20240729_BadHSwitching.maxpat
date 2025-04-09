@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 87.0, 1628.0, 895.0 ],
+		"rect" : [ 373.0, 88.0, 1114.0, 895.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -4561,7 +4561,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 163.290700435638428, 370.999999284744263, 136.0, 35.0 ],
+					"patching_rect" : [ 182.290700435638428, 371.0, 136.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4795,7 +4795,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 10.666664958000183, 370.999999284744263, 136.0, 35.0 ],
+					"patching_rect" : [ 5.0, 371.0, 136.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5702,7 +5702,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.666664958000183, 593.716993212699776, 132.634146690368652, 22.0 ],
-					"text" : "/DSS/A 0. 0. 0. 0. 0. 0."
+					"text" : "/DSS/A 1. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -5727,7 +5727,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 173.225767374038696, 593.716993212699776, 129.0, 22.0 ],
-					"text" : "/DSS/B 0. 0. 0. 0. 0. 0."
+					"text" : "/DSS/B 0. 0. 1. 0. 0. 0."
 				}
 
 			}
@@ -6578,7 +6578,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 269.74999988079071, 765.342776705592996, 120.0, 89.0 ],
-					"text" : "/DSS/B \"0000000000000000000000000000000000000000000000000000000000000000\""
+					"text" : "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
 				}
 
 			}
@@ -7047,7 +7047,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 188.874999731779099, 461.393118774011555, 74.0, 35.0 ],
+					"patching_rect" : [ 190.583332479000092, 466.393118774011555, 74.0, 35.0 ],
 					"text" : "getcolumn 0"
 				}
 
@@ -7137,7 +7137,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 156.874999731779099, 430.393118774011555, 18.383538603782654, 82.050327301025391 ],
+					"patching_rect" : [ 157.058230578899384, 437.380039582877998, 18.383538603782654, 82.050327301025391 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 316.834416598081646, 80.782477408647537, 29.256436401983933, 150.0 ],
 					"rows" : 6,
@@ -8532,6 +8532,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 1 ],
 					"source" : [ "obj-44", 0 ]
 				}
@@ -8548,7 +8555,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-45", 0 ]
 				}
 
@@ -8556,7 +8563,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-45", 0 ]
 				}
 
@@ -8967,7 +8974,14 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FSPv1.4_20240722.maxsnap",
+				"name" : "FSPv1.4_20250325.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FSPv1.4_20250325_1.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
@@ -9017,7 +9031,7 @@
 						"live.gain~[4]" : -60.0,
 						"live.gain~[5]" : -60.0,
 						"live.gain~[6]" : -60.0,
-						"live.slider" : -0.761467889908257,
+						"live.slider" : -1.0,
 						"live.slider[1]" : -60.0
 					}
 
@@ -9032,10 +9046,44 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "FSPv1.4",
-						"origin" : "Audium Open 1D_20240722",
+						"origin" : "Audium Open 1D_20250325",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 1,
+						"snapshot" : 						{
+							"valuedictionary" : 							{
+								"parameter_values" : 								{
+									"live.gain~[2]" : -60.0,
+									"live.gain~[3]" : 0.0,
+									"live.gain~[4]" : -60.0,
+									"live.gain~[5]" : -60.0,
+									"live.gain~[6]" : -60.0,
+									"live.slider" : -1.0,
+									"live.slider[1]" : -60.0
+								}
+
+							}
+
+						}
+,
+						"fileref" : 						{
+							"name" : "FSPv1.4",
+							"filename" : "FSPv1.4_20250325.maxsnap",
+							"filepath" : "~/Documents/Max 8/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "77fc856fbb4a15def70019999ae13ec0"
+						}
+
+					}
+, 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "FSPv1.4",
+						"origin" : "Audium Open 1D_20250325",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
@@ -9054,10 +9102,10 @@
 ,
 						"fileref" : 						{
 							"name" : "FSPv1.4",
-							"filename" : "FSPv1.4_20240722.maxsnap",
+							"filename" : "FSPv1.4_20250325_1.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "4a78e3c3f9255310dcdf8dc0ab8a58cf"
+							"snapshotfileid" : "aec9a68b88ab4b83246c12bbe52b32d8"
 						}
 
 					}
