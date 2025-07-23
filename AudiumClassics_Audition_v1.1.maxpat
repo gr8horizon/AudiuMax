@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 6,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1328.0, 891.0 ],
+		"rect" : [ 548.0, 85.0, 1328.0, 891.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1210,7 +1210,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -2429,7 +2429,7 @@
 				"box" : 				{
 					"id" : "obj-158",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 0,
 					"patching_rect" : [ 999.849999999999909, 1167.0, 77.0, 25.0 ],
 					"text" : "SetBankLED",
@@ -2597,7 +2597,7 @@
 				"box" : 				{
 					"id" : "obj-126",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 0,
 					"patching_rect" : [ 632.5, 1175.0, 77.0, 25.0 ],
 					"text" : "SetBankLED"
@@ -2740,7 +2740,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1098.5, 1069.0, 72.0, 22.0 ],
-					"text" : "0 0 0 0 0 1"
+					"text" : "0 0 1 0 0 0"
 				}
 
 			}
@@ -3136,7 +3136,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 733.0, 1082.0, 72.0, 22.0 ],
-					"text" : "0 0 0 0 0 1"
+					"text" : "0 0 0 0 1 0"
 				}
 
 			}
