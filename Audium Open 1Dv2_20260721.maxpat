@@ -3813,7 +3813,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 46.749997437000275, 906.7212347286642, 169.0, 22.0 ],
+                    "patching_rect": [ 109.09090805053711, 928.4090820550919, 169.0, 22.0 ],
                     "text": "udpsend 192.168.42.82 9000"
                 }
             },
@@ -4802,7 +4802,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 814.0, 230.724693, 139.0, 139.0 ],
+                    "patching_rect": [ 810.2603762149811, 238.0, 139.0, 139.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 439.42858, 95.333335, 139.0, 139.0 ],
                     "viewvisibility": 1
@@ -4851,7 +4851,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 173.2257673740387, 593.7169932126998, 129.0, 22.0 ],
-                    "text": "/DSS/B 0. 0. 1. 0. 0. 0."
+                    "text": "/DSS/B 0. 0. 0. 1. 0. 0."
                 }
             },
             {
@@ -5643,7 +5643,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 269.7499998807907, 765.342776705593, 120.0, 89.0 ],
-                    "text": "/DSS/B \"0010000000000000001000000000000000100000000000000010000000000000\""
+                    "text": "/DSS/A \"1000000000000000100000000000000010000000000000001000000000000000\""
                 }
             },
             {
@@ -6079,7 +6079,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 14.5, 873.7212347286642, 169.0, 22.0 ],
+                    "patching_rect": [ 9.374999731779099, 908.2658958435059, 169.0, 22.0 ],
                     "text": "udpsend 192.168.42.81 9000"
                 }
             },
@@ -7129,26 +7129,28 @@
             {
                 "patchline": {
                     "destination": [ "obj-134", 1 ],
-                    "disabled": 1,
+                    "order": 1,
                     "source": [ "obj-254", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-134", 0 ],
-                    "disabled": 1,
+                    "order": 1,
                     "source": [ "obj-254", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-253", 1 ],
+                    "order": 0,
                     "source": [ "obj-254", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-253", 0 ],
+                    "order": 0,
                     "source": [ "obj-254", 0 ]
                 }
             },
@@ -7213,7 +7215,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-239", 0 ],
-                    "disabled": 1,
                     "source": [ "obj-275", 0 ]
                 }
             },
@@ -7563,7 +7564,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-48", 0 ],
-                    "midpoints": [ 24.0, 702.0, 0.0, 702.0, 0.0, 849.0, 24.0, 849.0 ],
+                    "midpoints": [ 24.0, 702.0, 0.0, 702.0, 0.0, 849.0, 18.8749997317791, 849.0 ],
                     "order": 1,
                     "source": [ "obj-67", 0 ]
                 }
@@ -7705,6 +7706,14 @@
             "obj-262": [ "live.gain~[5]", "live.gain~", 0 ],
             "obj-275": [ "live.slider", "live.slider", 0 ],
             "obj-96": [ "live.gain~[4]", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 1,
@@ -7720,12 +7729,12 @@
             "snapshot": {
                 "valuedictionary": {
                     "parameter_values": {
-                        "live.gain~[2]": -80.0,
-                        "live.gain~[3]": 0.0,
-                        "live.gain~[4]": -60.0,
-                        "live.gain~[5]": -60.0,
-                        "live.gain~[6]": -80.0,
-                        "live.slider": 1.0,
+                        "live.gain~[2]": -55.27317428588867,
+                        "live.gain~[3]": -15.173728942871094,
+                        "live.gain~[4]": -29.47982406616211,
+                        "live.gain~[5]": -30.32773780822754,
+                        "live.gain~[6]": -37.32844543457031,
+                        "live.slider": 0.061282992362976074,
                         "live.slider[1]": -60.0
                     }
                 }
@@ -7738,19 +7747,19 @@
                         "version": 2,
                         "minorversion": 0,
                         "name": "FSPv1.4",
-                        "origin": "Audium Open 1D_20250325",
+                        "origin": "Audium Open 1Dv2_20260721",
                         "type": "patcher",
                         "subtype": "Undefined",
                         "embed": 1,
                         "snapshot": {
                             "valuedictionary": {
                                 "parameter_values": {
-                                    "live.gain~[2]": -80.0,
-                                    "live.gain~[3]": 0.0,
-                                    "live.gain~[4]": -60.0,
-                                    "live.gain~[5]": -60.0,
-                                    "live.gain~[6]": -80.0,
-                                    "live.slider": 1.0,
+                                    "live.gain~[2]": -55.27317428588867,
+                                    "live.gain~[3]": -15.173728942871094,
+                                    "live.gain~[4]": -29.47982406616211,
+                                    "live.gain~[5]": -30.32773780822754,
+                                    "live.gain~[6]": -37.32844543457031,
+                                    "live.slider": 0.061282992362976074,
                                     "live.slider[1]": -60.0
                                 }
                             }
@@ -7760,41 +7769,7 @@
                             "filename": "FSPv1.4_20240722.maxsnap",
                             "filepath": "~/Documents/Max 8/Snapshots",
                             "filepos": -1,
-                            "snapshotfileid": "487135e23c4e42a33422ec6fbf27e46f"
-                        }
-                    },
-                    {
-                        "filetype": "C74Snapshot",
-                        "version": 2,
-                        "minorversion": 0,
-                        "name": "FSPv1.4",
-                        "origin": "Audium Open 1D_20250325",
-                        "type": "patcher",
-                        "subtype": "Undefined",
-                        "embed": 0,
-                        "fileref": {
-                            "name": "FSPv1.4",
-                            "filename": "FSPv1.4_20250325.maxsnap",
-                            "filepath": "~/Documents/Max 8/Snapshots",
-                            "filepos": -1,
-                            "snapshotfileid": "77fc856fbb4a15def70019999ae13ec0"
-                        }
-                    },
-                    {
-                        "filetype": "C74Snapshot",
-                        "version": 2,
-                        "minorversion": 0,
-                        "name": "FSPv1.4",
-                        "origin": "Audium Open 1D_20250325",
-                        "type": "patcher",
-                        "subtype": "Undefined",
-                        "embed": 0,
-                        "fileref": {
-                            "name": "FSPv1.4",
-                            "filename": "FSPv1.4_20250325_1.maxsnap",
-                            "filepath": "~/Documents/Max 8/Snapshots",
-                            "filepos": -1,
-                            "snapshotfileid": "aec9a68b88ab4b83246c12bbe52b32d8"
+                            "snapshotfileid": "d412733bb0b39c131b16b9c918028078"
                         }
                     }
                 ]
